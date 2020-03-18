@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+	<style type="text/css">
+		body, html,#allmap {width: 100%;height: 100%;overflow: hidden;margin:0;font-family:"微软雅黑";}
+		a{ color:black}
+		a:hover{ color:brown}
+	</style>
+	<script src="https://cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+	<script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=4PLrMiRg2lqj3pAu6Kz4SaNvOyWrh61V"></script>
+	<script type="text/javascript" src="https://api.map.baidu.com/library/GeoUtils/1.2/src/GeoUtils_min.js"></script>
+	<title>汽修单位地图展示</title>
+</head>
+<body>
+	<div id="allmap"></div>
+</body>
+</html>
+<script type="text/javascript">
+	var currentPosMarker = null;
+	function getParam(name) {
+	    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+	    var reg_rewrite = new RegExp("(^|/)" + name + "/([^/]*)(/|$)", "i");
+	    var search = decodeURI(window.location.search);
+	    var pathname = decodeURI(window.location.pathname);
+	    var r = search.substr(1).match(reg);
+	    var q = pathname.substr(1).match(reg_rewrite);
+	    if(r != null){
+	    	return r[2];
+	    }else if(q != null){
+	    	return q[2];
+	    }else{
+	        return null;
+	    }
+	};
+	var defaultLng= getParam('lng'), defaultLat = getParam('lat'), defaultCity = getParam('city');
+	console.log('---lng='+defaultLng+',lat='+defaultLat+',city='+defaultCity);
+	if(defaultCity===null||defaultCity==='') defaultCity ='杭州市';
+	
+	//console.log('---lng='+defaultLng+',lat='+defaultLat+',city='+defaultCity);
+	// 百度地图API功能
+	var map = new BMap.Map("allmap");    // 创建Map实例
+	//map.setCurrentCity(defaultCity);    // 设置地图显示的城市 此项是必须设置的
+	map.enableScrollWheelZoom(true);     //开启鼠标滚轮缩放
+	
+	var geolocation = new BMap.Geolocation();
+	//创建地理编码实例	                             
+	var myGeo = new BMap.Geocoder();	                             
+	// 开启SDK辅助定位
+	geolocation.enableSDKLocation();
+	
+	var navigationControl = new BMap.NavigationControl({enableGeolocation:false})
+	map.addControl(navigationControl);    
+	map.addControl(new BMap.ScaleControl());    
+	map.addControl(new BMap.OverviewMapControl());    
+	map.addControl(new BMap.MapTypeControl());
+	
+	/*
+	var geolocationControl =new BMap.GeolocationControl();
+	geolocationControl.addEventListener("locationSuccess", function(e){
+		move2ThePoint(myGeo,e.point);
+	});
+	map.addControl(geolocationControl);
+	*/
+	
+	map.centerAndZoom(defaultCity, 12);
+	if(defaultLng!==''&&defaultLat!==''){
+		map.panTo(new BMap.Point(defaultLng,defaultLat));
+	}
+	
+	
+	//var point = new BMap.Point(120.0993709,30.296707699999995);
+    //	                             120.11061875054,30.300604223181
+	var postMsg = function(msgData){
+		window.parent.postMessage(JSON.stringify(msgData),"*");
+	};
+	
+	var showGarageOrder = function(garageid,garage){ 
+		//地图加载完毕
+		var msgData = {
+	   		type : 'baiduMap',
+	   		action : 'garage_order',
+	   		data : {
+	   		    garage : garage,
+	   			garageid : garageid
+	   		}
+	   	};
+		postMsg(msgData);
+	};
+	var nav2Garage = function(lng,lat,name,addr){ 
+		//地图加载完毕
+		var msgData = {
+	   		type : 'baiduMap',
+	   		action : 'garage_nav',
+	   		data : {
+	   		    lng:lng,
+	   			lat:lat,
+	   			name:name,
+	   			addr:addr
+	   		}
+	   	};
+		postMsg(msgData);
+	};
+	
+	
+	
+	var getAddrWithPoint = function(geo,point){
+		// 根据坐标得到地址描述    
+	    geo.getLocation(point, function(result){      
+	        if (result){      
+	        	var titleAddr='',dtlAddr = '';
+	        	if(result.surroundingPois.length>0){
+	        		var sp0 = result.surroundingPois[0];
+	        		titleAddr = sp0.title;
+	        		dtlAddr = sp0.address;
+	        	}
+	        	var msg = "当前定位:"+result.address+",当前地址:"+titleAddr+'-'+dtlAddr;
+	        	
+	        	var msgData = {
+	        		type : 'baiduMap',
+	        		action : 'getAddress',
+	        		data : {
+	        			lng : point.lng,
+	        			lat : point.lat,
+	        			province	 : result.addressComponents.province,
+	        	        city 		 : result.addressComponents.city,
+	        	        district 	 : result.addressComponents.district,
+	        	        street    	 : result.addressComponents.district,
+	        	        streetNumber : result.addressComponents.streetNumber,
+	        			locAddr 	 : result.address,
+	        			titleAddr    : titleAddr,
+	        			dtlAddr 	 : dtlAddr
+	        		}
+	        	};
+	        	//console.log(result.point);
+	        	//console.log(msgData);
+	        	postMsg(msgData);
+	        	//console.log(result.point);
+	        	//console.log(result.surroundingPois);
+	        	
+	        	//console.log("当前地址:"+JSON.stringify(result));
+	        }else{
+	        	alert('无法获得定位地址!');
+	        }      
+	    });
+	};
+	var doLocation = function(){
+		console.log('-----doLocation---------');
+		geolocation.getCurrentPosition(function(r){
+			if(this.getStatus() == BMAP_STATUS_SUCCESS){
+				var mk = new BMap.Marker(r.point); //创建标注
+				mk.enableDragging();
+				mk.addEventListener("dragend", function(e){    
+				    getAddrWithPoint(myGeo,e.point);
+				})
+				map.addOverlay(mk);                // 将标注添加到地图中
+				setTimeout(function(){
+					map.panTo(r.point);            //1 秒钟后移动到定位点
+				},1000);
+				getAddrWithPoint(myGeo,r.point);
+				
+			}else {
+				alert('failed'+this.getStatus());
+			}  
+		});
+	};
+	var doSearchWithAddress = function(geo,addr){
+			geo.getPoint(addr, function(point){
+				if (point) {
+					move2ThePoint(geo,point);
+				}else{
+					alert("您选择地址没有解析到结果!");
+				}
+			}, defaultCity);
+	};
+	var addGarMarker = function(gar,showLabel){
+		if(gar.lng == 0 || gar.lat == 0) return ;
+		var pt = new BMap.Point(gar.lng,gar.lat);
+		var myIcon = new BMap.Icon("../res/images/markers/"+gar.icon, new BMap.Size(22,26),{anchor : new BMap.Size(10, 25)});
+		var mk = new BMap.Marker(pt,{icon:myIcon});  // 创建标注
+		map.addOverlay(mk);
+		
+		
+		var onMkClick = function(e) {
+			var p = e.target;
+			var point = new BMap.Point(p.getPosition().lng, p.getPosition().lat);
+			var showfun = "showGarageOrder("+gar.garageid+",'"+gar.title+"')";
+			var navfun = "nav2Garage("+gar.lng+","+gar.lat+",'"+gar.title+"','"+gar.garaddr+"')";
+			var gartitle = '<a href="javascript:void(0);" onclick="'+showfun+'"  style="font-size:12px;">单位:'+gar.title+'</a>';
+			var infoWindow = new BMap.InfoWindow('<span  style="font-size:12px;">地址:'+gar.garaddr+'</span><br/><span style="font-size:12px">'+gar.disp+'</span>',
+			//var infoWindow = new BMap.InfoWindow('<a href="javascript:void(0);" onclick="'+navfun+'"  style="font-size:12px;">地址:'+gar.garaddr+'</a><br/><span style="font-size:12px">'+gar.disp+'</span>', 
+				{
+				width : 180, // 信息窗口宽度
+				height : 90, // 信息窗口高度
+				title : gartitle, // 信息窗口标题
+				enableMessage : true // 设置允许信息窗发送短息
+			}); // 创建信息窗口对象
+			map.openInfoWindow(infoWindow, point); // 开启信息窗口
+		};
+		if(showLabel==1){
+			var label = new BMap.Label(gar.title+'('+gar.cnt+')',{offset:new BMap.Size(20,-10)});
+			mk.setLabel(label);
+			label.addEventListener("click",onMkClick);
+		}
+		mk.addEventListener("click",onMkClick);
+	};
+	var addGarageMakers = function(gars,showLabel,showD){
+		//增加一些汽修厂的位置
+		map.clearOverlays();
+		var toPt = null;
+		var dist = 99999999;
+		var curPoint = new BMap.Point(defaultLng,defaultLat);
+		for(var i =0; i<gars.length; i++){
+		    var cnt = 0 ;
+			var gar = {
+				lng : gars[i].lng,
+				lat : gars[i].lat,
+				title : gars[i].garage,
+				garageid : gars[i].garageid,
+				garaddr : gars[i].locateaddr
+			};
+			/* 
+			if(gar.title.indexOf('凯旋')>=0){
+					console.log('--------------------------------------------------------');
+					console.log(gars[i]);
+			}
+			*/ 
+			if(!gar.garaddr || gar.garaddr=='' || gar.garaddr == 'null'){
+			    //无gps定位地址的,跳过
+				continue;
+			}
+			if(gar.lng==0||gar.lat==0||gar.lng==''||gar.lat==''||!gar.lng||!gar.lat){
+			  //无gps定位点的,跳过
+			  continue;
+			}
+			var pt = new BMap.Point(gar.lng,gar.lat);
+			var d = BMapLib.GeoUtils.getDistance(curPoint,pt).toFixed();
+			//console.log('---------dist='+dist);
+			//console.log('---------d='+d);
+			if(d<dist){
+				dist = d;
+				toPt = pt;
+			}
+			
+			var disp = '订单:';
+			switch(gars[i].status){
+				case 'A':
+					gar.icon = 'm_green.png';
+					break;
+				case 'B':
+					gar.icon = 'm_red.png';
+					break;
+				case 'C':
+					gar.icon = 'm_orange.png';
+					break;
+				case 'D':
+					gar.icon = 'm_blue.png';
+					break;
+			}
+			if(gars[i].A_cnt){ disp += ' <span style="color:green">今日'+gars[i].A_cnt+'</span>';   	cnt += gars[i].A_cnt ;}
+			if(gars[i].B_cnt){ disp += ' <span style="color:red">今日(急)'+gars[i].B_cnt+'</span>';	    cnt += gars[i].B_cnt ;}
+			if(gars[i].C_cnt){ disp += ' <span style="color:orange">逾期'+gars[i].C_cnt+'</span>'; 		cnt += gars[i].C_cnt ;}
+			if(gars[i].D_cnt){ disp += ' <span style="color:blue">预约'+gars[i].D_cnt+'</span>'; 		cnt += gars[i].D_cnt ;}
+            gar.disp = disp;
+            gar.cnt = cnt;
+            //console.log('showLabel='+showLabel);
+            //console.log('showD='+showD);
+            if(gars[i].status=='D'){
+                if(showD==1) addGarMarker(gar,showLabel);
+			}else{
+				addGarMarker(gar,showLabel);
+			}
+		}
+		//console.log('---------min dist='+dist);
+		if(toPt){
+			move2ThePoint(myGeo,toPt,false);
+		}
+		if(currentPosMarker) map.addOverlay(currentPosMarker);
+	};
+	
+	var move2ThePoint = function(geo,point,addMarker){
+		console.log('-----move2ThePoint---------');
+		
+		//加标记
+		if(addMarker != false){
+			map.removeOverlay(currentPosMarker);
+			var mk = new BMap.Marker(point); //创建标注
+			currentPosMarker = mk;
+			mk.enableDragging();
+			mk.addEventListener("dragend", function(e){    
+			    getAddrWithPoint(geo,e.point);
+			});
+			map.addOverlay(mk);
+		}
+		
+		//300毫秒后移动到这个点,不延迟的话，经常不能移动到这里
+		setTimeout(function(){
+			var ZoomNum = map.getZoom();
+			map.centerAndZoom(point,ZoomNum);
+			//map.panTo(point);            //移动到定位点
+			//getAddrWithPoint(myGeo,point);
+		},300); 
+	}
+	/*
+	* 在手机上,由微信定位坐标不做百度定位
+	if((defaultLng==null&&defaultLat==null)||(defaultLng==''&&defaultLat=='')){
+		if(defaultCity==null||defaultCity=='')
+			doLocation();
+	}else{
+		move2ThePoint(myGeo,new BMap.Point(defaultLng,defaultLat));
+	}
+	var originalPt = new BMap.Point(120.11056641764,30.300492298038);
+	*/ 
+	map.addEventListener("click", function(e){   
+		if(e.overlay==null){
+			//当点击出不是覆盖物时才移动到该点
+			move2ThePoint(myGeo,e.point);
+			//测距
+			//var dist = BMapLib.GeoUtils.getDistance(originalPt,e.point).toFixed();
+			//console.log('----距离原始点距离='+dist+'米');
+		}
+	});
+	window.onmessage=function(e){
+		console.log('-----------on search message-----------------------');
+		if(e.source==window.parent&&(e.data!='')){
+	        var msgData = JSON.parse(e.data);
+	        if(msgData.type=='baiduMap'){
+				//console.log(msgData);	            
+	        	var data  = msgData.data;
+	        	if(data){
+	        	    switch(msgData.action){
+	        	    	case 'location':
+	        	    		defaultLng =  data.curPos.lng;
+			        		defaultLat =  data.curPos.lat;   
+		        			move2ThePoint(myGeo,new BMap.Point(data.curPos.lng,data.curPos.lat),true);
+	        	    	break;
+	        	    	case 'garages_dist':
+	        	    		addGarageMakers(data.gars,data.showLabel,data.showD);
+	        	    		break;
+	        	    	case 'location&&garages_dist':
+	        	    		defaultLng =  data.curPos.lng;
+			        		defaultLat =  data.curPos.lat;   
+		        			move2ThePoint(myGeo,new BMap.Point(data.curPos.lng,data.curPos.lat),true);
+		        			addGarageMakers(data.gars,data.showLabel,data.showD);
+	        	    		break;
+	        	    }
+	        	}
+    	    		
+	        }
+        }
+	}
+	var mapIsReady = function(){ 
+		//地图加载完毕
+		var msgData = {
+	   		type : 'baiduMap',
+	   		action : 'map_isready',
+	   		data : {
+	   		}
+	   	};
+		postMsg(msgData);
+	};
+	
+	mapIsReady();
+
+	
+</script>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cQvu2Ib" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cQvu2Ib" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/windowContainer/windowContainer,$model/UI2/system/components/bootstrap/carousel/carousel,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">null</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onModelConstructDone:modelModelConstructDone;onModelConstruct:modelModelConstruct;onLoad:modelLoad" __cid="cQvu2Ib" class="cQvu2Ib"/>  
+  <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cQvu2Ib" xid="pages" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;routable&quot;:true,&quot;swipe&quot;:false}" __cid="cQvu2Ib"> 
+    <div class="x-contents-content active cQvu2Ib" xid="maint" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cQvu2Ib">
+      <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container cQvu2Ib" xid="windowContainer1" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;src&quot;:&quot;$model/UI2/ddwx/setup/main.w&quot;}" __cid="cQvu2Ib">
+        <div xid="window" class="window ciyYnym" component="$model/UI2/system/components/justep/window/window" design="device:m;$skin:compact;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="ciyYnym" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/windowContainer/windowContainer,$model/UI2/system/components/bootstrap/carousel/carousel,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,">  
+          <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.grid9.ciyYnym .row.ciyYnym{margin-left: 0; margin-right: 0} .grid9.ciyYnym .cell.ciyYnym{padding: 0; overflow: hidden} .grid9.ciyYnym .cell.ciyYnym .card.ciyYnym i.ciyYnym{margin-top: 5px; margin-bottom: 10px; font-size: 32px; color: rgb(136, 136, 136)} .portal-main.ciyYnym .x-contents.ciyYnym &gt; .x-contents-content.ciyYnym{overflow: hidden} .grid9.ciyYnym .btn.ciyYnym{width: 100%} .x-portal.ciyYnym .x-contents[xid="carousel"].ciyYnym{height: 188px} .iosstatusbar.ciyYnym .x-portal.ciyYnym .x-contents[xid="carousel"].ciyYnym{height: 108px} .x-portal.ciyYnym &gt; .x-panel-top.ciyYnym{z-index: 100} angleBox.ciyYnym{width: 80px; float: left; position: relative} .angle.ciyYnym{position: absolute; right: 20px; top: 15px; color: rgb(255, 99, 71); text-align: "left"; background-color: transparent} .x-panel.ciyYnym .x-contents.ciyYnym .x-contents-content.ciyYnym img.ciyYnym{width: 100%}</style>  
+          <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onActive:modelActive;onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="ciyYnym" class="ciyYnym"></div>  
+          <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcn63AFz-iosstatusbar ciyYnym" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="ciyYnym">  
+            <div class="x-panel-content clearfix ciyYnym" xid="content4" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ciyYnym"> 
+              <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full ciyYnym" xid="mainContents" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;routable&quot;:true,&quot;swipe&quot;:false}" __cid="ciyYnym"> 
+                <div class="x-contents-content active ciyYnym" xid="contentHome" style="background-color:#fafafa;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:contentHomeActive" __cid="ciyYnym"> 
+                  <div class="x-content ciyYnym" xid="content1" __cid="ciyYnym"> 
+                    <div component="$model/UI2/system/components/bootstrap/carousel/carousel" class="x-carousel carousel ciyYnym" xid="carousel1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/carousel/carousel'}" data-config="{&quot;auto&quot;:true,&quot;interval&quot;:4}" __cid="ciyYnym"> 
+                      <ol class="carousel-indicators ciyYnym" xid="ol1" __cid="ciyYnym"/>  
+                      <div role="listbox" component="$model/UI2/system/components/justep/contents/contents" xid="contents2" class="x-contents carousel-inner ciyYnym" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;routable&quot;:false,&quot;slidable&quot;:true,&quot;swipe&quot;:true,&quot;wrap&quot;:true}" __cid="ciyYnym"> 
+                        <div class="x-contents-content active ciyYnym" xid="page1" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="ciyYnym"> 
+                          <img src="@justepContextPath@/v_6274_nol_zh_CNs_d_m/ddwx/res/images/1.png" alt="" xid="image1" __cid="ciyYnym" class="ciyYnym"/> 
+                        </div>  
+                        <div class="x-contents-content ciyYnym" xid="page2" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="ciyYnym"> 
+                          <img src="@justepContextPath@/v_6274_nol_zh_CNs_d_m/ddwx/res/images/2.png" alt="" xid="image2" __cid="ciyYnym" class="ciyYnym"/> 
+                        </div>  
+                        <div class="x-contents-content ciyYnym" xid="page3" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="ciyYnym"> 
+                          <img src="@justepContextPath@/v_6274_nol_zh_CNs_d_m/ddwx/res/images/3.png" alt="" xid="image3" __cid="ciyYnym" class="ciyYnym"/> 
+                        </div> 
+                      </div> 
+                    </div>  
+                    <div xid="div2" class="container ciyYnym" __cid="ciyYnym"> 
+                      <div component="$model/UI2/system/components/bootstrap/row/row" class="row grid9 ciyYnym" xid="row1" style="width:100%;padding-top:20px;" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="ciyYnym"> 
+                        <div class="col col-xs-4 col-sm-4 col-md-4 col-lg-1 cell ciyYnym" xid="col1" __cid="ciyYnym"> 
+                          <div xid="div1" class="card borderDiv ciyYnym" __cid="ciyYnym"> 
+                            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top ciyYnym" xid="btnCanRecv" style="color:#888888;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:getAllOrder" data-config="{&quot;icon&quot;:&quot;round round-file&quot;,&quot;label&quot;:&quot;所有订单&quot;}" __cid="ciyYnym"> 
+                              <i xid="i1" class="round round-file ciyYnym" style="color:#00BFFF;" __cid="ciyYnym"/>  
+                              <span xid="span1" __cid="ciyYnym" class="ciyYnym">所有订单</span> 
+                            </a>  
+                            <span class="badge angle ciyYnym" xid="badge2" __cid="ciyYnym" data-bind="text:$model.orderStatiscs.val(&quot;all_order&quot;)">0</span> 
+                          </div> 
+                        </div>  
+                        <div class="col col-xs-4 col-sm-4 col-md-4 col-lg-1 cell ciyYnym" xid="col3" __cid="ciyYnym" data-bind="visible:$model.showCanRecv"> 
+                          <div xid="div3" class="card borderDiv ciyYnym" __cid="ciyYnym"> 
+                            <span class="badge angle ciyYnym" xid="badge1" __cid="ciyYnym" data-bind="text:$model.orderStatiscs.val(&quot;canrecv_order&quot;)">0</span>  
+                            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top ciyYnym" xid="btnUrgentOrder" style="color:#888888;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:getCanRecvOrder" data-config="{&quot;icon&quot;:&quot;round round-edit&quot;,&quot;label&quot;:&quot;待回收订单&quot;}" __cid="ciyYnym"> 
+                              <i xid="i5" class="round round-edit ciyYnym" style="color:#FFA500;" __cid="ciyYnym"/>  
+                              <span xid="span4" __cid="ciyYnym" class="ciyYnym">待回收订单</span> 
+                            </a> 
+                          </div> 
+                        </div>  
+                        <div class="col col-xs-4 col-sm-4 col-md-4 col-lg-1 cell ciyYnym" xid="col8" __cid="ciyYnym" data-bind="visible:$model.showCanConfirm"> 
+                          <div xid="div10" class="card borderDiv ciyYnym" __cid="ciyYnym"> 
+                            <span class="badge angle ciyYnym" xid="badge8" __cid="ciyYnym" data-bind="text:$model.orderStatiscs.val(&quot;canconfirm_order&quot;)">0</span>  
+                            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top ciyYnym" xid="btnCanConfirm" style="color:#888888;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:getCanConfirm" data-config="{&quot;icon&quot;:&quot;round round-edit&quot;,&quot;label&quot;:&quot;待确认订单&quot;}" __cid="ciyYnym"> 
+                              <i xid="i19" class="round round-edit ciyYnym" style="color:#FFA500;" __cid="ciyYnym"/>  
+                              <span xid="span24" __cid="ciyYnym" class="ciyYnym">待确认订单</span> 
+                            </a> 
+                          </div> 
+                        </div>  
+                        <div class="col col-xs-4 col-sm-4 col-md-4 col-lg-1 cell ciyYnym" xid="col4" __cid="ciyYnym"> 
+                          <div xid="div4" class="card borderDiv ciyYnym" __cid="ciyYnym"> 
+                            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top ciyYnym" xid="button4" url="/demo/native/geolocation/mainActivity.w" style="color:#888888;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:getConfirmedOrder" data-config="{&quot;icon&quot;:&quot;round round-paperairplane&quot;,&quot;label&quot;:&quot;修理厂确认单&quot;}" __cid="ciyYnym"> 
+                              <i xid="i6" class="round round-paperairplane ciyYnym" style="color:#008B8B;" __cid="ciyYnym"/>  
+                              <span xid="span5" __cid="ciyYnym" class="ciyYnym">修理厂确认单</span> 
+                            </a>  
+                            <span class="badge angle ciyYnym" xid="badge3" __cid="ciyYnym" data-bind="text:$model.orderStatiscs.val(&quot;confirmed_order&quot;)">0</span> 
+                          </div> 
+                        </div>  
+                        <div class="col col-xs-4 col-sm-4 col-md-4 col-lg-1 cell ciyYnym" xid="col5" __cid="ciyYnym"> 
+                          <div xid="div5" class="card borderDiv ciyYnym" __cid="ciyYnym"> 
+                            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top ciyYnym" xid="button1" url="/demo/native/geolocation/mainActivity.w" style="color:#888888;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:getUrgentOrder" data-config="{&quot;icon&quot;:&quot;round round-collect&quot;,&quot;label&quot;:&quot;加急订单&quot;}" __cid="ciyYnym"> 
+                              <i xid="i8" class="round round-collect ciyYnym" style="color:#8A2BE2;" __cid="ciyYnym"/>  
+                              <span xid="span7" __cid="ciyYnym" class="ciyYnym">加急订单</span> 
+                            </a>  
+                            <span class="badge angle ciyYnym" xid="badge4" __cid="ciyYnym" data-bind="text:$model.orderStatiscs.val(&quot;urgent_order&quot;)">0</span> 
+                          </div> 
+                        </div>  
+                        <div class="col col-xs-4 col-sm-4 col-md-4 col-lg-1 cell ciyYnym" xid="col6" __cid="ciyYnym" data-bind="visible:$model.showOverdue"> 
+                          <div xid="div6" class="card borderDiv ciyYnym" __cid="ciyYnym"> 
+                            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top ciyYnym" xid="button3" url="/demo/native/geolocation/mainActivity.w" style="color:#888888;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:getOverdueOrder" data-config="{&quot;icon&quot;:&quot;round round-wallet&quot;,&quot;label&quot;:&quot;逾期订单&quot;}" __cid="ciyYnym"> 
+                              <i xid="i9" class="round round-wallet ciyYnym" style="color:#FF6347;" __cid="ciyYnym"/>  
+                              <span xid="span12" __cid="ciyYnym" class="ciyYnym">逾期订单</span> 
+                            </a>  
+                            <span class="badge angle ciyYnym" xid="badge5" __cid="ciyYnym" data-bind="text:$model.orderStatiscs.val(&quot;overdue_order&quot;)">0</span> 
+                          </div> 
+                        </div>  
+                        <div class="col col-xs-4 col-sm-4 col-md-4 col-lg-1 cell ciyYnym" xid="col11" __cid="ciyYnym"> 
+                          <div xid="div8" class="card borderDiv ciyYnym" __cid="ciyYnym"> 
+                            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top ciyYnym" xid="button9" url="/demo/native/geolocation/mainActivity.w" style="color:#888888;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:getTodayrecvOrder" data-config="{&quot;icon&quot;:&quot;round round-download&quot;,&quot;label&quot;:&quot;本日已收订单&quot;}" __cid="ciyYnym"> 
+                              <i xid="i12" class="round round-download ciyYnym" style="color:#32CD32;" __cid="ciyYnym"/>  
+                              <span xid="span15" __cid="ciyYnym" class="ciyYnym">本日已收订单</span> 
+                            </a>  
+                            <span class="badge angle ciyYnym" xid="badge7" __cid="ciyYnym" data-bind="text:$model.orderStatiscs.val(&quot;todayrecv_order&quot;)">0</span> 
+                          </div> 
+                        </div>  
+                        <div class="col col-xs-4 col-sm-4 col-md-4 col-lg-1 cell ciyYnym" xid="col2" __cid="ciyYnym"> 
+                          <div xid="div7" class="card borderDiv ciyYnym" __cid="ciyYnym"> 
+                            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top ciyYnym" xid="button2" url="/demo/native/geolocation/mainActivity.w" style="color:#888888;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:getMyOrder" data-config="{&quot;icon&quot;:&quot;round round-person&quot;,&quot;label&quot;:&quot;我的订单&quot;,&quot;target&quot;:&quot;contentHome&quot;}" __cid="ciyYnym"> 
+                              <i xid="i11" class="round-person round ciyYnym" style="color:#804040;" __cid="ciyYnym"/>  
+                              <span xid="span14" __cid="ciyYnym" class="ciyYnym">我的订单</span> 
+                            </a>  
+                            <span class="badge angle ciyYnym" xid="badge6" __cid="ciyYnym" data-bind="text:$model.orderStatiscs.val(&quot;my_order&quot;)">0</span> 
+                          </div> 
+                        </div>  
+                        <div class="col col-xs-4 col-sm-4 col-md-4 col-lg-1 cell ciyYnym" xid="col7" __cid="ciyYnym" data-bind="visible:showNewOrder"> 
+                          <div xid="div9" class="card borderDiv ciyYnym" __cid="ciyYnym"> 
+                            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top ciyYnym" xid="btnNewOrder" url="/demo/native/geolocation/mainActivity.w" style="color:#888888;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnNewOrderClick" data-config="{&quot;icon&quot;:&quot;round round-plus&quot;,&quot;label&quot;:&quot;新增订单&quot;}" __cid="ciyYnym"> 
+                              <i xid="i17" class="round-plus round ciyYnym" style="color:#3A81A3;" __cid="ciyYnym"/>  
+                              <span xid="span23" __cid="ciyYnym" class="ciyYnym">新增订单</span> 
+                            </a> 
+                          </div> 
+                        </div> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </div>  
+                <div class="x-contents-content ciyYnym" xid="contentLocation" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:contentLocationActive" __cid="ciyYnym"> 
+                  <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container ciyYnym" xid="windowContainer1" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-events="onLoad:windowContainer1Load" data-config="{&quot;autoLoad&quot;:false}" __cid="ciyYnym"/> 
+                </div>  
+                <div class="x-contents-content ciyYnym" xid="contentMy" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:contentMyActive" __cid="ciyYnym"> 
+                  <div class="x-panel-content ciyYnym" xid="content7" __cid="ciyYnym"> 
+                    <ul xid="ul1" __cid="ciyYnym" class="ciyYnym"> 
+                      <li class="list-group-item ciyYnym" xid="liPerson" __cid="ciyYnym" data-bind="event:{click:$model._callModelFn.bind($model, 'myInfoClick')}"> 
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right ciyYnym" xid="button12" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="ciyYnym"> 
+                          <i xid="i18" class="icon-ios7-arrow-right text-muted ciyYnym" __cid="ciyYnym"/>  
+                          <span xid="span17" __cid="ciyYnym" class="ciyYnym"/> 
+                        </a>  
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon ciyYnym" xid="button13" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-contact&quot;}" __cid="ciyYnym"> 
+                          <i xid="i26" class="text-warning icon-android-contact ciyYnym" __cid="ciyYnym"/>  
+                          <span xid="span18" __cid="ciyYnym" class="ciyYnym"/> 
+                        </a>  
+                        <span xid="span16" __cid="ciyYnym" class="ciyYnym">个人资料</span> 
+                      </li>  
+                      <li class="list-group-item ciyYnym" xid="liModifyPwd" __cid="ciyYnym" data-bind="event:{click:$model._callModelFn.bind($model, 'updatePwdClick')}"> 
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right ciyYnym" xid="button14" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="ciyYnym"> 
+                          <i xid="i27" class="icon-ios7-arrow-right text-muted ciyYnym" __cid="ciyYnym"/>  
+                          <span xid="span20" __cid="ciyYnym" class="ciyYnym"/> 
+                        </a>  
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon ciyYnym" xid="button15" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-key&quot;}" __cid="ciyYnym"> 
+                          <i xid="i28" class="icon-key ciyYnym" __cid="ciyYnym"/>  
+                          <span xid="span21" __cid="ciyYnym" class="ciyYnym"/> 
+                        </a>  
+                        <span xid="span19" __cid="ciyYnym" class="ciyYnym">修改密码</span> 
+                      </li> 
+                    </ul>  
+                    <ul xid="ul2" __cid="ciyYnym" class="ciyYnym"> 
+                      <li class="list-group-item ciyYnym" xid="liPhone" __cid="ciyYnym" data-bind="visible:false"> 
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right ciyYnym" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="ciyYnym"> 
+                          <i xid="i15" class="icon-ios7-arrow-right text-muted ciyYnym" __cid="ciyYnym"/>  
+                          <span xid="span19" __cid="ciyYnym" class="ciyYnym"/> 
+                        </a>  
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon ciyYnym" xid="button10" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-call&quot;}" __cid="ciyYnym"> 
+                          <i xid="i14" class="text-warning icon-android-call ciyYnym" __cid="ciyYnym"/>  
+                          <span xid="span22" __cid="ciyYnym" class="ciyYnym"/> 
+                        </a>  
+                        <a href="tel:13612345678" xid="a2" __cid="ciyYnym" class="ciyYnym"> 
+                          <span xid="span21" __cid="ciyYnym" class="ciyYnym">客服电话</span> 
+                        </a> 
+                      </li>  
+                      <li class="list-group-item ciyYnym" xid="liAbout" __cid="ciyYnym" data-bind="event:{click:$model._callModelFn.bind($model, 'aboutClick')}"> 
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right ciyYnym" xid="button11" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="ciyYnym"> 
+                          <i xid="i16" class="icon-ios7-arrow-right text-muted ciyYnym" __cid="ciyYnym"/>  
+                          <span xid="span8" __cid="ciyYnym" class="ciyYnym"/> 
+                        </a>  
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon ciyYnym" xid="button6" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-information-outline&quot;}" __cid="ciyYnym"> 
+                          <i xid="i13" class="text-danger icon-ios7-information-outline ciyYnym" __cid="ciyYnym"/>  
+                          <span xid="span20" __cid="ciyYnym" class="ciyYnym"/> 
+                        </a>  
+                        <span xid="span9" __cid="ciyYnym" class="ciyYnym">关于</span> 
+                      </li> 
+                    </ul>  
+                    <ul xid="ul3" __cid="ciyYnym" class="ciyYnym"> 
+                      <li class="list-group-item ciyYnym" xid="liLoinout" __cid="ciyYnym" data-bind="event:{click:$model._callModelFn.bind($model, 'btnLoginOut')}"> 
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right ciyYnym" xid="button10" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="ciyYnym"> 
+                          <i xid="i10" class="icon-ios7-arrow-right text-muted ciyYnym" __cid="ciyYnym"/>  
+                          <span xid="span11" __cid="ciyYnym" class="ciyYnym"/> 
+                        </a>  
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon ciyYnym" xid="button8" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-gear-b&quot;}" __cid="ciyYnym"> 
+                          <i xid="i7" class="text-warning icon-gear-b ciyYnym" __cid="ciyYnym"/>  
+                          <span xid="span10" __cid="ciyYnym" class="ciyYnym"/> 
+                        </a>  
+                        <span xid="span13" __cid="ciyYnym" class="ciyYnym">注销</span> 
+                      </li> 
+                    </ul> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <div class="x-panel-bottom ciyYnym" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="ciyYnym"> 
+              <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified clearfix center-block ciyYnym" xid="buttonGroup1" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;selected&quot;:&quot;btnHome&quot;,&quot;tabbed&quot;:true}" __cid="ciyYnym"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-icon-top active ciyYnym" xid="btnHome" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-home&quot;,&quot;label&quot;:&quot;首页&quot;,&quot;target&quot;:&quot;contentHome&quot;}" __cid="ciyYnym"> 
+                  <i xid="i2" class="linear linear-bookmark icon-home ciyYnym" __cid="ciyYnym"/>  
+                  <span xid="span2" __cid="ciyYnym" class="ciyYnym">首页</span> 
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top ciyYnym" xid="btnLocation" style="font-weight:normal;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-home&quot;,&quot;label&quot;:&quot;位置分布&quot;,&quot;target&quot;:&quot;contentLocation&quot;}" __cid="ciyYnym"> 
+                  <i xid="i4" class="linear linear-mapmarker icon-home ciyYnym" __cid="ciyYnym"/>  
+                  <span xid="span6" __cid="ciyYnym" class="ciyYnym">位置分布</span> 
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top ciyYnym" xid="btnMy" style="font-weight:normal;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-contact&quot;,&quot;label&quot;:&quot;我的&quot;,&quot;target&quot;:&quot;contentMy&quot;}" __cid="ciyYnym"> 
+                  <i xid="i3" class="linear linear-user icon-android-contact ciyYnym" __cid="ciyYnym"/>  
+                  <span xid="span3" __cid="ciyYnym" class="ciyYnym">我的</span> 
+                </a> 
+              </div> 
+            </div>  
+            <style __cid="ciyYnym" class="ciyYnym">.x-panel.pcn63AFz-iosstatusbar &gt;.x-panel-top {height: 0px;}.x-panel.pcn63AFz-iosstatusbar &gt;.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcn63AFz-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcn63AFz-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcn63AFz-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcn63AFz-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcn63AFz-iosstatusbar &gt;.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcn63AFz-iosstatusbar &gt;.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcn63AFz-iosstatusbar &gt;.x-panel-content {top: 0px;}</style> 
+          </div>  
+          <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="loginDialog" style="top:43px;left:25px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onClose:loginDialogClose" data-config="{&quot;src&quot;:&quot;$model/UI2/ddwx/setup/login.w&quot;}" __cid="ciyYnym" class="ciyYnym">  
+            <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay ciyYnym" __cid="ciyYnym"></div>  
+            <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog ciyYnym" style="display:none;" __cid="ciyYnym">  
+              <div class="x-dialog-title ciyYnym" __cid="ciyYnym"> 
+                <button class="close ciyYnym" __cid="ciyYnym"> 
+                  <span __cid="ciyYnym" class="ciyYnym">×</span> 
+                </button>  
+                <div class="x-dialog-title-text ciyYnym" __cid="ciyYnym"/> 
+              </div>  
+              <div class="x-dialog-body ciyYnym" __cid="ciyYnym"/> 
+            </div> 
+          </span>  
+          <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="orderDialog" style="top:15px;left:110px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceived:orderDialogReceived" __cid="ciyYnym" class="ciyYnym">  
+            <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay ciyYnym" __cid="ciyYnym"></div>  
+            <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog ciyYnym" style="display:none;" __cid="ciyYnym">  
+              <div class="x-dialog-title ciyYnym" __cid="ciyYnym"> 
+                <button class="close ciyYnym" __cid="ciyYnym"> 
+                  <span __cid="ciyYnym" class="ciyYnym">×</span> 
+                </button>  
+                <div class="x-dialog-title-text ciyYnym" __cid="ciyYnym"/> 
+              </div>  
+              <div class="x-dialog-body ciyYnym" __cid="ciyYnym"/> 
+            </div> 
+          </span> 
+        </div>
+      </div>
+    </div>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="loginDialog" style="top:43px;left:25px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceived:loginDialogReceived" data-config="{&quot;src&quot;:&quot;$model/UI2/ddwx/setup/login.w&quot;}" __cid="cQvu2Ib" class="cQvu2Ib">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cQvu2Ib" __cid="cQvu2Ib"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cQvu2Ib" style="display:none;" __cid="cQvu2Ib">
+      <xhtml:div class="x-dialog-title cQvu2Ib" __cid="cQvu2Ib">
+        <xhtml:button class="close cQvu2Ib" __cid="cQvu2Ib">
+          <xhtml:span __cid="cQvu2Ib" class="cQvu2Ib">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text cQvu2Ib" __cid="cQvu2Ib"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body cQvu2Ib" __cid="cQvu2Ib"/>
+    </xhtml:div>
+  </span>
+</div>

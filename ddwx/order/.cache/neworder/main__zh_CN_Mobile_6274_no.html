@@ -1,0 +1,932 @@
+<!DOCTYPE HTML>
+<html style="width:100%;height:100%" class="no-js">
+    <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="renderer" content="webkit">
+        <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,viewport-fit=cover">
+        <script src="../../../v_6274_nol_zh_CNs_d_m/system/lib/base/modernizr-2.8.3.min.js"></script>
+		<script id="__varReplace">
+    	
+    	    	window.__justep = window.__justep || {};
+				window.__justep.isDebug = false;
+				window.__justep.__packageMode = "1";
+				window.__justep.__isPackage = false;;
+				window.__justep.url = location.href;
+				window.__justep.versionInfo = {};
+		 
+    	</script>
+        <script id="__updateVersion">
+        
+				(function(url, mode){
+					if (("@"+"mode@") === mode) mode = "3";
+					if (("@"+"versionUrl@") === url) url = "system/service/common/app.j";
+					if ((mode!=="1" && (mode!="2") && (mode!="3"))) return;
+					var async = (mode=="1");
+					var x5Version = "noApp";
+					var x5AppAgents = /x5app\/([0-9.]*)/.exec(navigator.userAgent);
+					if(x5AppAgents && x5AppAgents.length > 1){
+					   	x5Version = x5AppAgents[1] || "";
+					} 
+					function createXhr(){
+						try {	
+							return new XMLHttpRequest();
+						}catch (tryMS) {	
+							var version = ["MSXML2.XMLHttp.6.0",
+							               "MSXML2.XMLHttp.3.0",
+							               "MSXML2.XMLHttp",
+							               "Miscrosoft.XMLHTTP"];
+							for(var i = 0; i < version.length; i++){
+								try{
+							    	return new ActiveXObject(version[i]);
+								}catch(e){}
+							}
+						}
+						throw new Error("您的系统或浏览器不支持XHR对象！");
+					}
+					
+					function createGuid(){	
+						var guid = '';	
+						for (var i = 1; i <= 32; i++){		
+							var n = Math.floor(Math.random()*16.0).toString(16);		
+							guid += n;		
+							if((i==8)||(i==12)||(i==16)||(i==20))			
+								guid += '-';	
+						}	
+						return guid;
+					}
+					
+					function parseUrl(href){
+						href = href.split("#")[0];
+						var items = href.split("?");
+						href = items[0];
+						var query = items[1] || "";
+						items = href.split("/");
+						var baseItems = [];
+						var pathItems = [];
+						var isPath = false;
+						for (var i=0; i<items.length; i++){
+							if (mode == "3"){
+								if (items[i] && (items[i].indexOf("v_") === 0) 
+										&& (items[i].indexOf("l_") !== -1)
+										&& (items[i].indexOf("s_") !== -1)
+										&& (items[i].indexOf("d_") !== -1)
+										|| (items[i]=="v_")){
+									isPath = true;
+									continue;
+								}
+							}else{
+								if (items[i] && (items[i].indexOf("v-")===0) && (items[i].charAt(items[i].length-1)=="-") ){
+									isPath = true;
+									continue;
+								}
+							}
+							if (isPath){
+								pathItems.push(items[i]);
+							}else{
+								baseItems.push(items[i]);	
+							}
+							
+						}
+						var base = baseItems.join("/");
+						if (base.charAt(base.length-1)!=="/") base += "/";
+						
+						var path = pathItems.join("/");
+						if (path.charAt(0) !== "/") path = "/" + path;
+						return [base, path, query];
+					}
+					
+					
+					var items = parseUrl(window.location.href);
+					var base = items[0];
+					var path = items[1];
+					var query = items[2];
+					var xhr = createXhr();
+					url += ((url.indexOf("?")!=-1) ? "&" : "?") +"_=" + createGuid();
+					if (mode === "3"){
+						url += "&url=" + path;
+						if (query)
+							url += "&" + query;
+					}
+					xhr.open('GET', base + url, async);
+					
+					if (async){
+						xhr.onreadystatechange=function(){
+							if((xhr.readyState == 4) && (xhr.status == 200) && xhr.responseText){
+								var versionInfo = JSON.parse(xhr.responseText);
+								window.__justep.versionInfo = versionInfo;
+								window.__justep.versionInfo.baseUrl = base;
+								if (query){
+									path = path + "?" + query;
+								}
+								path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+								var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+								versionInfo.resourceInfo.indexPageURL = indexUrl;
+								if(versionInfo.resourceInfo.resourceUpdateMode != "md5"){
+									if (window.__justep.url.indexOf(versionInfo.resourceInfo.version) == -1){
+										versionInfo.resourceInfo.isNewVersion = true;
+									};
+								}
+							}
+						}
+					}
+					
+					try{
+						xhr.send(null);
+						if (!async && (xhr.status == 200) && xhr.responseText){
+							var versionInfo = JSON.parse(xhr.responseText);
+							window.__justep.versionInfo = versionInfo;
+							window.__justep.versionInfo.baseUrl = base;
+							if ((mode==="3") && window.__justep.isDebug){
+								/* 模式3且是调试模式不重定向 */
+							}else{
+								if (query){
+									path = path + "?" + query;
+								}
+								if(versionInfo.resourceInfo.resourceUpdateMode == "md5"){
+									path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+									var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+									versionInfo.resourceInfo.indexPageURL = indexUrl; 
+								}else if (versionInfo.resourceInfo && versionInfo.resourceInfo.version && (window.__justep.url.indexOf(versionInfo.resourceInfo.version) == -1)){
+									path = versionInfo.resourceInfo.indexURL || path; /* 如果返回indexPath则使用indexPath，否则使用当前的path */
+									var indexUrl = versionInfo.baseUrl + versionInfo.resourceInfo.version + path;
+									window.location.href = indexUrl;
+								}
+							}
+						}
+					}catch(e2){}
+				}("@versionUrl@", "@mode@"));
+                 
+        </script>
+    <link rel="stylesheet" href="../../../v_6274_nol_zh_CNs_d_m/system/components/bootstrap.min.css" include="$model/UI2/system/components/bootstrap/lib/css/bootstrap,$model/UI2/system/components/bootstrap/lib/css/bootstrap-theme"><link rel="stylesheet" href="../../../v_6274_nol_zh_CNs_d_m/system/components/comp.min.css" include="$model/UI2/system/components/justep/lib/css2/dataControl,$model/UI2/system/components/justep/input/css/datePickerPC,$model/UI2/system/components/justep/messageDialog/css/messageDialog,$model/UI2/system/components/justep/lib/css3/round,$model/UI2/system/components/justep/input/css/datePicker,$model/UI2/system/components/justep/row/css/row,$model/UI2/system/components/justep/dataTables/css/responsive,$model/UI2/system/components/justep/attachment/css/attachment,$model/UI2/system/components/justep/barcode/css/barcodeImage,$model/UI2/system/components/bootstrap/dropdown/css/dropdown,$model/UI2/system/components/justep/contents/css/contents,$model/UI2/system/components/justep/common/css/forms,$model/UI2/system/components/justep/dataTables/css/responsive,$model/UI2/system/components/justep/locker/css/locker,$model/UI2/system/components/justep/menu/css/menu,$model/UI2/system/components/justep/scrollView/css/scrollView,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/dialog/css/dialog,$model/UI2/system/components/justep/bar/css/bar,$model/UI2/system/components/justep/popMenu/css/popMenu,$model/UI2/system/components/justep/lib/css/icons,$model/UI2/system/components/justep/lib/css4/e-commerce,$model/UI2/system/components/justep/toolBar/css/toolBar,$model/UI2/system/components/justep/popOver/css/popOver,$model/UI2/system/components/justep/panel/css/panel,$model/UI2/system/components/bootstrap/carousel/css/carousel,$model/UI2/system/components/justep/wing/css/wing,$model/UI2/system/components/bootstrap/scrollSpy/css/scrollSpy,$model/UI2/system/components/justep/titleBar/css/titleBar,$model/UI2/system/components/justep/lib/css1/linear,$model/UI2/system/components/justep/numberSelect/css/numberList,$model/UI2/system/components/justep/list/css/list,$model/UI2/system/components/justep/dataTables/css/dataTables"></head>
+	
+    <body style="width:100%;height:100%;margin: 0;">
+        <script intro="none"></script>
+    	<div id="applicationHost" class="applicationHost" style="width:100%;height:100%;" __component-context__="block"><div xid="window" class="window cueeiue" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cueeiue" components="$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/toolBar/toolBar,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/dataTables/dataTables,$model/UI2/system/components/justep/popOver/popOver,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/select/select,$model/UI2/system/components/justep/grid/grid,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/tabs/tabs,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,">
+  <style>.h3.cueeiue{margin: 0; color: inherit; font-size: 24px} .x-output.cueeiue{padding: 0px; margin: 0px; font-size: 12px} .account-list-line.cueeiue{border-bottom: 1px solid lightgray; overflow: hidden} .account-list-line.cueeiue:active{background-color: lightgray} label.cueeiue{font-size: 12px} .free-wall.cueeiue{margin-left: 5px; margin-right: 5px} .brick.cueeiue{background-color: white; float: left; cursor: default; overflow: hidden; background-repeat: no-repeat; background-size: cover; background-position: center} .brick.cueeiue img.cueeiue{width: 100%; height: 100%} .list-img.cueeiue li.cueeiue{position: relative; margin-right: 0px; list-style: none} .list-img.cueeiue img.cueeiue{display: inline-block; width: 50px; height: 48px} .list-img.cueeiue input.cueeiue{position: absolute; top: 0; left: 0; z-index: 10; width: 50px; height: 48px; opacity: 0} .x-grid.cueeiue tr.jqgrow.cueeiue td.cueeiue{padding: 2px 4px 2px 4px} .x-grid.cueeiue .x-grid-htable.cueeiue th.cueeiue{background: rgb(238, 238, 238); height: 10px} .xui-grid.cueeiue td.cueeiue{height: 10px} .tb-nopadding.cueeiue{padding: 0} .x-popOver.cueeiue .x-popOver-content.cueeiue{width: 100%; background-color: rgb(255, 255, 255); bottom: 0 !important} .tb-sorting.cueeiue{width: 100%; background-color: rgb(255, 255, 255); border-top: 1px solid rgb(225, 225, 225)} .tb-sorting.cueeiue .list-group-item.cueeiue{margin: 0 10px; padding-left: 0; padding-right: 0; border-radius: 0; border-left: 0; border-right: 0; border-top: 0} .tb-sorting.cueeiue .list-group-item.cueeiue .tb-liBtn.cueeiue{display: none} .tb-sorting.cueeiue .list-group-item.current.cueeiue .tb-liBtn.cueeiue{display: block} .tb-sorting.cueeiue .list-group-item.current.cueeiue{color: rgb(255, 68, 0)} .list-group-item.cueeiue span.cueeiue{padding-top: 5px} .list-group-item.cueeiue input.cueeiue{background-color: rgb(238, 238, 238)} .list-group-item.cueeiue input.cueeiue:focus{background-color: rgb(255, 255, 255)} .tb-typelist.cueeiue .col.cueeiue{padding-left: 0; padding-right: 5px} .tb-typelist.cueeiue .col.cueeiue h5.cueeiue{line-height: 30px; border-radius: 5px; background-color: rgb(238, 238, 238); font-size: 12px} .tb-typelist.cueeiue .col.cueeiue h5.current.cueeiue{background-color: rgb(255, 68, 0); color: rgb(255, 255, 255)} .tb-resetBtn.btn-default.cueeiue{border-color: rgb(255, 68, 0); background-color: rgb(255, 255, 255); color: rgb(255, 68, 0); padding: 4px 20px} .tb-okBtn.btn.cueeiue{margin-top: 20px; background-color: rgb(255, 68, 0); border-radius: 0; border: 0} .media.cueeiue{margin-top: 0; padding: 10px; border-bottom: 1px solid rgb(231, 231, 231); background-color: rgb(255, 255, 255)} .tb-twoColList.cueeiue{padding: 5px} .tb-twoColList.cueeiue ul.cueeiue li.cueeiue{margin-bottom: 15px; padding: 5px; background-color: rgb(255, 255, 255)}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onActive:modelActive;onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cueeiue" class="cueeiue"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pc7RbUbi-iosstatusbar cueeiue" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cueeiue"> 
+    <div class="x-panel-top cueeiue" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cueeiue"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cueeiue" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cueeiue"> 
+        <div class="x-titlebar-left cueeiue" xid="left1" __cid="cueeiue"></div>  
+        <div class="x-titlebar-title cueeiue" xid="title1" __cid="cueeiue"> 
+          <span xid="span1" __cid="cueeiue" class="cueeiue">新增订单</span>
+        </div>  
+        <div class="x-titlebar-right  cueeiue" xid="right1" __cid="cueeiue">
+          <div class="empty cueeiue" __cid="cueeiue"></div>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cueeiue" xid="btnClose" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnCloseClick" data-config="{&#34;icon&#34;:&#34;icon-close-round&#34;,&#34;label&#34;:&#34;返回&#34;}" __cid="cueeiue"> 
+            <i xid="i4" class="icon-close-round cueeiue" __cid="cueeiue"></i>  
+            <span xid="span5" __cid="cueeiue" class="cueeiue">返回</span>
+          </a>
+        </div>
+      </div> 
+    </div>  
+    <div class="x-panel-content cueeiue" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cueeiue"> 
+      <div component="$model/UI2/system/components/justep/tabs/tabs" class="x-tabs cueeiue" xid="tabs1" data-bind="component:{name:'$model/UI2/system/components/justep/tabs/tabs'}" data-events="onSelect:tabs1Select" __cid="cueeiue"> 
+        <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel pcQn63Mf-iosstatusbar cueeiue" xid="panel4" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cueeiue"> 
+          <div class="x-panel-top cueeiue" xid="top4" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cueeiue"> 
+            <ul class="nav nav-tabs cueeiue" xid="ul1" __cid="cueeiue"> 
+              <li class="active cueeiue" xid="li1" style="text-align:center;width:33.33%;" __cid="cueeiue"> 
+                <a content="tabContent_1" xid="tabItem1" style="font-weight:bold;" __cid="cueeiue" class="cueeiue">基本信息</a>
+              </li>  
+              <li xid="li2" style="text-align:center;width:33.33%;" __cid="cueeiue" class="cueeiue"> 
+                <a content="tabContent1" xid="tabItem2" style="font-weight:bold;" __cid="cueeiue" class="cueeiue">订单明细</a>
+              </li>  
+              <li xid="li4" style="text-align:center;width:33.33%;" __cid="cueeiue" class="cueeiue"> 
+                <a content="tabContent1" xid="tabItem3" style="font-weight:bold;" __cid="cueeiue" class="cueeiue">定损照片</a>
+              </li> 
+            </ul> 
+          </div>  
+          <div class="x-panel-content cueeiue" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cueeiue"> 
+            <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents cueeiue" xid="orderContents" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&#34;active&#34;:0,&#34;swipe&#34;:true}" __cid="cueeiue"> 
+              <div class="x-contents-content  x-scroll-view active cueeiue" xid="contentOrder" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:contentOrderActive" __cid="cueeiue"> 
+                <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcE3UbQz-iosstatusbar cueeiue" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cueeiue"> 
+                  <div class="x-panel-content cueeiue" xid="content1" _xid="C876A5CA8E700001FE371D601AB41E5A" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cueeiue">
+                    <div class="x-scroll cueeiue" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView2" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cueeiue"> 
+                      <div class="x-scroll-content cueeiue" xid="div8" __cid="cueeiue"> 
+                        <div component="$model/UI2/system/components/justep/row/row" class="x-row cueeiue" xid="row17" style="padding:0px 10px 0px 0px;margin:10px 0px 0px 0px;height:30px;border-bottom-style:solid;border-bottom-width:0px;border-bottom-color:#C0C0C0;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'},visible:showSrv" __cid="cueeiue"> 
+                          <div class="x-col cueeiue" xid="col22" __cid="cueeiue">
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cueeiue" xid="labelEdit15" style="margin-left:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cueeiue"> 
+                              <label class="x-label cueeiue" xid="label16" style="padding-left:6px;width:70px;" __cid="cueeiue">回收单位*</label>  
+                              <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm x-edit cueeiue" xid="input13" style="padding-right:6px;height:24px;" data-bind="component:{ref:$model.orderData.ref(&#34;srv&#34;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;readonly&#34;:true}" __cid="cueeiue">
+                            </div>
+                          </div>  
+                          <div class="x-col x-col-fixed x-col-center cueeiue" xid="col21" style="width:auto;padding:0px 0px 0px 0px;margin:0px 5px 0px 0px;" __cid="cueeiue"> 
+                            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-primary btn-xs btn-only-icon cueeiue" xid="btnChooseSrv" style="margin-top:15px" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnChooseSrvClick" data-config="{&#34;icon&#34;:&#34;icon-ios7-arrow-right&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cueeiue"> 
+                              <i xid="i2" class="icon-ios7-arrow-right cueeiue" __cid="cueeiue"></i>  
+                              <span xid="span4" __cid="cueeiue" class="cueeiue"></span>
+                            </a> 
+                          </div>
+                        </div>
+                        <div component="$model/UI2/system/components/justep/row/row" class="x-row cueeiue" xid="row4" style="padding:0px 10px 0px 0px;margin:10px 0px 0px 0px;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'},visible:showInsur" __cid="cueeiue"> 
+                          <div class="x-col cueeiue" xid="col14" __cid="cueeiue"> 
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cueeiue" xid="labelEdit14" style="margin-left:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cueeiue"> 
+                              <label class="x-label cueeiue" xid="label15" style="padding-left:6px;width:70px;" __cid="cueeiue">保险公司*</label>  
+                              <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm x-edit cueeiue" xid="input12" style="padding-right:6px;height:24px;" data-bind="component:{ref:$model.orderData.ref(&#34;insur&#34;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;readonly&#34;:true}" __cid="cueeiue">
+                            </div>
+                          </div>  
+                          <div class="x-col x-col-fixed x-col-center cueeiue" xid="col15" style="width:auto;padding:0px 0px 0px 0px;margin:0px 5px 0px 0px;" __cid="cueeiue"> 
+                            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-primary btn-xs btn-only-icon cueeiue" xid="btnChooseInsur" style="margin-top:15px" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnChooseInsurClick" data-config="{&#34;icon&#34;:&#34;icon-ios7-arrow-right&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cueeiue"> 
+                              <i xid="i6" class="icon-ios7-arrow-right cueeiue" __cid="cueeiue"></i>  
+                              <span xid="span8" __cid="cueeiue" class="cueeiue"></span>
+                            </a> 
+                          </div> 
+                        </div>
+                        <div component="$model/UI2/system/components/justep/row/row" class="x-row cueeiue" xid="row5" style="padding:0px 10px 0px 0px;margin:10px 0px 0px 0px;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'},visible:showInsur" __cid="cueeiue"> 
+                          <div class="x-col cueeiue" xid="col9" __cid="cueeiue"> 
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cueeiue" xid="labelEdit13" style="margin-left:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cueeiue"> 
+                              <label class="x-label cueeiue" xid="label13" style="padding-left:6px;width:70px;" __cid="cueeiue">查勘员*</label>  
+                              <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm x-edit cueeiue" xid="input11" style="padding-right:6px;height:24px;" data-bind="component:{ref:$model.orderData.ref(&#34;dsy&#34;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;readonly&#34;:true}" __cid="cueeiue">
+                            </div>
+                          </div>  
+                          <div class="x-col x-col-fixed x-col-center cueeiue" xid="col16" style="width:auto;padding:0px 0px 0px 0px;margin:0px 5px 0px 0px;" __cid="cueeiue"> 
+                            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-primary btn-xs btn-only-icon cueeiue" xid="btnChooseInsurlxr" style="margin-top:15px" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},enable:$model.enableDsy" data-events="onClick:btnChooseInsurlxrClick" data-config="{&#34;icon&#34;:&#34;icon-ios7-arrow-right&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cueeiue"> 
+                              <i xid="i7" class="icon-ios7-arrow-right cueeiue" __cid="cueeiue"></i>  
+                              <span xid="span9" __cid="cueeiue" class="cueeiue"></span>
+                            </a> 
+                          </div>
+                        </div>
+                        <div component="$model/UI2/system/components/justep/row/row" class="x-row cueeiue" xid="row6" style="padding:0px 0px 0px 0px;margin:10px 0px 0px 0px;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'},visible:showInsur" __cid="cueeiue"> 
+                          <div class="x-col cueeiue" xid="col8" __cid="cueeiue"> 
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cueeiue" xid="labelEdit12" style="margin-left:10px;margin-right:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cueeiue"> 
+                              <label class="x-label cueeiue" xid="label12" style="padding-left:6px;width:70px;" __cid="cueeiue">联系方式</label>  
+                              <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm x-edit cueeiue" xid="input10" style="padding-right:6px;height:24px;" data-bind="component:{ref:$model.orderData.ref(&#34;dsytel&#34;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;readonly&#34;:true}" __cid="cueeiue">
+                            </div>
+                          </div> 
+                        </div>
+                        <div component="$model/UI2/system/components/justep/row/row" class="x-row cueeiue" xid="row20" style="padding:0px 0px 0px 0px;margin:10px 0px 0px 0px;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cueeiue"> 
+                          <div class="x-col cueeiue" xid="col29" __cid="cueeiue"> 
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cueeiue" xid="labelEdit22" style="margin-left:10px;margin-right:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cueeiue"> 
+                              <label class="x-label cueeiue" xid="label21" style="padding-left:6px;width:70px;" __cid="cueeiue">报案号*</label>  
+                              <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm x-edit cueeiue" xid="input3" style="padding-right:6px;height:24px;" data-bind="component:{ref:orderData.ref(&#34;accno&#34;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cueeiue"> 
+                            </div> 
+                          </div> 
+                        </div>
+                        <div component="$model/UI2/system/components/justep/row/row" class="x-row cueeiue" xid="row19" style="padding:0px 0px 0px 0px;margin:10px 0px 0px 0px;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cueeiue"> 
+                          <div class="x-col cueeiue" xid="col28" __cid="cueeiue"> 
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cueeiue" xid="labelEdit21" style="margin-left:10px;margin-right:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cueeiue"> 
+                              <label class="x-label cueeiue" xid="label14" style="padding-left:6px;width:70px;" __cid="cueeiue">车牌号*</label>  
+                              <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm x-edit cueeiue" xid="input4" style="padding-right:6px;height:24px;" data-bind="component:{ref:orderData.ref(&#34;plateno&#34;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cueeiue"> 
+                            </div> 
+                          </div> 
+                        </div>
+                        <div component="$model/UI2/system/components/justep/row/row" class="x-row cueeiue" xid="row21" style="padding:0px 0px 0px 0px;margin:10px 0px 0px 0px;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cueeiue"> 
+                          <div class="x-col cueeiue" xid="col30" __cid="cueeiue"> 
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cueeiue" xid="labelEdit23" style="margin-left:10px;margin-right:10px;border-bottom-style:solid;border-bottom-width:1px;border-bottom-color:#C0C0C0;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cueeiue"> 
+                              <label class="x-label cueeiue" xid="label22" style="padding-left:6px;width:70px;" __cid="cueeiue">车型名称*</label>  
+                              <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm x-edit cueeiue" xid="input5" style="padding-right:6px;height:24px;" data-bind="component:{ref:orderData.ref(&#34;carmodel&#34;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cueeiue"> 
+                            </div> 
+                          </div> 
+                        </div>
+                        <div component="$model/UI2/system/components/justep/row/row" class="x-row cueeiue" xid="row23" style="padding:0px 10px 0px 0px;margin:12px 0px 0px 0px;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'},visible:showGar" __cid="cueeiue"> 
+                          <div class="x-col cueeiue" xid="col33" __cid="cueeiue"> 
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cueeiue" xid="labelEdit9" style="margin-left:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cueeiue"> 
+                              <label class="x-label cueeiue" xid="label9" style="padding-left:6px;width:70px;" __cid="cueeiue">汽修单位</label>  
+                              <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm x-edit cueeiue" xid="input8" style="padding-right:6px;height:24px;" data-bind="component:{ref:$model.orderData.ref(&#34;garage&#34;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;readonly&#34;:true}" __cid="cueeiue">
+                            </div>
+                          </div>  
+                          <div class="x-col x-col-fixed x-col-center cueeiue" xid="col7" style="width:auto;padding:0px 0px 0px 0px;margin:0px 5px 0px 0px;" __cid="cueeiue"> 
+                            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-primary btn-xs btn-only-icon cueeiue" xid="btnChooseGarage" style="margin-top:15px" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnChooseGarageClick" data-config="{&#34;icon&#34;:&#34;icon-ios7-arrow-right&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cueeiue"> 
+                              <i xid="i3" class="icon-ios7-arrow-right cueeiue" __cid="cueeiue"></i>  
+                              <span xid="span3" __cid="cueeiue" class="cueeiue"></span>
+                            </a> 
+                          </div>
+                        </div>
+                        <div component="$model/UI2/system/components/justep/row/row" class="x-row cueeiue" xid="row25" style="padding:0px 0px 0px 0px;margin:10px 0px 0px 0px;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'},visible:showGar" __cid="cueeiue"> 
+                          <div class="x-col cueeiue" xid="col35" __cid="cueeiue"> 
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cueeiue" xid="labelEdit10" style="margin-left:10px;margin-right:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cueeiue"> 
+                              <label class="x-label cueeiue" xid="label10" style="padding-left:6px;width:70px;" __cid="cueeiue">详细地址</label>  
+                              <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm x-edit cueeiue" xid="input9" style="padding-right:6px;height:24px;" data-bind="component:{ref:$model.orderData.ref(&#34;garaddr&#34;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&#34;readonly&#34;:true}" __cid="cueeiue">
+                            </div>
+                          </div> 
+                        </div>  
+                        <div component="$model/UI2/system/components/justep/row/row" class="x-row cueeiue" xid="row26" style="padding:0px 10px 0px 0px;margin:10px 0px 0px 0px;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'},visible:showGar" __cid="cueeiue"> 
+                          <div class="x-col cueeiue" xid="col37" __cid="cueeiue"> 
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cueeiue" xid="labelEdit4" style="margin-left:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cueeiue"> 
+                              <label class="x-label cueeiue" xid="label6" style="padding-left:6px;width:70px;" __cid="cueeiue">联系人</label>  
+                              <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm x-edit cueeiue" xid="input6" style="padding-right:6px;height:24px;" data-bind="component:{ref:$model.orderData.ref(&#34;garlxr&#34;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cueeiue">
+                            </div>
+                          </div>  
+                          <div class="x-col x-col-fixed x-col-center cueeiue" xid="col17" style="width:auto;padding:0px 0px 0px 0px;margin:0px 5px 0px 0px;" __cid="cueeiue"> 
+                            <a component="$model/UI2/system/components/justep/button/button" class="btn btn-primary btn-xs btn-only-icon cueeiue" xid="btnChooseGarlxr" style="margin-top:15px" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnChooseGarlxrClick" data-config="{&#34;icon&#34;:&#34;icon-ios7-arrow-right&#34;,&#34;label&#34;:&#34;button&#34;}" __cid="cueeiue"> 
+                              <i xid="i9" class="icon-ios7-arrow-right cueeiue" __cid="cueeiue"></i>  
+                              <span xid="span10" __cid="cueeiue" class="cueeiue"></span>
+                            </a> 
+                          </div>
+                        </div>
+                        <div component="$model/UI2/system/components/justep/row/row" class="x-row cueeiue" xid="row27" style="padding:0px 0px 0px 0px;margin:10px 0px 0px 0px;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'},visible:showGar" __cid="cueeiue"> 
+                          <div class="x-col cueeiue" xid="col38" __cid="cueeiue"> 
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cueeiue" xid="labelEdit5" style="margin-left:10px;margin-right:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cueeiue"> 
+                              <label class="x-label cueeiue" xid="label8" style="padding-left:6px;width:70px;" __cid="cueeiue">联系方式</label>  
+                              <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm x-edit cueeiue" xid="input7" style="padding-right:6px;height:24px;" data-bind="component:{ref:$model.orderData.ref(&#34;gartel&#34;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cueeiue">
+                            </div>
+                          </div> 
+                        </div>
+                        <div component="$model/UI2/system/components/justep/row/row" class="x-row cueeiue" xid="row9" style="padding:0px 0px 0px 0px;margin:10px 0px 0px 0px;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cueeiue"> 
+                          <div class="x-col cueeiue" xid="col23" __cid="cueeiue"> 
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cueeiue" xid="labelEdit11" style="margin-left:10px;margin-right:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cueeiue"> 
+                              <label class="x-label cueeiue" xid="label11" style="padding-left:6px;width:70px;" __cid="cueeiue">是否加急</label>  
+                              <select component="$model/UI2/system/components/justep/select/select" class="form-control x-edit cueeiue" xid="select1" style="padding-right:6px;height:24px;" data-bind="component:{ref:$model.orderData.ref(&#34;isurgent&#34;),name:'$model/UI2/system/components/justep/select/select'},options:yesnoData.datas,optionsValue:'value',optionsText:'name',optionsAfterRender2:$model.__justep__.selectOptionsAfterRender.bind($model,$element),optionsBeforeRender:$model.__justep__.selectOptionsBeforeRender.bind($model,$element)" data-config="{&#34;optionsAutoLoad&#34;:true}" __cid="cueeiue"></select>
+                            </div>
+                          </div> 
+                        </div>
+                        <div component="$model/UI2/system/components/justep/row/row" class="x-row cueeiue" xid="row3" style="padding:0px 0px 0px 0px;margin:10px 0px 0px 0px;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cueeiue"> 
+                          <div class="x-col cueeiue" xid="col6" __cid="cueeiue">
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cueeiue" xid="labelEdit2" style="margin-left:10px;margin-right:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cueeiue"> 
+                              <label class="x-label cueeiue" xid="label2" style="padding-left:6px;width:70px;" __cid="cueeiue">预约日期*</label>  
+                              <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm x-edit cueeiue" xid="input15" style="padding-right:6px;height:24px;" data-bind="component:{ref:orderData.ref(&#34;yydt&#34;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cueeiue"> 
+                            </div>
+                          </div> 
+                        </div>
+                        <div component="$model/UI2/system/components/justep/row/row" class="x-row cueeiue" xid="row30" style="padding:0px 0px 0px 0px;margin:10px 0px 0px 0px;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cueeiue"> 
+                          <div class="x-col cueeiue" xid="col41" __cid="cueeiue"> 
+                            <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cueeiue" xid="labelEdit32" style="border-bottom-style:solid;border-bottom-width:1px;border-bottom-color:#C0C0C0;margin-left:10px;margin-right:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cueeiue"> 
+                              <label class="x-label cueeiue" xid="label31" style="padding-left:6px;width:70px;" __cid="cueeiue">订单备注</label>  
+                              <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm x-edit cueeiue" xid="input2" style="padding-right:6px;height:24px;" data-bind="component:{ref:orderData.ref(&#34;memo&#34;),name:'$model/UI2/system/components/justep/input/input'}" __cid="cueeiue"> 
+                            </div> 
+                          </div> 
+                        </div> 
+                      </div> 
+                    </div>
+                  </div>  
+                  <div class="x-panel-bottom cueeiue" xid="bottom1" style="margin-right:5px;margin-bottom:5px" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" data-config="{&#34;visible&#34;:false}" __cid="cueeiue"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cueeiue" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cueeiue"> 
+                      <div class="x-col cueeiue" xid="col2" __cid="cueeiue"></div>  
+                      <div class="x-col cueeiue" xid="col3" __cid="cueeiue"></div>  
+                      <div class="x-col cueeiue" xid="col4" __cid="cueeiue"></div>  
+                      <div class="x-col cueeiue" xid="col5" __cid="cueeiue"></div>
+                    </div>
+                  </div>
+                  <style __cid="cueeiue" class="cueeiue">.x-panel.pcE3UbQz-iosstatusbar >.x-panel-top {height: 0px;}.x-panel.pcE3UbQz-iosstatusbar >.x-panel-content { top: 0px;bottom: nullpx;}.x-panel.pcE3UbQz-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcE3UbQz-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcE3UbQz-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel.pcE3UbQz-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcE3UbQz-iosstatusbar >.x-panel-content { top: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcE3UbQz-iosstatusbar >.x-panel-top {height: 0px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcE3UbQz-iosstatusbar >.x-panel-content {top: 0px;}</style>
+                </div>
+              </div>  
+              <div class="x-contents-content cueeiue" xid="contentOrderDtl" onactive="contentOrderDtlActive" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:contentOrderDtlActive" __cid="cueeiue"> 
+                <div component="$model/UI2/system/components/justep/toolBar/toolBar" class="x-toolbar form-inline x-toolbar-spliter cueeiue" xid="toolBar1" style="padding-left:3px;padding-bottom:4px;padding-top:4px;" data-bind="component:{name:'$model/UI2/system/components/justep/toolBar/toolBar'}" __cid="cueeiue"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs btn-only-label cueeiue" xid="btnNew" style="background-color:#FFFFFF;color:#1E90FF;height:24px;color:1E90FF;font-size:small;vertical-align:middle;border-style:solid solid solid solid;border-width:1px 1px 1px 1px;width:60px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnAddRowClick" data-config="{&#34;label&#34;:&#34;增行&#34;}" __cid="cueeiue"> 
+                    <i xid="i11" __cid="cueeiue" class="cueeiue"></i>  
+                    <span xid="span12" __cid="cueeiue" class="cueeiue">增行</span>
+                  </a>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs btn-only-label cueeiue" xid="btnInsert" style="background-color:#FFFFFF;color:#1E90FF;height:24px;font-size:small;vertical-align:middle;margin-left:10px;width:60px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnInsertClick" data-config="{&#34;label&#34;:&#34;插行&#34;}" __cid="cueeiue"> 
+                    <i xid="i13" __cid="cueeiue" class="cueeiue"></i>  
+                    <span xid="span14" __cid="cueeiue" class="cueeiue">插行</span>
+                  </a>
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs btn-only-label cueeiue" xid="btnDel" style="background-color:#FFFFFF;color:#1E90FF;height:24px;font-size:small;vertical-align:middle;margin-left:10px;width:60px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnDelClick" data-config="{&#34;label&#34;:&#34;删行&#34;}" __cid="cueeiue"> 
+                    <i xid="i12" __cid="cueeiue" class="cueeiue"></i>  
+                    <span xid="span13" __cid="cueeiue" class="cueeiue">删行</span>
+                  </a>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-xs btn-only-label cueeiue" xid="btnScan" style="background-color:#FFFFFF;color:#1E90FF;height:24px;font-size:small;vertical-align:middle;margin-left:10px;width:60px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'},style:{color: canScan.get()?'#1E90FF':'gray'},enable:canScan" data-events="onClick:btnScanClick" data-config="{&#34;label&#34;:&#34;扫码&#34;}" __cid="cueeiue"> 
+                    <i xid="i5" __cid="cueeiue" class="cueeiue"></i>  
+                    <span xid="span6" __cid="cueeiue" class="cueeiue">扫码</span>
+                  </a>
+                </div>  
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cueeiue" xid="row8" style="padding-bottom:48px;height:100%;font-size:x-small;padding-top:0px;margin-top:0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cueeiue"> 
+                  <table component="$model/UI2/system/components/justep/grid/grid" hiddenCaptionbar="true" altRows="true" class="x-grid-no-bordered x-grid-title-center cueeiue" xid="dtlGrid" data="orderDtlData" showRowNumber="true" serverSort="false" rowNumberWidth="20" data-config="{&#34;altRows&#34;:true,&#34;colModel&#34;:[{&#34;align&#34;:&#34;left&#34;,&#34;editable&#34;:true,&#34;label&#34;:&#34;配件名称&#34;,&#34;name&#34;:&#34;partname&#34;,&#34;resizable&#34;:false,&#34;sortable&#34;:false,&#34;xid&#34;:&#34;column21&#34;},{&#34;align&#34;:&#34;center&#34;,&#34;editable&#34;:true,&#34;label&#34;:&#34;易碎贴&#34;,&#34;name&#34;:&#34;partno&#34;,&#34;sortable&#34;:false,&#34;xid&#34;:&#34;column22&#34;},{&#34;align&#34;:&#34;center&#34;,&#34;editable&#34;:true,&#34;label&#34;:&#34;价值件&#34;,&#34;multiRowEditor&#34;:true,&#34;name&#34;:&#34;isvalue&#34;,&#34;sortable&#34;:false,&#34;width&#34;:&#34;45px&#34;,&#34;xid&#34;:&#34;column24&#34;}],&#34;data&#34;:&#34;orderDtlData&#34;,&#34;editors&#34;:&#34;E58FF819BDD3407DABB1B6E932D05191&#34;,&#34;height&#34;:&#34;auto&#34;,&#34;hiddenCaptionbar&#34;:true,&#34;rownumWidth&#34;:20,&#34;rownumbers&#34;:true,&#34;serverSort&#34;:false,&#34;width&#34;:&#34;100%&#34;}" data-bind="component:{name:'$model/UI2/system/components/justep/grid/grid'}" data-events="onRowClick:dtlGridRowClick" __cid="cueeiue"></table>
+                  <div xid="E58FF819BDD3407DABB1B6E932D05191" class="x-grid-editors cueeiue" __cid="cueeiue" data-bind="with:comp('dtlGrid').getCellEditorsBindingObject()">
+                    <div col="partname" __cid="cueeiue" class="cueeiue">
+                      <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit-focusin cueeiue" data-bind="component:{ref:ref('partname'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cueeiue">
+                    </div>
+                    <div col="partno" __cid="cueeiue" class="cueeiue">
+                      <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit-focusin cueeiue" data-bind="component:{ref:ref('partno'),name:'$model/UI2/system/components/justep/input/input'}" __cid="cueeiue">
+                    </div>
+                    <div col="isvalue" __cid="cueeiue" class="cueeiue">
+                      <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cueeiue" data-config="{&#34;checked&#34;:false,&#34;disabled&#34;:false}" data-bind="component:{ref:ref('isvalue'),name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="cueeiue">
+                        <input type="checkbox" __cid="cueeiue" class="cueeiue">
+                        <label __cid="cueeiue" class="cueeiue"></label>
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              </div>  
+              <div class="x-contents-content cueeiue" xid="contentOrderImg" onactive="contentOrderImgActive" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" data-events="onActive:contentOrderImgActive" __cid="cueeiue"> 
+                <div component="$model/UI2/system/components/justep/row/row" class="x-row cueeiue" xid="row7" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cueeiue"> 
+                  <div class="x-col cueeiue" xid="col18" __cid="cueeiue"> 
+                    <table component="$model/UI2/system/components/justep/dataTables/dataTables" flexibleWidth="false" responsive="true" rowActiveClass="active" class="table table-hover table-striped cueeiue" xid="tblOrderImg" data="orderDtlData1" showRowNumber="false" data-config="{&#34;columns&#34;:[{&#34;className&#34;:&#34;x-dt-title-center x-dt-cell-left&#34;,&#34;orderable&#34;:false,&#34;sName&#34;:&#34;partname&#34;,&#34;title&#34;:&#34;配件名称&#34;,&#34;width&#34;:&#34;70%&#34;,&#34;xid&#34;:&#34;column34&#34;},{&#34;className&#34;:&#34;x-dt-title-center x-dt-cell-center&#34;,&#34;orderable&#34;:false,&#34;sName&#34;:&#34;attcount&#34;,&#34;title&#34;:&#34;照片&#34;,&#34;xid&#34;:&#34;column35&#34;}],&#34;data&#34;:&#34;orderDtlData1&#34;,&#34;flexibleWidth&#34;:false,&#34;responsive&#34;:true,&#34;rowActiveClass&#34;:&#34;active&#34;,&#34;showRowNumber&#34;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/dataTables/dataTables'}" data-events="onRowSelect:tblOrderImgRowSelect" __cid="cueeiue"></table> 
+                  </div>  
+                  <div class="x-col x-col-fixed cueeiue" xid="col13" style="padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;width:148px;" __cid="cueeiue"> 
+                    <div class="list-img cueeiue" style="height:48px;" xid="div2" __cid="cueeiue"> 
+                      <div component="$model/UI2/system/components/justep/row/row" class="x-row cueeiue" xid="row7" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cueeiue"> 
+                        <div class="x-col cueeiue" xid="col12" style="padding:0px 0px 0px 0px;" __cid="cueeiue"> 
+                          <li style="padding-left:10px" xid="li8" __cid="cueeiue" class="cueeiue"> 
+                            <img src="../../../v_6274_nol_zh_CNs_d_m/ddwx/res/images/MD_camera.png" xid="imgCamera" __cid="cueeiue" class="cueeiue" data-bind="event:{click:$model._callModelFn.bind($model, 'imgCameraClick')}">  
+                            <input type="file" accept="image/*" name="image5" capture="camera" xid="fileUpload" __cid="cueeiue" class="cueeiue">
+                          </li> 
+                        </div>  
+                        <div class="x-col cueeiue" xid="col18" style="padding:0px 0px 0px 0px;" __cid="cueeiue"> 
+                          <li xid="li9" style="padding-left:10px" __cid="cueeiue" class="cueeiue"> 
+                            <img src="../../../v_6274_nol_zh_CNs_d_m/ddwx/res/images/MD_photo.png" xid="image4" __cid="cueeiue" class="cueeiue">  
+                            <input type="file" accept="image/*" name="file" xid="fileUpload2" __cid="cueeiue" class="cueeiue">
+                          </li> 
+                        </div> 
+                      </div> 
+                    </div>  
+                    <div component="$model/UI2/system/components/justep/list/list" class="x-list cueeiue" xid="orderImgList" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;autoLoad&#34;:false,&#34;data&#34;:&#34;imgData&#34;}" __cid="cueeiue"> 
+                      <ul class="x-list-template hide cueeiue" xid="listTemplateUl1" style="margin-bottom:0px;" __cid="cueeiue" data-bind="foreach:{data:$model.foreach_orderImgList($element),afterRender:$model.foreach_afterRender_orderImgList.bind($model,$element)}"> 
+                        <li xid="li7" style="margin-right:3px;height:70px;width:70px;" class="brick cueeiue" __cid="cueeiue"> 
+                          <a href="javascript:void(0)" data-size="" data-med="" data-med-size="" xid="a1" __cid="cueeiue" class="cueeiue"> 
+                            <img src="" xid="image3" __cid="cueeiue" class="cueeiue" data-bind="attr:{src:$model.toImgUrl(val(&#34;paththumb&#34;))},event:{click:$model._callModelFn.bind($model, 'image1Click')}">
+                          </a> 
+                        </li> 
+                      </ul> 
+                    </div> 
+                  </div> 
+                </div>
+              </div> 
+            </div> 
+          </div>  
+          <style __cid="cueeiue" class="cueeiue">.x-panel.pcQn63Mf-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcQn63Mf-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcQn63Mf-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcQn63Mf-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcQn63Mf-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcQn63Mf-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcQn63Mf-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcQn63Mf-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcQn63Mf-iosstatusbar >.x-panel-content {top: 48px;}</style>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-bottom cueeiue" xid="bottom2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cueeiue"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cueeiue" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cueeiue"> 
+        <div class="x-col cueeiue" xid="col1" __cid="cueeiue" data-bind="visible:canSave">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-sm btn-block center-block cueeiue" xid="btnSave" style="background-color:#FFFFFF;color:#1E90FF;border-style:solid solid solid solid;border-width:1px 1px 1px 1px;height:32px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnSaveClick" data-config="{&#34;icon&#34;:&#34;icon-archive&#34;,&#34;label&#34;:&#34;暂存&#34;}" __cid="cueeiue"> 
+            <i xid="i1" class="icon-archive cueeiue" __cid="cueeiue"></i>  
+            <span xid="span2" __cid="cueeiue" class="cueeiue">暂存</span>
+          </a>
+        </div>  
+        <div class="x-col cueeiue" xid="col19" __cid="cueeiue">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-sm btn-block center-block cueeiue" xid="btnSubmit" style="background-color:#FFFFFF;color:#1E90FF;border-style:solid solid solid solid;border-width:1px 1px 1px 1px;height:32px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnSubmitClick" data-config="{&#34;icon&#34;:&#34;icon-android-checkmark&#34;,&#34;label&#34;:&#34;提交&#34;}" __cid="cueeiue"> 
+            <i xid="i10" class="icon-android-checkmark cueeiue" __cid="cueeiue"></i>  
+            <span xid="span11" __cid="cueeiue" class="cueeiue">提交</span>
+          </a>
+        </div>  
+        <div class="x-col x-col-25 cueeiue" xid="col10" __cid="cueeiue" data-bind="visible:$model.showSMS"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-sm btn-block center-block cueeiue" xid="btnSms" style="background-color:#FFFFFF;color:#1E90FF;border-style:solid solid solid solid;border-width:1px 1px 1px 1px;height:32px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnSmsClick" data-config="{&#34;icon&#34;:&#34;icon-archive&#34;,&#34;label&#34;:&#34;短信识别&#34;}" __cid="cueeiue"> 
+            <i xid="i8" class="linear linear-fileadd icon-archive cueeiue" __cid="cueeiue"></i>  
+            <span xid="span7" __cid="cueeiue" class="cueeiue">短信识别</span>
+          </a>  
+          <div class="clearfix cueeiue" xid="div32_afterBtnSms" __cid="cueeiue"></div>
+        </div>
+      </div> 
+    </div>
+    <style __cid="cueeiue" class="cueeiue">.x-panel.pc7RbUbi-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pc7RbUbi-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pc7RbUbi-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pc7RbUbi-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc7RbUbi-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pc7RbUbi-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pc7RbUbi-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc7RbUbi-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pc7RbUbi-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div>  
+  <div id="gallery_neworder" class="pswp cueeiue" tabindex="-1" role="dialog" aria-hidden="true" style="opacity:1;z-index:10000;" xid="div11" __cid="cueeiue"> 
+    <div class="pswp__bg cueeiue" xid="div10" __cid="cueeiue"></div>  
+    <div class="pswp__scroll-wrap cueeiue" xid="div9" __cid="cueeiue"> 
+      <div class="pswp__container cueeiue" xid="div7" __cid="cueeiue"> 
+        <div class="pswp__item cueeiue" xid="div6" __cid="cueeiue"></div>  
+        <div class="pswp__item cueeiue" xid="div7" __cid="cueeiue"></div>  
+        <div class="pswp__item cueeiue" xid="div6" __cid="cueeiue"></div>
+      </div>  
+      <div class="pswp__ui pswp__ui--hidden cueeiue" style="height:44px;" xid="div9" __cid="cueeiue"> 
+        <div class="pswp__top-bar cueeiue" xid="div10" __cid="cueeiue"> 
+          <div class="pswp__counter cueeiue" xid="div11" __cid="cueeiue"></div>  
+          <button class="pswp__button pswp__button--close cueeiue" title="Close (Esc)" xid="button1" __cid="cueeiue"></button>  
+          <button class="pswp__button pswp__button--share cueeiue" title="Share" xid="button1" __cid="cueeiue"></button>  
+          <button class="pswp__button pswp__button--fs cueeiue" title="Toggle fullscreen" xid="button3" __cid="cueeiue"></button>  
+          <button class="pswp__button pswp__button--zoom cueeiue" title="Zoom in/out" xid="button4" __cid="cueeiue"></button>  
+          <button class="pswp__button pswp__button--delete cueeiue" title="Delete" __cid="cueeiue"></button>  
+          <button class="pswp__button pswp__button--download cueeiue" title="Download" xid="btnDownload" __cid="cueeiue">&gt;</button>  
+          <div class="pswp__preloader cueeiue" xid="div12" __cid="cueeiue"> 
+            <div class="pswp__preloader__icn cueeiue" xid="div13" __cid="cueeiue"> 
+              <div class="pswp__preloader__cut cueeiue" xid="div14" __cid="cueeiue"> 
+                <div class="pswp__preloader__donut cueeiue" xid="div15" __cid="cueeiue"></div>
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap cueeiue" xid="div16" __cid="cueeiue"> 
+          <div class="pswp__share-tooltip cueeiue" xid="div17" __cid="cueeiue"></div>
+        </div>  
+        <button class="pswp__button pswp__button--arrow--left cueeiue" title="Previous (arrow left)" xid="button5" __cid="cueeiue"></button>  
+        <button class="pswp__button pswp__button--arrow--right cueeiue" title="Next (arrow right)" xid="button6" __cid="cueeiue"></button>  
+        <div class="pswp__caption cueeiue" xid="div18" __cid="cueeiue"> 
+          <div class="pswp__caption__center cueeiue" xid="div19" __cid="cueeiue"></div>
+        </div> 
+      </div> 
+    </div> 
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="brDialog" style="top:460px;left:331px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceived:brDialogReceived" data-config="{&#34;src&#34;:&#34;$model/UI2/ddwx/order/srvlist.w&#34;}" __cid="cueeiue" class="cueeiue">
+    <div class="x-dialog-overlay cueeiue" __cid="cueeiue"></div>
+    <div class="x-dialog cueeiue" style="display:none;" __cid="cueeiue">
+      <div class="x-dialog-title cueeiue" __cid="cueeiue">
+        <button class="close cueeiue" __cid="cueeiue">
+          <span __cid="cueeiue" class="cueeiue">×</span>
+        </button>
+        <div class="x-dialog-title-text cueeiue" __cid="cueeiue"></div>
+      </div>
+      <div class="x-dialog-body cueeiue" __cid="cueeiue"></div>
+    </div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="lxrDialog" style="top:439px;left:192px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" data-events="onReceived:lxrDialogReceived" __cid="cueeiue" class="cueeiue">
+    <div class="x-dialog-overlay cueeiue" __cid="cueeiue"></div>
+    <div class="x-dialog cueeiue" style="display:none;" __cid="cueeiue">
+      <div class="x-dialog-title cueeiue" __cid="cueeiue">
+        <button class="close cueeiue" __cid="cueeiue">
+          <span __cid="cueeiue" class="cueeiue">×</span>
+        </button>
+        <div class="x-dialog-title-text cueeiue" __cid="cueeiue"></div>
+      </div>
+      <div class="x-dialog-body cueeiue" __cid="cueeiue"></div>
+    </div>
+  </span>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver1" style="top:13px;left:55px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:windowReceiver1Receive" __cid="cueeiue" class="cueeiue"></span>  
+  <div component="$model/UI2/system/components/justep/popOver/popOver" class="x-popOver cueeiue" xid="smsPopOver" data-bind="component:{name:'$model/UI2/system/components/justep/popOver/popOver'}" data-config="{&#34;anchor&#34;:&#34;div32_afterBtnSms&#34;,&#34;direction&#34;:&#34;right-top&#34;,&#34;dismissible&#34;:true,&#34;opacity&#34;:0.7,&#34;position&#34;:&#34;bottom&#34;}" __cid="cueeiue"> 
+    <div class="x-popOver-overlay cueeiue" xid="div4" __cid="cueeiue"></div>  
+    <div class="x-popOver-content tb-sorting cueeiue" xid="div3" __cid="cueeiue"> 
+      <div xid="div1" __cid="cueeiue" class="cueeiue"> 
+        <div component="$model/UI2/system/components/justep/row/row" class="x-row cueeiue" xid="row24" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cueeiue"> 
+          <div class="x-col cueeiue" xid="col40" __cid="cueeiue"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cueeiue" xid="row32" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cueeiue"> 
+              <div class="x-col cueeiue" xid="col45" __cid="cueeiue">
+                <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control cueeiue" xid="smsInput" style="height:255px;" data-bind="component:{name:'$model/UI2/system/components/justep/textarea/textarea'}" data-config="{&#34;placeHolder&#34;:&#34;请粘贴收到的短信内容&#34;}" __cid="cueeiue"></textarea>
+              </div> 
+            </div>
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cueeiue" xid="row16" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cueeiue"> 
+              <div class="x-col cueeiue" xid="col44" __cid="cueeiue"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-sm btn-block center-block cueeiue" xid="btnAnaly" style="border-style:solid solid solid solid;border-width:1px 1px 1px 1px;height:32px;font-weight:bold;color:#FFFFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnAnalyClick" data-config="{&#34;icon&#34;:&#34;icon-archive&#34;,&#34;label&#34;:&#34;   开 始 识 别&#34;}" __cid="cueeiue"> 
+                  <i xid="i18" class="linear linear-fileadd icon-archive cueeiue" __cid="cueeiue"></i>  
+                  <span xid="span17" __cid="cueeiue" class="cueeiue">开 始 识 别</span>
+                </a> 
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cueeiue" xid="row28" style="padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cueeiue"> 
+              <div class="x-col cueeiue" xid="col36" __cid="cueeiue"> 
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cueeiue" xid="labelEdit8" style="margin-left:10px;margin-right:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cueeiue"> 
+                  <label class="x-label cueeiue" xid="label17" style="padding-left:6px;width:70px;" __cid="cueeiue">报案号码</label>  
+                  <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm x-edit cueeiue" xid="inputAccno" style="padding-right:6px;height:24px;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cueeiue">
+                </div>
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cueeiue" xid="row14" style="padding:0px 0px 0px 0px;margin:5px 0px 0px 0px;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cueeiue"> 
+              <div class="x-col cueeiue" xid="col34" __cid="cueeiue"> 
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cueeiue" xid="labelEdit16" style="margin-left:10px;margin-right:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cueeiue"> 
+                  <label class="x-label cueeiue" xid="label18" style="padding-left:6px;width:70px;" __cid="cueeiue">车牌号码</label>  
+                  <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm x-edit cueeiue" xid="inputPlateno" style="padding-right:6px;height:24px;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cueeiue">
+                </div>
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cueeiue" xid="row31" style="padding:0px 0px 0px 0px;margin:5px 0px 0px 0px;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cueeiue"> 
+              <div class="x-col cueeiue" xid="col42" __cid="cueeiue"> 
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cueeiue" xid="labelEdit17" style="margin-left:10px;margin-right:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cueeiue"> 
+                  <label class="x-label cueeiue" xid="label19" style="padding-left:6px;width:70px;" __cid="cueeiue">车型名称</label>  
+                  <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm x-edit cueeiue" xid="inputCarmodel" style="padding-right:6px;height:24px;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cueeiue">
+                </div>
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cueeiue" xid="row29" style="padding:0px 0px 0px 0px;margin:5px 0px 0px 0px;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cueeiue"> 
+              <div class="x-col cueeiue" xid="col39" __cid="cueeiue"> 
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cueeiue" xid="labelEdit18" style="margin-left:10px;margin-right:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cueeiue"> 
+                  <label class="x-label cueeiue" xid="label20" style="padding-left:6px;width:70px;" __cid="cueeiue">汽修单位</label>  
+                  <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm x-edit cueeiue" xid="inputGarage" style="padding-right:6px;height:24px;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cueeiue">
+                </div>
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cueeiue" xid="row22" style="padding:0px 0px 0px 0px;margin:5px 0px 0px 0px;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cueeiue"> 
+              <div class="x-col cueeiue" xid="col32" __cid="cueeiue"> 
+                <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cueeiue" xid="labelEdit19" style="margin-left:10px;margin-right:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cueeiue"> 
+                  <label class="x-label cueeiue" xid="label23" style="padding-left:6px;width:70px;" __cid="cueeiue">详细地址</label>  
+                  <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm x-edit cueeiue" xid="inputGaraddr" style="padding-right:6px;height:24px;" data-bind="component:{name:'$model/UI2/system/components/justep/input/input'}" __cid="cueeiue">
+                </div>
+              </div> 
+            </div>  
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cueeiue" xid="row18" style="padding-top:15px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cueeiue"> 
+              <div class="x-col cueeiue" xid="col20" __cid="cueeiue"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-sm btn-block center-block cueeiue" xid="btnImport" style="border-style:solid solid solid solid;border-width:1px 1px 1px 1px;height:32px;font-weight:bold;color:#FFFFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnImportClick" data-config="{&#34;icon&#34;:&#34;linear linear-highlight&#34;,&#34;label&#34;:&#34;  导入内容&#34;}" __cid="cueeiue"> 
+                  <i xid="i17" class="linear linear-highlight cueeiue" __cid="cueeiue"></i>  
+                  <span xid="span16" __cid="cueeiue" class="cueeiue">导入内容</span>
+                </a>
+              </div>
+              <div class="x-col cueeiue" xid="col43" __cid="cueeiue"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-sm btn-block center-block cueeiue" xid="btnCancel" style="border-style:solid solid solid solid;border-width:1px 1px 1px 1px;height:32px;font-weight:bold;color:#FFFFFF;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnSmsClick" data-config="{&#34;icon&#34;:&#34;linear linear-arrowdown&#34;,&#34;label&#34;:&#34;  取  消&#34;}" __cid="cueeiue"> 
+                  <i xid="i16" class="linear linear-arrowdown cueeiue" __cid="cueeiue"></i>  
+                  <span xid="span18" __cid="cueeiue" class="cueeiue">取 消</span>
+                </a>
+              </div> 
+            </div> 
+          </div> 
+        </div>
+      </div> 
+    </div> 
+  </div>
+</div></div>
+        
+        <div id="downloadGCF" style="display:none;padding:50px;">
+        	<span>您使用的浏览器需要下载插件才能使用, </span>
+        	<a id="downloadGCFLink" href="#">下载地址</a>
+        	<p>(安装后请重新打开浏览器)</p>
+        </div>
+    	<script>
+    	
+    	            //判断浏览器, 判断GCF
+    	 			var browser = {
+    			        isIe: function () {
+    			            return navigator.appVersion.indexOf("MSIE") != -1;
+    			        },
+    			        navigator: navigator.appVersion,
+    			        getVersion: function() {
+    			            var version = 999; // we assume a sane browser
+    			            if (navigator.appVersion.indexOf("MSIE") != -1)
+    			                // bah, IE again, lets downgrade version number
+    			                version = parseFloat(navigator.appVersion.split("MSIE")[1]);
+    			            return version;
+    			        }
+    			    };
+    				function isGCFInstalled(){
+    			      try{
+    			        var i = new ActiveXObject('ChromeTab.ChromeFrame');
+    			        if (i) {
+    			          return true;
+    			        }
+    			      }catch(e){}
+    			      return false;
+    				}
+    	            //判断浏览器, 判断GCF
+    	            var __continueRun = true;
+    				if (browser.isIe() && (browser.getVersion() < 10) && !isGCFInstalled()) {
+    					document.getElementById("applicationHost").style.display = 'none';
+    					document.getElementById("downloadGCF").style.display = 'block';
+    					var downloadLink = "/" + location.pathname.match(/[^\/]+/)[0] + "/v8.msi";
+    					document.getElementById("downloadGCFLink").href = downloadLink; 
+    					__continueRun = false;
+    	            }
+		 	
+    	</script>
+        <script id="_metaJS" src="../../../v_6274_nol_zh_CNs_d_m/system/config/meta.js"> </script>
+        <script id="_requireJS" src="../../../v_6274_nol_zh_CNs_d_m/system/lib/require/require.2.1.10.js"> </script>
+        <script src="../../../v_6274_nol_zh_CNs_d_m/system/core.min.js"></script><script src="../../../v_6274_nol_zh_CNs_d_m/system/common.min.js"></script><script src="../../../v_6274_nol_zh_CNs_d_m/system/components/comp.min.js"></script><script src="../../../v_6274_nol_zh_CNs_d_m/system/components/comp2.min.js"></script><script src="../../../v_6274_nol_zh_CNs_d_m/system/components/pc.addon.min.js"></script><script id="_mainScript">
+        
+			if (__continueRun) {
+                window.__justep.cssReady = function(fn){
+                	var promises = [];
+                	for (var p in window.__justep.__ResourceEngine.__loadingCss){
+                		if(window.__justep.__ResourceEngine.__loadingCss.hasOwnProperty(p))
+                			promises.push(window.__justep.__ResourceEngine.__loadingCss[p].promise());
+                	}
+                	$.when.apply($, promises).done(fn);
+                };
+                
+            	window.__justep.__ResourceEngine = {
+            		readyRegExp : navigator.platform === 'PLAYSTATION 3' ? /^complete$/ : /^(complete|loaded)$/,
+            		url: window.location.href,	
+            		/*contextPath: 不包括语言 */
+            		contextPath: "",
+            		serverPath: "",
+            		__loadedJS: [],
+            		__loadingCss: {},
+            		onLoadCss: function(url, node){
+            			if (!this.__loadingCss[url]){
+            				this.__loadingCss[url] = $.Deferred();	
+                			if (node.attachEvent &&
+                                    !(node.attachEvent.toString && node.attachEvent.toString().indexOf('[native code') < 0) &&
+                                    !(typeof opera !== 'undefined' && opera.toString() === '[object Opera]')) {
+                                node.attachEvent('onreadystatechange', this.onLinkLoad.bind(this));
+                            } else {
+                                node.addEventListener('load', this.onLinkLoad.bind(this), false);
+                                node.addEventListener('error', this.onLinkError.bind(this), false);
+                            }
+            			}
+            		},
+            		
+            		onLinkLoad: function(evt){
+            	        var target = (evt.currentTarget || evt.srcElement);
+            	        if (evt.type === 'load' ||
+                                (this.readyRegExp.test(target.readyState))) {
+            	        	var url = target.getAttribute("href");
+            	        	if (url && window.__justep.__ResourceEngine.__loadingCss[url]){
+            	        		window.__justep.__ResourceEngine.__loadingCss[url].resolve(url);
+            	        	}
+                        }
+            		},
+            		
+            		onLinkError: function(evt){
+            	        var target = (evt.currentTarget || evt.srcElement);
+        	        	var url = target.getAttribute("href");
+        	        	if (url && window.__justep.__ResourceEngine.__loadingCss[url]){
+        	        		window.__justep.__ResourceEngine.__loadingCss[url].resolve(url);
+        	        	}
+            		},
+            		
+            		initContextPath: function(){
+            			var baseURL = document.getElementById("_requireJS").src;
+            			var before = location.protocol + "//" + location.host;
+            			var after = "/system/lib/require/require.2.1.10";
+            			var i = baseURL.indexOf(after);
+            			if (i !== -1){
+    	        			var middle = baseURL.substring(before.length, i);
+    						var items = middle.split("/");
+    						
+    						
+    						if ((items[items.length-1].indexOf("v_") === 0) 
+    								&& (items[items.length-1].indexOf("l_") !== -1)
+    								&& (items[items.length-1].indexOf("s_") !== -1)
+    								&& (items[items.length-1].indexOf("d_") !== -1)
+    								|| (items[items.length-1]=="v_")){
+    							items.splice(items.length-1, 1);
+    						}
+    						
+    						
+    						if (items.length !== 1){
+    							window.__justep.__ResourceEngine.contextPath = items.join("/");
+    						}else{
+    							window.__justep.__ResourceEngine.contextPath = before;
+    						}
+    						var index = window.__justep.__ResourceEngine.contextPath.lastIndexOf("/");
+    						if (index != -1){
+    							window.__justep.__ResourceEngine.serverPath = window.__justep.__ResourceEngine.contextPath.substr(0, index);
+    						}else{
+    							window.__justep.__ResourceEngine.serverPath = window.__justep.__ResourceEngine.contextPath;
+    						}
+            			}else{
+            				throw new Error(baseURL + " hasn't  " + after);
+            			}
+            		},
+            	
+            		loadJs: function(urls){
+            			if (urls && urls.length>0){
+            				var loadeds = this._getResources("script", "src").concat(this.__loadedJS);
+    	       				for (var i=0; i<urls.length; i++){
+								var url = urls[i];
+    	        				if(!this._isLoaded(url, loadeds)){
+    	        					this.__loadedJS[this.__loadedJS.length] = url;
+    	        					/*
+    	        					var script = document.createElement("script");
+    	        					script.src = url;
+    	        					document.head.appendChild(script);
+    	        					*/
+    	        					//$("head").append("<script  src='" + url + "'/>");
+									var url = require.toUrl("$UI" + url);
+    	        					$.ajax({
+    	        						url: url,
+    	        						dataType: "script",
+    	        						cache: true,
+    	        						async: false,
+    	        						success: function(){}
+    	        						});
+    	        				} 
+    	       				}
+            			}
+            		},
+            		
+            		loadCss: function(styles){
+           				var loadeds = this._getResources("link", "href");
+            			if (styles && styles.length>0){
+            				for (var i=0; i<styles.length; i++){
+    	       					var url = window.__justep.__ResourceEngine.contextPath + styles[i].url.replace("/UI2/", "/");
+    	        				if(!this._isLoaded(url, loadeds)){
+    	        					var include = styles[i].include || "";
+    	        					var link = $("<link type='text/css' rel='stylesheet' href='" + url + "' include='" + include + "'/>");
+    	        					this.onLoadCss(url, link[0]);
+    	        					$("head").append(link);
+    	        				} 
+            				}
+            			}
+            			
+            		},
+            		
+            		
+            		_isLoaded: function(url, loadeds){
+            			if (url){
+            				var newUrl = "";
+            				var items = url.split("/");
+            				var isVls = false;
+            				for (var i=0; i<items.length; i++){
+            					if (isVls){
+                					newUrl += "/" + items[i];
+            					}else{
+                					if (items[i] && (items[i].indexOf("v_")===0)
+            								&& (items[i].indexOf("l_")!==-1)
+            								&& (items[i].indexOf("s_")!==-1)
+            								&& (items[i].indexOf("d_")!==-1)
+            								|| (items[i]=="v_")){
+                						isVls = true;
+                					}
+            					}
+            				}
+            				if (!newUrl)
+            					newUrl = url;
+            				
+            				for (var i=0; i<loadeds.length; i++){
+								var originUrl = this._getOriginUrl(loadeds[i]);
+								if (originUrl && (originUrl.indexOf(newUrl)!==-1)){
+									return true;
+								}
+    						}
+            			}
+    					return false;
+            		},
+
+					_getOriginUrl: function(url){
+						var result = "";
+						if (url && (url.indexOf(".md5_")!==-1)){
+							url = url.split("#")[0];
+							url = url.split("?")[0];
+							var items = url.split(".");
+							for (var i=0; i<items.length; i++){
+								if ((i===items.length-2) && (items[i].indexOf("md5_")!==-1)){
+									continue;
+								}else{
+									if (i>0) result += ".";
+									result += items[i];
+								}
+							}
+						}else{
+							result = url;
+						}
+						return result;
+					},
+            		
+            		_getResources: function(tag, attr){
+    					var result = [];
+    					var scripts = $(tag);
+    					for (var i=0; i<scripts.length; i++){
+    						var v = scripts[i][attr];
+    						if (v){
+    							result[result.length] = v;
+    						}
+    					}
+    					return result;
+            		}
+            	};
+            	
+            	window.__justep.__ResourceEngine.initContextPath();
+    			requirejs.config({
+    				baseUrl: window.__justep.__ResourceEngine.contextPath + '/v_6274_nol_zh_CNs_d_m/ddwx/order',
+    			    paths: {
+    			    	/* 解决require.normalizeName与require.toUrl嵌套后不一致的bug   */
+    			    	'$model/UI2/v_': window.__justep.__ResourceEngine.contextPath + '/v_6274_nol_zh_CNs_d_m',
+    			    	'$model/UI2': window.__justep.__ResourceEngine.contextPath + '/v_6274_nol_zh_CNs_d_m',
+    			    	'$model': window.__justep.__ResourceEngine.serverPath,
+    			        'text': window.__justep.__ResourceEngine.contextPath + '/v_6274_nol_zh_CNs_d_m/system/lib/require/text.2.0.10',
+    			        'bind': window.__justep.__ResourceEngine.contextPath + '/v_6274_nol_zh_CNs_d_m/system/lib/bind/bind',
+    			        'jquery': window.__justep.__ResourceEngine.contextPath + '/v_6274_nol_zh_CNs_d_m/system/lib/jquery/jquery-1.11.1.min'
+    			    },
+    			    map: {
+    				        '*': {
+    				            res: '$model/UI2/system/lib/require/res',
+    				            service: '$model/UI2/system/lib/require/service',
+    				            cordova: '$model/UI2/system/lib/require/cordova',
+    				            w: '$model/UI2/system/lib/require/w',
+    				            css: '$model/UI2/system/lib/require/css'
+    				        }
+    				},
+    				waitSeconds: 300
+    			});
+    			
+    			requirejs(['require', 'jquery', '$model/UI2/system/lib/base/composition', '$model/UI2/system/lib/base/url', '$model/UI2/system/lib/route/hashbangParser', '$model/UI2/system/components/justep/versionChecker/versionChecker', '$model/UI2/system/components/justep/loadingBar/loadingBar', '$model/UI2/system/lib/jquery/domEvent',  '$model/UI2/system/lib/cordova/cordova'],  function (require, $, composition, URL, HashbangParser,versionChecker) { 
+    				document.addEventListener('deviceready', function() {
+    	                if (navigator && navigator.splashscreen && navigator.splashscreen.hide) {
+    	                	/*延迟隐藏，视觉效果更理想*/
+    	                	setTimeout(function() {navigator.splashscreen.hide();}, 800);
+    	                }
+    	            }, false);
+					setTimeout(function(){
+						versionChecker.check();
+					},2000);
+    				var context = {};
+    				context.model = '$model/UI2/ddwx/order/neworder.w' + (document.location.search || "");
+    				context.view = $('#applicationHost').children()[0];
+    				var element = document.getElementById('applicationHost');
+
+					    				
+    				
+    				var ownerid = new URL(window.__justep.__ResourceEngine.url).getParam("$ownerid");
+    				var pwindow = opener;
+    				if (!pwindow && window.parent && window.parent.window){
+    					pwindow = window.parent.window;
+    				}
+    				if(ownerid && pwindow 
+    						&& pwindow.__justep && pwindow.__justep.windowOpeners
+    						&& pwindow.__justep.windowOpeners[ownerid]
+    						&& $.isFunction(pwindow.__justep.windowOpeners[ownerid].sendToWindow)){
+    					window.__justep.setParams = function(params){
+    						/* 给windowOpener提供再次传参数的接口  */
+    						params = params || {};
+    						composition.setParams(document.getElementById('applicationHost'), params);
+    					};
+    					var winOpener = pwindow.__justep.windowOpeners[ownerid];
+    					if(winOpener) winOpener.window = window;
+    					$(window).unload(function(event){
+    						if(winOpener && winOpener.dispatchCloseEvent) winOpener.dispatchCloseEvent();
+    					});
+    					var params = winOpener.sendToWindow();
+						context.owner = winOpener;
+						context.params = params || {};
+	        			composition.compose(element, context);
+    				}else{
+        				var params =  {};
+    					var state = new HashbangParser(window.location.hash).parse().__state;
+    					if (state){
+    						params = state.get("");
+    						try{
+    							params = JSON.parse(params);
+    							if (params.hasOwnProperty("__singleValue__")){
+    								params = params.__singleValue__;
+    							}
+    						}catch(e1){}
+    					}
+    					context.noUpdateState = true;
+        				context.params = params;
+        				composition.compose(element, context);
+    				}
+    			});    
+            }
+		 	
+        </script>
+    </body>
+</html>

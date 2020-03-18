@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cj63YZj" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cj63YZj" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">null</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cj63YZj" class="cj63YZj"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcn2A3Mb-iosstatusbar cj63YZj" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cj63YZj"> 
+    <div class="x-panel-top cj63YZj" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cj63YZj"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cj63YZj" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;关于&quot;}" __cid="cj63YZj"> 
+        <div class="x-titlebar-left cj63YZj" __cid="cj63YZj"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cj63YZj" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cj63YZj"> 
+            <i class="icon-chevron-left cj63YZj" __cid="cj63YZj"/>  
+            <span __cid="cj63YZj" class="cj63YZj"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cj63YZj" __cid="cj63YZj">关于</div>  
+        <div class="x-titlebar-right  cj63YZj" __cid="cj63YZj"> 
+          <div class="empty cj63YZj" __cid="cj63YZj"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cj63YZj" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cj63YZj"> 
+      <ul xid="ul1" __cid="cj63YZj" class="cj63YZj"> 
+        <li class="list-group-item cj63YZj" xid="liMyOrder" __cid="cj63YZj" data-bind="event:{click:$model._callModelFn.bind($model, 'myOrderClick')}"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cj63YZj" xid="button13" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-bookmarks&quot;}" __cid="cj63YZj"> 
+            <i xid="i26" class="text-warning icon-ios7-bookmarks cj63YZj" __cid="cj63YZj"/>  
+            <span xid="span18" __cid="cj63YZj" class="cj63YZj"/> 
+          </a>  
+          <span xid="resVersion" __cid="cj63YZj" class="cj63YZj">资源版本：1.0.0</span> 
+        </li>  
+        <li class="list-group-item cj63YZj" xid="liAppVersion" __cid="cj63YZj"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cj63YZj" xid="button13" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-card&quot;}" __cid="cj63YZj"> 
+            <i xid="i26" class="text-warning icon-card cj63YZj" __cid="cj63YZj"/>  
+            <span xid="span18" __cid="cj63YZj" class="cj63YZj"/> 
+          </a>  
+          <span xid="appVersion" __cid="cj63YZj" class="cj63YZj">程序版本：1.0.0</span> 
+        </li>  
+        <li class="list-group-item cj63YZj" xid="liUpdate" __cid="cj63YZj" data-bind="event:{click:$model._callModelFn.bind($model, 'versionClick')}"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right cj63YZj" xid="button1" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cj63YZj"> 
+            <i xid="i4" class="icon-ios7-arrow-right text-muted cj63YZj" __cid="cj63YZj"/>  
+            <span xid="span7" __cid="cj63YZj" class="cj63YZj"/> 
+          </a>  
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cj63YZj" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-hammer&quot;}" __cid="cj63YZj"> 
+            <i xid="i3" class="icon-hammer cj63YZj" __cid="cj63YZj"/>  
+            <span xid="span6" __cid="cj63YZj" class="cj63YZj"/> 
+          </a>  
+          <span xid="span3" __cid="cj63YZj" class="cj63YZj">版本升级</span> 
+        </li> 
+      </ul> 
+    </div>  
+    <style __cid="cj63YZj" class="cj63YZj">.x-panel.pcn2A3Mb-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcn2A3Mb-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcn2A3Mb-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcn2A3Mb-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcn2A3Mb-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcn2A3Mb-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcn2A3Mb-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcn2A3Mb-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcn2A3Mb-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

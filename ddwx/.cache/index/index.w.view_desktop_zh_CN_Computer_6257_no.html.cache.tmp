@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window c3euQrm" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c3euQrm" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,,$model/UI2/system/components/justep/windowContainer/windowContainer,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">null</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="c3euQrm" class="c3euQrm"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full c3euQrm" xid="pages" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0,&quot;swipe&quot;:false}" __cid="c3euQrm"> 
+    <div class="x-contents-content active c3euQrm" xid="main" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="c3euQrm"> 
+      <div component="$model/UI2/system/components/justep/windowContainer/windowContainer" class="x-window-container c3euQrm" xid="mainContainer" __component-context__="block" data-bind="component:{name:'$model/UI2/system/components/justep/windowContainer/windowContainer'}" data-config="{&quot;src&quot;:&quot;$model/UI2/dd/main.w&quot;}" __cid="c3euQrm"> 
+        <div xid="window" class="window cqui67j" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cqui67j" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/button/buttonGroup,$model/UI2/system/components/justep/panel/panel,"> 
+          <style xmlns:xhtml="http://www.w3.org/1999/xhtml">.grid9.cqui67j .row.cqui67j{margin-left: 0; margin-right: 0} .grid9.cqui67j .cell.cqui67j{padding: 0; overflow: hidden} .grid9.cqui67j .cell.cqui67j .card.cqui67j i.cqui67j{margin-top: 5px; margin-bottom: 10px; font-size: 32px; color: rgb(136, 136, 136)} .portal-main.cqui67j .x-contents.cqui67j &gt; .x-contents-content.cqui67j{overflow: hidden} .grid9.cqui67j .btn.cqui67j{width: 100%} .x-portal.cqui67j .x-contents[xid="carousel"].cqui67j{height: 288px} .iosstatusbar.cqui67j .x-portal.cqui67j .x-contents[xid="carousel"].cqui67j{height: 308px} .x-portal.cqui67j &gt; .x-panel-top.cqui67j{z-index: 100} .x-portal.cqui67j &gt; .x-panel-top.cqui67j &gt; .x-titlebar.cqui67j{background-color: transparent; color: white} .imgBox.cqui67j{position: relative; float: top; top: 0} .liSty.cqui67j{position: absolute; top: 60px; left: 60px} angleBox.cqui67j{width: 50px; float: left; position: relative} .angle.cqui67j{position: absolute; right: 80px; top: 0; background-color: rgb(199, 28, 34)}</style>  
+          <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cqui67j" class="cqui67j"></div>  
+          <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcRbmYny-iosstatusbar cqui67j" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cqui67j">  
+            <div class="x-panel-bottom cqui67j" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cqui67j"> 
+              <div component="$model/UI2/system/components/justep/button/buttonGroup" class="btn-group x-card btn-group-justified clearfix center-block cqui67j" xid="buttonGroup1" style="height:48px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/buttonGroup'}" data-config="{&quot;tabbed&quot;:true}" __cid="cqui67j"> 
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top active cqui67j" xid="btnHome" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-home&quot;,&quot;label&quot;:&quot;首页&quot;,&quot;target&quot;:&quot;content2&quot;}" __cid="cqui67j"> 
+                  <i xid="i2" class="icon-home cqui67j" __cid="cqui67j"/>  
+                  <span xid="span2" __cid="cqui67j" class="cqui67j">首页</span> 
+                </a>  
+                <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top active cqui67j" xid="btnMy" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-contact&quot;,&quot;label&quot;:&quot;我的&quot;,&quot;target&quot;:&quot;content5&quot;}" __cid="cqui67j"> 
+                  <i xid="i3" class="imgBox icon-android-contact cqui67j" __cid="cqui67j"> 
+                    <li xid="li1" style="color:#FF0000;vertical-align:super;font-family:Arial;top:-17%;left:67%;font-size:x-small;" class="active liSty cqui67j" __cid="cqui67j">20</li> 
+                  </i>  
+                  <span xid="span3" __cid="cqui67j" class="cqui67j">我的</span> 
+                </a> 
+              </div> 
+            </div>  
+            <div class="x-panel-content cqui67j" xid="content4" style="top:0px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cqui67j"> 
+              <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full cqui67j" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="cqui67j"> 
+                <div class="x-contents-content active cqui67j" xid="content2" style="background-color:#fafafa;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cqui67j"> 
+                  <div class="x-panel-top cqui67j" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cqui67j"> 
+                    <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cqui67j" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;首页&quot;}" __cid="cqui67j"> 
+                      <div class="x-titlebar-left cqui67j" xid="left1" __cid="cqui67j"/>  
+                      <div class="x-titlebar-title cqui67j" xid="title1" __cid="cqui67j">首页</div>  
+                      <div class="x-titlebar-right  cqui67j" xid="right1" __cid="cqui67j"> 
+                        <div class="empty cqui67j" __cid="cqui67j"/> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div class="x-panel-content cqui67j" xid="content1" __cid="cqui67j"> 
+                    <div component="$model/UI2/system/components/bootstrap/row/row" class="row cqui67j" xid="row2" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cqui67j"> 
+                      <div class="col col-xs-4 cqui67j" xid="col5" __cid="cqui67j"> 
+                        <label xid="label1" __cid="cqui67j" class="cqui67j"/> 
+                      </div>  
+                      <div class="col col-xs-4 cqui67j" xid="col6" __cid="cqui67j"/>  
+                      <div class="col col-xs-4 cqui67j" xid="col7" __cid="cqui67j"/> 
+                    </div>  
+                    <div component="$model/UI2/system/components/bootstrap/row/row" class="row grid9 cqui67j" xid="row1" style="width:102%;" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="cqui67j"> 
+                      <div class="col col-xs-6 col-sm-6 col-md-6 col-lg-1 cell cqui67j" xid="col1" __cid="cqui67j"> 
+                        <div class="card cqui67j" xid="div1" __cid="cqui67j"> 
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cqui67j" xid="button1" url="/demo/native/geolocation/mainActivity.w" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnAddOrderClick" data-config="{&quot;icon&quot;:&quot;icon-edit&quot;,&quot;label&quot;:&quot;新增申请单&quot;}" __cid="cqui67j"> 
+                            <i xid="i1" class="icon-edit imgBox cqui67j" style="color:#FF8000;width:50px; height:50px; padding:10px; border-radius:50%; background-color:#f2b741;" __cid="cqui67j"> 
+                              <li xid="li2" class="active liSty cqui67j" style="color:#FF0000;font-family:Arial;top:10%;left:67%;font-size:medium;" __cid="cqui67j">20</li> 
+                            </i>  
+                            <span xid="span1" __cid="cqui67j" class="cqui67j">新增申请单</span> 
+                          </a> 
+                        </div> 
+                      </div>  
+                      <div class="col col-xs-6 col-sm-6 col-md-6 col-lg-1 cell cqui67j" xid="col3" __cid="cqui67j"> 
+                        <div class="card angleBox cqui67j" xid="div3" __cid="cqui67j"> 
+                          <span class="badge angle cqui67j" __cid="cqui67j">4</span>  
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cqui67j" xid="btnMyOrder" url="/demo/native/geolocation/mainActivity.w" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnMyOrderClick" data-config="{&quot;icon&quot;:&quot;icon-android-storage&quot;,&quot;label&quot;:&quot;我的申请单&quot;}" __cid="cqui67j"> 
+                            <i xid="i5" class="icon-android-storage cqui67j" style="color:#2fa4e7;width:50px; height:50px; padding:10px; border-radius:50%; background-color:#f2b741;" __cid="cqui67j"/>  
+                            <span xid="span4" __cid="cqui67j" class="cqui67j">我的申请单</span> 
+                          </a> 
+                        </div> 
+                      </div>  
+                      <div class="col col-xs-6 col-sm-6 col-md-6 col-lg-1 cell cqui67j" xid="col4" __cid="cqui67j"> 
+                        <div class="card cqui67j" xid="div4" __cid="cqui67j"> 
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cqui67j" xid="button4" url="/demo/native/geolocation/mainActivity.w" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnWaitOderClick" data-config="{&quot;icon&quot;:&quot;icon-android-clock&quot;,&quot;label&quot;:&quot;待派单申请&quot;}" __cid="cqui67j"> 
+                            <i xid="i6" class="icon-android-clock cqui67j" style="color:#2fa4e7;" __cid="cqui67j"/>  
+                            <span xid="span5" __cid="cqui67j" class="cqui67j">待派单申请</span> 
+                          </a> 
+                        </div> 
+                      </div>  
+                      <div class="col col-xs-6 col-sm-6 col-md-6 col-lg-1 cell cqui67j" xid="col2" __cid="cqui67j"> 
+                        <div class="card cqui67j" xid="div2" __cid="cqui67j"> 
+                          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top cqui67j" xid="button2" url="/demo/native/geolocation/mainActivity.w" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnHasOrderClick" data-config="{&quot;icon&quot;:&quot;icon-android-earth&quot;,&quot;label&quot;:&quot;已派单申请&quot;}" __cid="cqui67j"> 
+                            <i xid="i4" class="icon-model-s icon-android-earth cqui67j" style="color:#2fa4e7;" __cid="cqui67j"/>  
+                            <span xid="span6" __cid="cqui67j" class="cqui67j">已派单申请</span> 
+                          </a> 
+                        </div> 
+                      </div> 
+                    </div> 
+                  </div> 
+                </div>  
+                <div class="x-contents-content cqui67j" xid="content5" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="cqui67j"> 
+                  <div class="x-panel-top cqui67j" xid="top4" __cid="cqui67j"> 
+                    <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cqui67j" xid="titleBar4" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;我的&quot;}" __cid="cqui67j"> 
+                      <div class="x-titlebar-left cqui67j" xid="left3" __cid="cqui67j"/>  
+                      <div class="x-titlebar-title cqui67j" xid="title4" __cid="cqui67j">我的</div>  
+                      <div class="x-titlebar-right  cqui67j" xid="right3" __cid="cqui67j"> 
+                        <div class="empty cqui67j" __cid="cqui67j"/> 
+                      </div> 
+                    </div> 
+                  </div>  
+                  <div class="x-panel-content cqui67j" xid="content7" __cid="cqui67j"> 
+                    <ul xid="ul1" __cid="cqui67j" class="cqui67j"> 
+                      <li class="list-group-item cqui67j" xid="liPerson" __cid="cqui67j" data-bind="event:{click:$model._callModelFn.bind($model, 'myInfoClick')}"> 
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right cqui67j" xid="button12" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cqui67j"> 
+                          <i xid="i18" class="icon-ios7-arrow-right text-muted cqui67j" __cid="cqui67j"/>  
+                          <span xid="span17" __cid="cqui67j" class="cqui67j"/> 
+                        </a>  
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cqui67j" xid="button13" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-contact&quot;}" __cid="cqui67j"> 
+                          <i xid="i26" class="text-warning icon-android-contact cqui67j" __cid="cqui67j"/>  
+                          <span xid="span18" __cid="cqui67j" class="cqui67j"/> 
+                        </a>  
+                        <span xid="span16" __cid="cqui67j" class="cqui67j">个人资料</span> 
+                      </li>  
+                      <li class="list-group-item cqui67j" xid="liModifyPwd" __cid="cqui67j" data-bind="event:{click:$model._callModelFn.bind($model, 'updatePwdClick')}"> 
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right cqui67j" xid="button14" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cqui67j"> 
+                          <i xid="i27" class="icon-ios7-arrow-right text-muted cqui67j" __cid="cqui67j"/>  
+                          <span xid="span20" __cid="cqui67j" class="cqui67j"/> 
+                        </a>  
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cqui67j" xid="button15" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-key&quot;}" __cid="cqui67j"> 
+                          <i xid="i28" class="icon-key cqui67j" __cid="cqui67j"/>  
+                          <span xid="span21" __cid="cqui67j" class="cqui67j"/> 
+                        </a>  
+                        <span xid="span19" __cid="cqui67j" class="cqui67j">修改密码</span> 
+                      </li> 
+                    </ul>  
+                    <ul xid="ul2" __cid="cqui67j" class="cqui67j"> 
+                      <li class="list-group-item cqui67j" xid="liPhone" __cid="cqui67j"> 
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right cqui67j" xid="button5" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cqui67j"> 
+                          <i xid="i15" class="icon-ios7-arrow-right text-muted cqui67j" __cid="cqui67j"/>  
+                          <span xid="span19" __cid="cqui67j" class="cqui67j"/> 
+                        </a>  
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cqui67j" xid="button10" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-android-call&quot;}" __cid="cqui67j"> 
+                          <i xid="i14" class="text-warning icon-android-call cqui67j" __cid="cqui67j"/>  
+                          <span xid="span22" __cid="cqui67j" class="cqui67j"/> 
+                        </a>  
+                        <a href="tel:13738009722" xid="a2" __cid="cqui67j" class="cqui67j"> 
+                          <span xid="span21" __cid="cqui67j" class="cqui67j">客服电话</span> 
+                        </a> 
+                      </li>  
+                      <li class="list-group-item cqui67j" xid="liAbout" __cid="cqui67j" data-bind="event:{click:$model._callModelFn.bind($model, 'aboutClick')}"> 
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right cqui67j" xid="button11" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cqui67j"> 
+                          <i xid="i16" class="icon-ios7-arrow-right text-muted cqui67j" __cid="cqui67j"/>  
+                          <span xid="span8" __cid="cqui67j" class="cqui67j"/> 
+                        </a>  
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cqui67j" xid="button6" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-information-outline&quot;}" __cid="cqui67j"> 
+                          <i xid="i13" class="text-danger icon-ios7-information-outline cqui67j" __cid="cqui67j"/>  
+                          <span xid="span20" __cid="cqui67j" class="cqui67j"/> 
+                        </a>  
+                        <span xid="span9" __cid="cqui67j" class="cqui67j">关于</span> 
+                      </li> 
+                    </ul>  
+                    <ul xid="ul3" __cid="cqui67j" class="cqui67j"> 
+                      <li class="list-group-item cqui67j" xid="liLoinout" __cid="cqui67j" data-bind="event:{click:$model._callModelFn.bind($model, 'btnLoginOut')}"> 
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon pull-right cqui67j" xid="button10" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-ios7-arrow-right&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cqui67j"> 
+                          <i xid="i10" class="icon-ios7-arrow-right text-muted cqui67j" __cid="cqui67j"/>  
+                          <span xid="span11" __cid="cqui67j" class="cqui67j"/> 
+                        </a>  
+                        <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cqui67j" xid="button8" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-config="{&quot;icon&quot;:&quot;icon-gear-b&quot;}" __cid="cqui67j"> 
+                          <i xid="i7" class="text-warning icon-gear-b cqui67j" __cid="cqui67j"/>  
+                          <span xid="span10" __cid="cqui67j" class="cqui67j"/> 
+                        </a>  
+                        <span xid="span13" __cid="cqui67j" class="cqui67j">注销</span> 
+                      </li> 
+                    </ul> 
+                  </div> 
+                </div> 
+              </div> 
+            </div>  
+            <style __cid="cqui67j" class="cqui67j">.x-panel.pcRbmYny-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcRbmYny-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcRbmYny-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcRbmYny-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcRbmYny-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcRbmYny-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcRbmYny-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcRbmYny-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcRbmYny-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+</div>

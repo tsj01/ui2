@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<div xid="window" class="window c26JZzm" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c26JZzm" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/select/radioGroup,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="c26JZzm" class="c26JZzm"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcaQF7Jz-iosstatusbar c26JZzm" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c26JZzm"> 
+    <div class="x-panel-top c26JZzm" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c26JZzm"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar c26JZzm" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="c26JZzm"> 
+        <div class="x-titlebar-left c26JZzm" xid="left1" __cid="c26JZzm"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c26JZzm" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&#34;icon&#34;:&#34;icon-chevron-left&#34;,&#34;label&#34;:&#34;返回&#34;}" __cid="c26JZzm"> 
+            <i xid="i1" class="icon-chevron-left c26JZzm" __cid="c26JZzm"></i>  
+            <span xid="span2" __cid="c26JZzm" class="c26JZzm">返回</span>
+          </a>
+        </div>  
+        <div class="x-titlebar-title c26JZzm" xid="title1" __cid="c26JZzm"> 
+          <span xid="span1" __cid="c26JZzm" class="c26JZzm">整单不收</span>
+        </div>  
+        <div class="x-titlebar-right  c26JZzm" xid="right1" __cid="c26JZzm">
+          <div class="empty c26JZzm" __cid="c26JZzm"></div>
+        </div>
+      </div> 
+    </div>  
+    <div class="x-panel-content c26JZzm" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c26JZzm"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents c26JZzm" xid="content3" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&#34;active&#34;:0}" __cid="c26JZzm"> 
+        <div class="x-contents-content active active c26JZzm" xid="contentOrder" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="c26JZzm"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row c26JZzm" xid="row2" style="padding:0px 5px 0px 5px;margin:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c26JZzm"> 
+            <div class="x-col c26JZzm" xid="col10" __cid="c26JZzm">
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c26JZzm" xid="labelEditRecvyy" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c26JZzm"> 
+                <label class="x-label c26JZzm" xid="label2" style="margin:0px 0px 0px 5px;width:70px;text-align:right;" __cid="c26JZzm">不收原因:</label>  
+                <span component="$model/UI2/system/components/justep/select/radioGroup" class="x-radio-group x-radio-group-vertical x-radios x-edit c26JZzm" xid="rgpRecvyy" readonly="true" data-bind="component:{ref:unrecvyy,name:'$model/UI2/system/components/justep/select/radioGroup'},foreach:{data:unrecvReasons.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" data-events="onChange:rgpunrecvyyChange" data-config="{&#34;disabled&#34;:true}" __cid="c26JZzm">
+                  <span component="$model/UI2/system/components/justep/button/radio" class="x-radio c26JZzm" data-config="{&#34;checked&#34;:false,&#34;disabled&#34;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio',label:ref(&#34;name&#34;),value:ref(&#34;value&#34;)}" __cid="c26JZzm">
+                    <input type="radio" __cid="c26JZzm" class="c26JZzm">
+                    <label __cid="c26JZzm" class="c26JZzm"></label>
+                  </span>
+                </span>
+              </div>
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row c26JZzm" xid="row1" style="padding:0px 10px 0px 5px;margin:0px 0px 0px 0px;height:40px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'},visible:showOthUnrecvyy" __cid="c26JZzm"> 
+            <div class="x-col c26JZzm" xid="col1" __cid="c26JZzm">
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c26JZzm" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c26JZzm"> 
+                <label class="x-label c26JZzm" xid="label3" style="margin:0px 0px 0px 5px;width:70px;text-align:right;" __cid="c26JZzm">其他情况:</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm x-edit c26JZzm" xid="othRecvyy" data-bind="component:{ref:othUnrecvyy,name:'$model/UI2/system/components/justep/input/input'}" __cid="c26JZzm">
+              </div>
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row c26JZzm" xid="row4" style="padding:0px 10px 0px 5px;margin:0px 0px 0px 0px;height:40px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c26JZzm"> 
+            <div class="x-col c26JZzm" xid="col8" __cid="c26JZzm">
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c26JZzm" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c26JZzm"> 
+                <label class="x-label c26JZzm" xid="label4" style="margin:0px 0px 0px 5px;width:70px;text-align:right;" __cid="c26JZzm">回收备注:</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm x-edit c26JZzm" xid="inputRecvmemo" data-bind="component:{ref:recvmemo,name:'$model/UI2/system/components/justep/input/input'}" __cid="c26JZzm">
+              </div>
+            </div> 
+          </div>
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row c26JZzm" xid="row3" style="padding-top:5px;margin-top:5px" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="c26JZzm"> 
+            <div class="x-col c26JZzm" xid="col4" __cid="c26JZzm">
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-label btn-block c26JZzm" xid="btnOK" style="background-color:#FFFFFF;color:#1E90FF;border-style:solid solid solid solid;border-width:1px 1px 1px 1px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnOKClick" data-config="{&#34;icon&#34;:&#34;icon-chevron-down&#34;,&#34;label&#34;:&#34;提交&#34;}" __cid="c26JZzm"> 
+                <i xid="i3" class="icon-chevron-down c26JZzm" __cid="c26JZzm"></i>  
+                <span xid="span3" __cid="c26JZzm" class="c26JZzm">提交</span>
+              </a>
+            </div> 
+          </div>
+        </div> 
+      </div>
+    </div>  
+    <style __cid="c26JZzm" class="c26JZzm">.x-panel.pcaQF7Jz-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcaQF7Jz-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcaQF7Jz-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcaQF7Jz-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcaQF7Jz-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcaQF7Jz-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcaQF7Jz-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcaQF7Jz-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcaQF7Jz-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver1" style="top:22px;left:162px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:windowReceiver1Receive" __cid="c26JZzm" class="c26JZzm"></span> 
+</div>

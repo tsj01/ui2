@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cNFVv6b" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cNFVv6b" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/dataTables/dataTables,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.brick.cNFVv6b{background-color: white; float: left; cursor: default; overflow: hidden; background-repeat: no-repeat; background-size: cover; background-position: center} .brick.cNFVv6b img.cNFVv6b{width: 100%; height: 100%} .list-img.cNFVv6b li.cNFVv6b{position: relative; margin-right: 0px; list-style: none} .list-img.cNFVv6b img.cNFVv6b{display: inline-block; width: 50px; height: 48px} .list-img.cNFVv6b input.cNFVv6b{position: absolute; top: 0; left: 0; z-index: 10; width: 50px; height: 48px; opacity: 0}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="cNFVv6b" class="cNFVv6b"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcMJneui-iosstatusbar cNFVv6b" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cNFVv6b"> 
+    <div class="x-panel-top cNFVv6b" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cNFVv6b"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cNFVv6b" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;标题&quot;}" __cid="cNFVv6b"> 
+        <div class="x-titlebar-left cNFVv6b" __cid="cNFVv6b"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cNFVv6b" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cNFVv6b"> 
+            <i class="icon-chevron-left cNFVv6b" __cid="cNFVv6b"/>  
+            <span __cid="cNFVv6b" class="cNFVv6b"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cNFVv6b" __cid="cNFVv6b">标题</div>  
+        <div class="x-titlebar-right  cNFVv6b" __cid="cNFVv6b"> 
+          <div class="empty cNFVv6b" __cid="cNFVv6b"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cNFVv6b" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cNFVv6b"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cNFVv6b" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cNFVv6b"> 
+        <div class="x-col cNFVv6b" xid="col1" __cid="cNFVv6b"> 
+          <table xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/dataTables/dataTables" flexibleWidth="true" responsive="true" rowActiveClass="active" class="table table-hover table-striped cNFVv6b" xid="dataTables1" data="data1" data-config="{&quot;columns&quot;:[{&quot;className&quot;:&quot;x-dt-title-center x-dt-cell-left&quot;,&quot;orderable&quot;:false,&quot;sName&quot;:&quot;partname&quot;,&quot;title&quot;:&quot;部件&quot;,&quot;width&quot;:&quot;80%&quot;,&quot;xid&quot;:&quot;column5&quot;},{&quot;className&quot;:&quot;x-dt-title-center x-dt-cell-center&quot;,&quot;orderable&quot;:false,&quot;sName&quot;:&quot;attcnt&quot;,&quot;title&quot;:&quot;照片&quot;,&quot;xid&quot;:&quot;column6&quot;}],&quot;data&quot;:&quot;data1&quot;,&quot;flexibleWidth&quot;:true,&quot;responsive&quot;:true,&quot;rowActiveClass&quot;:&quot;active&quot;}" data-bind="component:{name:'$model/UI2/system/components/justep/dataTables/dataTables'}" __cid="cNFVv6b"></table> 
+        </div>  
+        <div class="x-col x-col-fixed cNFVv6b" xid="col2" style="padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;width:120px;" __cid="cNFVv6b"> 
+          <div class="list-img cNFVv6b" __cid="cNFVv6b"> 
+            <ul id="preview" style="padding-left:30px;margin-bottom:0px" __cid="cNFVv6b" class="cNFVv6b"> 
+              <li __cid="cNFVv6b" class="cNFVv6b"> 
+                <img src="@justepContextPath@/v_3fd8c556c5e447b783ced07d795908d2l_zh_CNs_desktopd_pc/ddout/res/images/camera.png" __cid="cNFVv6b" class="cNFVv6b"/>  
+                <input id="fileImage" type="file" accept="image/*" name="file[]" capture="camera" xid="fileUpload" __cid="cNFVv6b" class="cNFVv6b" data-bind="event:{change:$model._callModelFn.bind($model, 'fileUploadChange')}"/> 
+              </li> 
+            </ul> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cNFVv6b" xid="list2" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;data&quot;:&quot;imgData&quot;}" __cid="cNFVv6b"> 
+            <ul class="x-list-template hide cNFVv6b" xid="listTemplateUl2" style="margin-bottom:0px;" __cid="cNFVv6b" data-bind="foreach:{data:$model.foreach_list2($element),afterRender:$model.foreach_afterRender_list2.bind($model,$element)}"> 
+              <li xid="li2" style="margin-left:2px;margin-right:3px;height:115px;width:115px;" class="brick cNFVv6b" __cid="cNFVv6b"> 
+                <a href="javascript:void(0)" data-size="" data-med="" data-med-size="" xid="a2" __cid="cNFVv6b" class="cNFVv6b"> 
+                  <img src="" xid="image1" __cid="cNFVv6b" class="cNFVv6b" data-bind="attr:{src:$model.toUrl(val(&quot;fSmallImg&quot;))},event:{click:$model._callModelFn.bind($model, 'image1Click')}"/> 
+                </a> 
+              </li> 
+            </ul> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cNFVv6b" class="cNFVv6b">.x-panel.pcMJneui-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcMJneui-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcMJneui-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcMJneui-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcMJneui-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcMJneui-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcMJneui-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcMJneui-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcMJneui-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div> 
+</div>

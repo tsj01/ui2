@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<div component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cyeiyMv" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cyeiyMv" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,">
+  <style>null</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cyeiyMv" class="cyeiyMv"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcauYJba-iosstatusbar cyeiyMv" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cyeiyMv"> 
+    <div class="x-panel-top cyeiyMv" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cyeiyMv"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cyeiyMv" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;个人资料&#34;}" __cid="cyeiyMv"> 
+        <div class="x-titlebar-left cyeiyMv" __cid="cyeiyMv"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cyeiyMv" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&#34;icon&#34;:&#34;icon-chevron-left&#34;,&#34;label&#34;:&#34;&#34;}" __cid="cyeiyMv"> 
+            <i class="icon-chevron-left cyeiyMv" __cid="cyeiyMv"></i>  
+            <span __cid="cyeiyMv" class="cyeiyMv"></span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cyeiyMv" __cid="cyeiyMv">个人资料</div>  
+        <div class="x-titlebar-right  cyeiyMv" __cid="cyeiyMv">
+          <div class="empty cyeiyMv" __cid="cyeiyMv"></div>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cyeiyMv" xid="btnHome" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnHomeClick" data-config="{&#34;icon&#34;:&#34;icon-home&#34;,&#34;label&#34;:&#34;&#34;}" __cid="cyeiyMv"> 
+            <i class="icon-home cyeiyMv" xid="i8" __cid="cyeiyMv"></i>  
+            <span xid="span12" __cid="cyeiyMv" class="cyeiyMv"></span>
+          </a>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cyeiyMv" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cyeiyMv"> 
+      <ul component="$model/UI2/system/components/justep/list/list" class="x-list x-list-template hide cyeiyMv" xid="list1" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'},foreach:{data:$model.foreach_list1($element),afterRender:$model.foreach_afterRender_list1.bind($model,$element)}" data-config="{&#34;data&#34;:&#34;userData&#34;}" __cid="cyeiyMv"> 
+        <li xid="li2" class="list-group-item cyeiyMv" __cid="cyeiyMv"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cyeiyMv" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cyeiyMv"> 
+            <label class="x-label cyeiyMv" xid="label2" __cid="cyeiyMv">企业类型：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cyeiyMv" xid="output2" data-bind="component:{ref:$model.userData.ref(&#34;brtp&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cyeiyMv"></div>
+          </div> 
+        </li>
+        <li xid="li1" class="list-group-item cyeiyMv" __cid="cyeiyMv"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cyeiyMv" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cyeiyMv"> 
+            <label class="x-label cyeiyMv" xid="label1" __cid="cyeiyMv">企业名称：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cyeiyMv" xid="output1" data-bind="component:{ref:$model.userData.ref(&#34;brname&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cyeiyMv"></div> 
+          </div> 
+        </li>  
+        <li xid="li1" class="list-group-item cyeiyMv" __cid="cyeiyMv"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cyeiyMv" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cyeiyMv"> 
+            <label class="x-label cyeiyMv" xid="label1" __cid="cyeiyMv">用户账号：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cyeiyMv" xid="output1" data-bind="component:{ref:$model.userData.ref(&#34;loginid&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cyeiyMv"></div> 
+          </div> 
+        </li>  
+        <li xid="li1" class="list-group-item cyeiyMv" __cid="cyeiyMv"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cyeiyMv" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cyeiyMv"> 
+            <label class="x-label cyeiyMv" xid="label1" __cid="cyeiyMv">用户名称：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cyeiyMv" xid="output1" data-bind="component:{ref:$model.userData.ref(&#34;name&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cyeiyMv"></div> 
+          </div> 
+        </li>  
+        <li xid="li1" class="list-group-item cyeiyMv" __cid="cyeiyMv"> 
+          <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cyeiyMv" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cyeiyMv"> 
+            <label class="x-label cyeiyMv" xid="label1" __cid="cyeiyMv">所属部门：</label>  
+            <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit cyeiyMv" xid="output1" data-bind="component:{ref:$model.userData.ref(&#34;dname&#34;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cyeiyMv"></div> 
+          </div> 
+        </li> 
+      </ul> 
+    </div>  
+    <style __cid="cyeiyMv" class="cyeiyMv">.x-panel.pcauYJba-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcauYJba-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcauYJba-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcauYJba-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcauYJba-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcauYJba-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcauYJba-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcauYJba-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcauYJba-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

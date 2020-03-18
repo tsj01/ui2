@@ -1,0 +1,67 @@
+
+.grid9 .row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+.grid9 .cell {
+  padding: 0;
+  overflow: hidden;
+}
+
+.grid9 .cell .card i {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 32px;
+  color: #888;
+}
+
+
+.portal-main .x-contents>.x-contents-content {
+	overflow: hidden;
+}
+
+.grid9 .btn{
+	width: 100%;
+}
+
+.x-portal .x-contents[xid=carousel]{
+	height:188px;		
+}
+
+.iosstatusbar .x-portal .x-contents[xid=carousel]{
+	height:108px;		
+}
+
+
+.x-portal >.x-panel-top{
+	z-index:100;
+}
+/*
+.x-portal >.x-panel-top > .x-titlebar{
+	background-color:transparent;
+	color: white;
+}
+*/
+
+/*消息图片角标*/
+angleBox {
+	width: 80px;
+	float: left;
+	position: relative;
+}
+
+.angle {
+	position: absolute;
+	right: 20px;
+	top: 15px;
+	/*background-color: #c71c22;*/
+	color : #FF6347;
+	text-align : 'left';
+	background-color:transparent
+}
+
+/*让滚动图片自适应宽度*/
+.x-panel .x-contents .x-contents-content img{ width:100%;}
+
+

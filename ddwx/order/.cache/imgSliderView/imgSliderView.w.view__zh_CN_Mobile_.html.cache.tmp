@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cqq2emu" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cqq2emu" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">null</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cqq2emu" class="cqq2emu"/>  
+  <script xmlns="" src="@justepContextPath@/v_822f9ec8522b48548a496a43b7fd53c7l_zh_CNs_d_m/ddout/res/islider/iSlider.js" __cid="cqq2emu" class="cqq2emu"/>  
+  <script xmlns="" src="@justepContextPath@/v_44b137d32e844eca864710dbfa7c2e15l_zh_CNs_d_m/ddout/res/islider/iSlider.plugin.button.js" __cid="cqq2emu" class="cqq2emu"/>  
+  <script xmlns="" src="@justepContextPath@/v_8188bbfbfc8a48fc82c18659ad3f9aebl_zh_CNs_d_m/ddout/res/islider/iSlider.plugin.dot.js" __cid="cqq2emu" class="cqq2emu"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcaIV73i-iosstatusbar cqq2emu" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cqq2emu"> 
+    <div class="x-panel-top cqq2emu" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cqq2emu"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cqq2emu" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;标题&quot;}" __cid="cqq2emu"> 
+        <div class="x-titlebar-left cqq2emu" __cid="cqq2emu"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cqq2emu" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cqq2emu"> 
+            <i class="icon-chevron-left cqq2emu" __cid="cqq2emu"/>  
+            <span __cid="cqq2emu" class="cqq2emu"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cqq2emu" __cid="cqq2emu">标题</div>  
+        <div class="x-titlebar-right  cqq2emu" __cid="cqq2emu"> 
+          <div class="empty cqq2emu" __cid="cqq2emu"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cqq2emu" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cqq2emu"> 
+      <div id="non-looping" class="iSlider-effect cqq2emu" style="height:100%;width:100%;" xid="div1" __cid="cqq2emu"/> 
+    </div>  
+    <style __cid="cqq2emu" class="cqq2emu">.x-panel.pcaIV73i-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcaIV73i-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcaIV73i-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcaIV73i-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcaIV73i-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcaIV73i-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcaIV73i-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcaIV73i-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcaIV73i-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver1" style="left:105px;top:16px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:windowReceiver1Receive" __cid="cqq2emu" class="cqq2emu"/> 
+</div>

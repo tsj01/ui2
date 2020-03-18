@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cqQNn63" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cqQNn63" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/dataTables/dataTables,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.brick.cqQNn63{background-color: white; float: left; cursor: default; overflow: hidden; background-repeat: no-repeat; background-size: cover; background-position: center} .brick.cqQNn63 img.cqQNn63{width: 100%; height: 100%} .list-img.cqQNn63 li.cqQNn63{position: relative; margin-right: 0px; list-style: none} .list-img.cqQNn63 img.cqQNn63{display: inline-block; width: 50px; height: 48px} .list-img.cqQNn63 input.cqQNn63{position: absolute; top: 0; left: 0; z-index: 10; width: 50px; height: 48px; opacity: 0}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cqQNn63" class="cqQNn63"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcQ7VrMz-iosstatusbar cqQNn63" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cqQNn63"> 
+    <div class="x-panel-top cqQNn63" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cqQNn63"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cqQNn63" xid="titlebar" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;标题&quot;}" __cid="cqQNn63"> 
+        <div class="x-titlebar-left cqQNn63" __cid="cqQNn63"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cqQNn63" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cqQNn63"> 
+            <i class="icon-chevron-left cqQNn63" __cid="cqQNn63"/>  
+            <span __cid="cqQNn63" class="cqQNn63"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cqQNn63" __cid="cqQNn63"/>  
+        <div class="x-titlebar-right  cqQNn63" __cid="cqQNn63"> 
+          <div class="empty cqQNn63" __cid="cqQNn63"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cqQNn63" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cqQNn63"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cqQNn63" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqQNn63"> 
+        <div class="x-col cqQNn63" xid="col1" __cid="cqQNn63"> 
+          <table xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/dataTables/dataTables" flexibleWidth="false" responsive="true" rowActiveClass="active" class="table table-hover table-striped cqQNn63" xid="dataTables1" data="orderdtlData" showRowNumber="false" data-config="{&quot;columns&quot;:[{&quot;className&quot;:&quot;x-dt-title-center x-dt-cell-left&quot;,&quot;orderable&quot;:false,&quot;sName&quot;:&quot;partname&quot;,&quot;title&quot;:&quot;配件名称&quot;,&quot;width&quot;:&quot;70%&quot;,&quot;xid&quot;:&quot;column5&quot;},{&quot;className&quot;:&quot;x-dt-title-center x-dt-cell-center&quot;,&quot;orderable&quot;:false,&quot;sName&quot;:&quot;attcount&quot;,&quot;title&quot;:&quot;照片&quot;,&quot;xid&quot;:&quot;column1&quot;}],&quot;data&quot;:&quot;orderdtlData&quot;,&quot;flexibleWidth&quot;:false,&quot;responsive&quot;:true,&quot;rowActiveClass&quot;:&quot;active&quot;,&quot;showRowNumber&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/dataTables/dataTables'}" data-events="onRowSelect:dataTables1RowSelect" __cid="cqQNn63"></table> 
+        </div>  
+        <div class="x-col x-col-fixed cqQNn63" xid="col2" style="padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;width:148px;" __cid="cqQNn63"> 
+          <div class="list-img cqQNn63" style="height:48px;" __cid="cqQNn63"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cqQNn63" xid="row2" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cqQNn63"> 
+              <div class="x-col cqQNn63" xid="col3" style="padding:0px 0px 0px 0px;" __cid="cqQNn63"> 
+                <li style="padding-left:10px" __cid="cqQNn63" class="cqQNn63"> 
+                  <img src="@justepContextPath@/v_1a9f8c3ccb3b4ea186248fbd26af0d70l_zh_CNs_d_m/ddwx/res/images/MD_camera.png" xid="camera" __cid="cqQNn63" class="cqQNn63"/>  
+                  <input type="file" accept="image/*" name="camera" capture="camera" xid="fileUpload" __cid="cqQNn63" class="cqQNn63"/> 
+                </li> 
+              </div>  
+              <div class="x-col cqQNn63" xid="col4" style="padding:0px 0px 0px 0px;" __cid="cqQNn63" data-bind="visible:showImgFolder"> 
+                <li xid="li1" style="padding-left:10px" __cid="cqQNn63" class="cqQNn63"> 
+                  <img src="@justepContextPath@/v_5336a89e6e0049f88dff271050587420l_zh_CNs_d_m/ddwx/res/images/MD_photo.png" xid="image2" __cid="cqQNn63" class="cqQNn63"/>  
+                  <input type="file" accept="image/*" name="file" xid="fileUpload2" __cid="cqQNn63" class="cqQNn63"/> 
+                </li> 
+              </div> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cqQNn63" xid="orderImgList" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;autoLoad&quot;:false,&quot;data&quot;:&quot;orderImgData&quot;}" __cid="cqQNn63"> 
+            <ul class="x-list-template hide cqQNn63" xid="listTemplateUl2" style="margin-bottom:0px;" __cid="cqQNn63" data-bind="foreach:{data:$model.foreach_orderImgList($element),afterRender:$model.foreach_afterRender_orderImgList.bind($model,$element)}"> 
+              <li xid="li2" style="margin-right:3px;height:70px;width:70px;" class="brick cqQNn63" __cid="cqQNn63"> 
+                <a href="javascript:void(0)" data-size="" data-med="" data-med-size="" xid="a2" __cid="cqQNn63" class="cqQNn63"> 
+                  <img src="" xid="image1" __cid="cqQNn63" class="cqQNn63" data-bind="attr:{src:$model.toImgUrl(val(&quot;paththumb&quot;))},event:{click:$model._callModelFn.bind($model, 'image1Click')}"/> 
+                </a> 
+              </li> 
+            </ul> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cqQNn63" class="cqQNn63">.x-panel.pcQ7VrMz-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcQ7VrMz-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcQ7VrMz-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcQ7VrMz-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcQ7VrMz-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcQ7VrMz-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcQ7VrMz-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcQ7VrMz-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcQ7VrMz-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div>  
+  <div xmlns="" id="gallery_imageview" class="pswp cqQNn63" tabindex="-1" role="dialog" aria-hidden="true" style="opacity:1;z-index:10000;" xid="div2" __cid="cqQNn63"> 
+    <div class="pswp__bg cqQNn63" xid="div3" __cid="cqQNn63"/>  
+    <div class="pswp__scroll-wrap cqQNn63" xid="div4" __cid="cqQNn63"> 
+      <div class="pswp__container cqQNn63" xid="div5" __cid="cqQNn63"> 
+        <div class="pswp__item cqQNn63" xid="div6" __cid="cqQNn63"/>  
+        <div class="pswp__item cqQNn63" xid="div7" __cid="cqQNn63"/>  
+        <div class="pswp__item cqQNn63" xid="div8" __cid="cqQNn63"/> 
+      </div>  
+      <div class="pswp__ui pswp__ui--hidden cqQNn63" style="height:44px;" xid="div9" __cid="cqQNn63"> 
+        <div class="pswp__top-bar cqQNn63" xid="div10" __cid="cqQNn63"> 
+          <div class="pswp__counter cqQNn63" xid="div11" __cid="cqQNn63"/>  
+          <button class="pswp__button pswp__button--close cqQNn63" title="Close (Esc)" xid="button1" __cid="cqQNn63"/>  
+          <button class="pswp__button pswp__button--share cqQNn63" title="Share" xid="button2" __cid="cqQNn63"/>  
+          <button class="pswp__button pswp__button--fs cqQNn63" title="Toggle fullscreen" xid="button3" __cid="cqQNn63"/>  
+          <button class="pswp__button pswp__button--zoom cqQNn63" title="Zoom in/out" xid="button4" __cid="cqQNn63"/>  
+          <button class="pswp__button pswp__button--delete cqQNn63" title="Delete" __cid="cqQNn63"/>  
+          <div class="pswp__preloader cqQNn63" xid="div12" __cid="cqQNn63"> 
+            <div class="pswp__preloader__icn cqQNn63" xid="div13" __cid="cqQNn63"> 
+              <div class="pswp__preloader__cut cqQNn63" xid="div14" __cid="cqQNn63"> 
+                <div class="pswp__preloader__donut cqQNn63" xid="div15" __cid="cqQNn63"/> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap cqQNn63" xid="div16" __cid="cqQNn63"> 
+          <div class="pswp__share-tooltip cqQNn63" xid="div17" __cid="cqQNn63"/> 
+        </div>  
+        <button class="pswp__button pswp__button--arrow--left cqQNn63" title="Previous (arrow left)" xid="button5" __cid="cqQNn63"/>  
+        <button class="pswp__button pswp__button--arrow--right cqQNn63" title="Next (arrow right)" xid="button6" __cid="cqQNn63"/>  
+        <div class="pswp__caption cqQNn63" xid="div18" __cid="cqQNn63"> 
+          <div class="pswp__caption__center cqQNn63" xid="div19" __cid="cqQNn63"/> 
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+</div>

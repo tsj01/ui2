@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cFZ7BZb" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cFZ7BZb" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/bootstrap/inputGroup/inputGroup,$model/UI2/system/components/justep/window/window,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">.x-output.cFZ7BZb{padding: 0px; margin: 0px} .account-list-line.cFZ7BZb{border-bottom: 1px solid lightgray; overflow: hidden} .account-list-line.cFZ7BZb:active{background-color: lightgray}</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cFZ7BZb" class="cFZ7BZb"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcamQVRz-iosstatusbar cFZ7BZb" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cFZ7BZb"> 
+    <div class="x-panel-top cFZ7BZb" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cFZ7BZb"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cFZ7BZb" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;回收单位&quot;}" __cid="cFZ7BZb"> 
+        <div class="x-titlebar-left cFZ7BZb" __cid="cFZ7BZb"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cFZ7BZb" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cFZ7BZb"> 
+            <i class="icon-chevron-left cFZ7BZb" __cid="cFZ7BZb"/>  
+            <span __cid="cFZ7BZb" class="cFZ7BZb"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cFZ7BZb" __cid="cFZ7BZb">回收单位</div>  
+        <div class="x-titlebar-right  cFZ7BZb" __cid="cFZ7BZb"> 
+          <div class="empty cFZ7BZb" __cid="cFZ7BZb"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content  x-scroll-view cFZ7BZb" xid="content1" _xid="C7C78D3804F00001BA62DA4868C711EB" style="bottom: 0px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cFZ7BZb"> 
+      <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcv2AVje-iosstatusbar cFZ7BZb" xid="panel2" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cFZ7BZb"> 
+        <div class="x-panel-top cFZ7BZb" xid="top2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cFZ7BZb"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cFZ7BZb" xid="row9" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cFZ7BZb"> 
+            <div class="x-col cFZ7BZb" xid="col21" __cid="cFZ7BZb"> 
+              <div class="input-group cFZ7BZb" component="$model/UI2/system/components/bootstrap/inputGroup/inputGroup" xid="inputGroup1" data-bind="component:{name:'$model/UI2/system/components/bootstrap/inputGroup/inputGroup'}" __cid="cFZ7BZb"> 
+                <input type="text" class="form-control cFZ7BZb" component="$model/UI2/system/components/justep/input/input" xid="searchInput" data-bind="component:{ref:searchFact,name:'$model/UI2/system/components/justep/input/input'}" __cid="cFZ7BZb"/>  
+                <div xid="div10" class="input-group-btn cFZ7BZb" __cid="cFZ7BZb"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-icon cFZ7BZb" xid="button4" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'factData.refresh'}" data-config="{&quot;icon&quot;:&quot;icon-android-search&quot;,&quot;label&quot;:&quot;button&quot;}" __cid="cFZ7BZb"> 
+                    <i xid="i6" class="icon-android-search cFZ7BZb" __cid="cFZ7BZb"/>  
+                    <span xid="span14" __cid="cFZ7BZb" class="cFZ7BZb"/> 
+                  </a> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-panel-content  x-scroll-view cFZ7BZb" xid="content2" _xid="C7C78E4677F00001B1F9AF40FFD1A920" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cFZ7BZb"> 
+          <div class="x-scroll cFZ7BZb" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView3" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" data-config="{&quot;autoPullUp&quot;:true}" __cid="cFZ7BZb"> 
+            <div class="x-content-center x-pull-down container cFZ7BZb" xid="div7" __cid="cFZ7BZb"> 
+              <i class="x-pull-down-img glyphicon x-icon-pull-down cFZ7BZb" xid="i4" __cid="cFZ7BZb"/>  
+              <span class="x-pull-down-label cFZ7BZb" xid="span11" __cid="cFZ7BZb">下拉刷新...</span> 
+            </div>  
+            <div class="x-scroll-content cFZ7BZb" xid="div8" __cid="cFZ7BZb"> 
+              <div component="$model/UI2/system/components/justep/list/list" class="x-list cFZ7BZb" xid="factList" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&quot;autoLoad&quot;:false,&quot;data&quot;:&quot;factData&quot;}" __cid="cFZ7BZb"> 
+                <ul class="x-list-template hide cFZ7BZb" xid="listTemplateUl6" __cid="cFZ7BZb" data-bind="foreach:{data:$model.foreach_factList($element),afterRender:$model.foreach_afterRender_factList.bind($model,$element)}"> 
+                  <li xid="li6" class="account-list-line cFZ7BZb" __cid="cFZ7BZb"> 
+                    <div component="$model/UI2/system/components/justep/row/row" class="x-row cFZ7BZb" xid="row11" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cFZ7BZb"> 
+                      <div class="x-col x-col-33 cFZ7BZb" xid="col27" __cid="cFZ7BZb"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output cFZ7BZb" xid="output12" data-bind="component:{ref:ref(&quot;name&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cFZ7BZb"/> 
+                      </div>  
+                      <div class="x-col cFZ7BZb" xid="col28" style="width:70%;" __cid="cFZ7BZb"> 
+                        <div component="$model/UI2/system/components/justep/output/output" class="x-output cFZ7BZb" xid="output13" data-bind="component:{ref:ref(&quot;addr&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="cFZ7BZb"/> 
+                      </div>  
+                      <div class="x-col x-col-fixed cFZ7BZb" xid="col29" style="width:auto;" __cid="cFZ7BZb"> 
+                        <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox cFZ7BZb" xid="checkbox1" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/checkbox'}" data-events="onChange:chkboxChg" __cid="cFZ7BZb"> 
+                          <input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" __cid="cFZ7BZb" class="cFZ7BZb"></input>  
+                          <label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="cFZ7BZb" class="cFZ7BZb"></label> 
+                        </span> 
+                      </div> 
+                    </div> 
+                  </li> 
+                </ul> 
+              </div> 
+            </div>  
+            <div class="x-content-center x-pull-up cFZ7BZb" xid="div9" __cid="cFZ7BZb"> 
+              <span class="x-pull-up-label cFZ7BZb" xid="span12" __cid="cFZ7BZb">加载更多...</span> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="x-panel-bottom cFZ7BZb" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cFZ7BZb"/>  
+        <style __cid="cFZ7BZb" class="cFZ7BZb">.x-panel.pcv2AVje-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcv2AVje-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcv2AVje-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcv2AVje-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcv2AVje-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcv2AVje-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcv2AVje-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcv2AVje-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcv2AVje-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+      </div> 
+    </div>  
+    <style __cid="cFZ7BZb" class="cFZ7BZb">.x-panel.pcamQVRz-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcamQVRz-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcamQVRz-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcamQVRz-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcamQVRz-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcamQVRz-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcamQVRz-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcamQVRz-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcamQVRz-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver1" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:windowReceiver1Receive" __cid="cFZ7BZb" class="cFZ7BZb"/> 
+</div>

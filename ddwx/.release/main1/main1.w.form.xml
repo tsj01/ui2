@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window crIBBzu" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="crIBBzu" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/bootstrap/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.grid9.crIBBzu .row.crIBBzu{margin-left: 0; margin-right: 0} .grid9.crIBBzu .cell.crIBBzu{padding: 0; overflow: hidden} .grid9.crIBBzu .cell.crIBBzu .card.crIBBzu i.crIBBzu{margin-top: 5px; margin-bottom: 10px; font-size: 32px; color: rgb(136, 136, 136)} .portal-main.crIBBzu .x-contents.crIBBzu &gt; .x-contents-content.crIBBzu{overflow: hidden} .grid9.crIBBzu .btn.crIBBzu{width: 100%} .x-portal.crIBBzu .x-contents[xid="carousel"].crIBBzu{height: 288px} .iosstatusbar.crIBBzu .x-portal.crIBBzu .x-contents[xid="carousel"].crIBBzu{height: 308px} .x-portal.crIBBzu &gt; .x-panel-top.crIBBzu{z-index: 100} .x-portal.crIBBzu &gt; .x-panel-top.crIBBzu &gt; .x-titlebar.crIBBzu{background-color: transparent; color: white} .imgBox.crIBBzu{position: relative; float: top; top: 0} .liSty.crIBBzu{position: absolute; top: 60px; left: 60px} angleBox.crIBBzu{width: 50px; float: left; position: relative} .angle.crIBBzu{position: absolute; right: 80px; top: 0; background-color: rgb(199, 28, 34)}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad" __cid="crIBBzu" class="crIBBzu"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcrARBba-iosstatusbar crIBBzu" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="crIBBzu"> 
+    <div class="x-panel-content crIBBzu" xid="content4" style="top:0px;" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="crIBBzu"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents x-full crIBBzu" xid="contents1" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="crIBBzu"> 
+        <div class="x-contents-content active crIBBzu" xid="content2" style="background-color:#fafafa;" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="crIBBzu"> 
+          <div class="x-panel-top crIBBzu" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="crIBBzu"> 
+            <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar crIBBzu" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;首页&quot;}" __cid="crIBBzu"> 
+              <div class="x-titlebar-left crIBBzu" xid="left1" __cid="crIBBzu"/>  
+              <div class="x-titlebar-title crIBBzu" xid="title1" __cid="crIBBzu">微信测试页</div>  
+              <div class="x-titlebar-right  crIBBzu" xid="right1" __cid="crIBBzu">
+                <div class="empty crIBBzu" __cid="crIBBzu"/>
+              </div>
+            </div> 
+          </div>  
+          <div class="x-panel-content crIBBzu" xid="content1" style="height:628px;" __cid="crIBBzu"> 
+            <div component="$model/UI2/system/components/bootstrap/row/row" class="row crIBBzu" xid="row2" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="crIBBzu"> 
+              <div class="col col-xs-4 crIBBzu" xid="col5" __cid="crIBBzu">
+                <label xid="label1" __cid="crIBBzu" class="crIBBzu"/>
+              </div>  
+              <div class="col col-xs-4 crIBBzu" xid="col6" __cid="crIBBzu"/>  
+              <div class="col col-xs-4 crIBBzu" xid="col7" __cid="crIBBzu"/>
+            </div>
+            <div component="$model/UI2/system/components/bootstrap/row/row" class="row grid9 crIBBzu" xid="row1" style="width:102%;" data-bind="component:{name:'$model/UI2/system/components/bootstrap/row/row'}" __cid="crIBBzu"> 
+              <div class="col col-xs-6 col-sm-6 col-md-6 col-lg-1 cell crIBBzu" xid="col1" __cid="crIBBzu"> 
+                <div class="card crIBBzu" xid="div1" __cid="crIBBzu"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top crIBBzu" xid="button1" url="/demo/native/geolocation/mainActivity.w" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnCheckJsApiClick" data-config="{&quot;icon&quot;:&quot;icon-edit&quot;,&quot;label&quot;:&quot;checkJsApi&quot;}" __cid="crIBBzu"> 
+                    <i xid="i1" class="linear linear-cog icon-edit crIBBzu" style="color:#2fa4e7;" __cid="crIBBzu">
+                      <li xid="li2" class="active liSty crIBBzu" style="color:#FF0000;font-family:Arial;top:10%;left:67%;font-size:medium;" __cid="crIBBzu">20</li>
+                    </i>  
+                    <span xid="span1" __cid="crIBBzu" class="crIBBzu">checkJsApi</span>
+                  </a> 
+                </div> 
+              </div>  
+              <div class="col col-xs-6 col-sm-6 col-md-6 col-lg-1 cell crIBBzu" xid="col3" __cid="crIBBzu"> 
+                <div class="card angleBox crIBBzu" xid="div3" __cid="crIBBzu"> 
+                  <span class="badge angle crIBBzu" __cid="crIBBzu">4</span>  
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top crIBBzu" xid="btnScan" url="/demo/native/geolocation/mainActivity.w" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnScanClick" data-config="{&quot;icon&quot;:&quot;icon-android-storage&quot;,&quot;label&quot;:&quot;扫一扫&quot;}" __cid="crIBBzu"> 
+                    <i xid="i5" class="linear linear-camera icon-android-storage crIBBzu" style="color:#2fa4e7;" __cid="crIBBzu"/>  
+                    <span xid="span4" __cid="crIBBzu" class="crIBBzu">扫一扫</span>
+                  </a> 
+                </div> 
+              </div>  
+              <div class="col col-xs-6 col-sm-6 col-md-6 col-lg-1 cell crIBBzu" xid="col4" __cid="crIBBzu"> 
+                <div class="card crIBBzu" xid="div4" __cid="crIBBzu"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top crIBBzu" xid="btnChooseImg" url="/demo/native/geolocation/mainActivity.w" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnChooseImgClick" data-config="{&quot;icon&quot;:&quot;icon-android-clock&quot;,&quot;label&quot;:&quot;拍照&quot;}" __cid="crIBBzu"> 
+                    <i xid="i6" class="linear linear-camera crIBBzu" style="color:#2fa4e7;" __cid="crIBBzu"/>  
+                    <span xid="span5" __cid="crIBBzu" class="crIBBzu">拍照</span>
+                  </a> 
+                </div> 
+              </div>  
+              <div class="col col-xs-6 col-sm-6 col-md-6 col-lg-1 cell crIBBzu" xid="col2" __cid="crIBBzu"> 
+                <div class="card crIBBzu" xid="div2" __cid="crIBBzu"> 
+                  <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-icon-top crIBBzu" xid="button2" url="/demo/native/geolocation/mainActivity.w" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&quot;icon&quot;:&quot;icon-android-earth&quot;,&quot;label&quot;:&quot;已派单申请&quot;}" __cid="crIBBzu"> 
+                    <i xid="i4" class="icon-model-s icon-android-earth crIBBzu" style="color:#2fa4e7;" __cid="crIBBzu"/>  
+                    <span xid="span6" __cid="crIBBzu" class="crIBBzu">已派单申请</span>
+                  </a> 
+                </div> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div>
+    </div>
+    <style __cid="crIBBzu" class="crIBBzu">.x-panel.pcrARBba-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcrARBba-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcrARBba-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcrARBba-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcrARBba-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcrARBba-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcrARBba-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcrARBba-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcrARBba-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

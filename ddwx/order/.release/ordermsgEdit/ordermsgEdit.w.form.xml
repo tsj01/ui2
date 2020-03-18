@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window cfia2Ez" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cfia2Ez" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/scrollView/scrollView,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/textarea/textarea,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">
+  <xhtml:style xmlns:xhtml="http://www.w3.org/1999/xhtml">.h3.cfia2Ez{margin: 0; color: inherit; font-size: 24px} .x-output.cfia2Ez{padding: 0px; margin: 0px; font-size: 12px} .account-list-line.cfia2Ez{border-bottom: 1px solid lightgray; overflow: hidden} .account-list-line.cfia2Ez:active{background-color: lightgray} label.cfia2Ez{font-size: 12px} .free-wall.cfia2Ez{margin-left: 5px; margin-right: 5px} .brick.cfia2Ez{background-color: white; float: left; cursor: default; overflow: hidden; background-repeat: no-repeat; background-size: cover; background-position: center} .brick.cfia2Ez img.cfia2Ez{width: 100%; height: 100%} .list-img.cfia2Ez li.cfia2Ez{position: relative; margin-right: 0px; list-style: none} .list-img.cfia2Ez img.cfia2Ez{display: inline-block; width: 50px; height: 48px} .list-img.cfia2Ez input.cfia2Ez{position: absolute; top: 0; left: 0; z-index: 10; width: 50px; height: 48px; opacity: 0}</xhtml:style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cfia2Ez" class="cfia2Ez"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcIFZFF3-iosstatusbar cfia2Ez" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cfia2Ez"> 
+    <div class="x-panel-top cfia2Ez" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cfia2Ez"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cfia2Ez" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="cfia2Ez"> 
+        <div class="x-titlebar-left cfia2Ez" xid="left1" __cid="cfia2Ez"></div>  
+        <div class="x-titlebar-title cfia2Ez" xid="title1" __cid="cfia2Ez"> 
+          <span xid="span1" __cid="cfia2Ez" class="cfia2Ez">留言信息</span>
+        </div>  
+        <div class="x-titlebar-right  cfia2Ez" xid="right1" __cid="cfia2Ez">
+          <div class="empty cfia2Ez" __cid="cfia2Ez"/>
+        </div>
+      </div> 
+    </div>  
+    <div class="x-panel-content cfia2Ez" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cfia2Ez"> 
+      <div class="x-scroll cfia2Ez" component="$model/UI2/system/components/justep/scrollView/scrollView" xid="scrollView2" data-bind="component:{name:'$model/UI2/system/components/justep/scrollView/scrollView'}" __cid="cfia2Ez"> 
+        <div class="x-scroll-content cfia2Ez" xid="div8" __cid="cfia2Ez"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cfia2Ez" xid="row17" style="padding:0px 10px 0px 0px;margin:10px 0px 0px 0px;height:30px;border-bottom-style:solid;border-bottom-width:0px;border-bottom-color:#C0C0C0;" bind-visible="$model.showTitle" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfia2Ez"> 
+            <div class="x-col cfia2Ez" xid="col22" __cid="cfia2Ez">
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cfia2Ez" xid="labelEdit15" style="margin-left:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cfia2Ez"> 
+                <label class="x-label cfia2Ez" xid="label16" style="padding-left:6px;width:70px;" __cid="cfia2Ez">标　　题</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm x-edit cfia2Ez" xid="input13" style="padding-right:6px;height:24px;" data-bind="component:{ref:$model.data1.ref(&quot;title&quot;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;maxLength&quot;:&quot;30&quot;}" __cid="cfia2Ez"/>
+              </div>
+            </div> 
+          </div>
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cfia2Ez" xid="row2" style="padding:0px 10px 0px 0px;margin:10px 0px 0px 0px;height:30px;border-bottom-style:solid;border-bottom-width:0px;border-bottom-color:#C0C0C0;" bind-visible="$model.showTitle.get()==false" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfia2Ez"> 
+            <div class="x-col cfia2Ez" xid="col1" __cid="cfia2Ez"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cfia2Ez" xid="labelEdit3" style="margin-left:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cfia2Ez"> 
+                <label class="x-label cfia2Ez" xid="label3" style="padding-left:6px;width:70px;" __cid="cfia2Ez">标　　题</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm x-edit cfia2Ez" xid="input1" style="padding-right:6px;height:24px;" data-bind="component:{ref:$model.data1.ref(&quot;title&quot;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;readonly&quot;:true}" __cid="cfia2Ez"/>
+              </div> 
+            </div> 
+          </div>
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cfia2Ez" xid="row4" style="padding:0px 10px 0px 0px;margin:10px 0px 0px 0px;height:60px;" bind-visible="$model.showContent" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfia2Ez"> 
+            <div class="x-col cfia2Ez" xid="col14" __cid="cfia2Ez"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cfia2Ez" xid="labelEdit1" style="margin-left:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cfia2Ez"> 
+                <label class="x-label cfia2Ez" xid="label1" style="padding-left:6px;width:70px;" __cid="cfia2Ez">内　　容</label>  
+                <textarea maxlength="200" component="$model/UI2/system/components/justep/textarea/textarea" class="form-control x-edit cfia2Ez" xid="textarea1" data-bind="component:{ref:$model.data1.ref(&quot;content&quot;),name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="cfia2Ez"/>
+              </div>
+            </div> 
+          </div>
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cfia2Ez" xid="row3" style="padding:0px 10px 0px 0px;margin:10px 0px 0px 0px;height:60px;" bind-visible="$model.showContent.get()==false" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfia2Ez"> 
+            <div class="x-col cfia2Ez" xid="col2" __cid="cfia2Ez"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cfia2Ez" xid="labelEdit4" style="margin-left:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cfia2Ez"> 
+                <label class="x-label cfia2Ez" xid="label4" style="padding-left:6px;width:70px;" __cid="cfia2Ez">内　　容</label>  
+                <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control x-edit cfia2Ez" xid="textarea3" readonly="true" data-bind="component:{ref:$model.data1.ref(&quot;content&quot;),name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="cfia2Ez"/>
+              </div> 
+            </div> 
+          </div>
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cfia2Ez" xid="row5" style="padding:0px 10px 0px 0px;margin:10px 0px 0px 0px;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfia2Ez"> 
+            <div class="x-col cfia2Ez" xid="col9" __cid="cfia2Ez"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cfia2Ez" xid="labelEdit13" style="margin-left:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cfia2Ez"> 
+                <label class="x-label cfia2Ez" xid="label13" style="padding-left:6px;width:70px;" __cid="cfia2Ez">留言人</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm x-edit cfia2Ez" xid="input11" style="padding-right:6px;height:24px;" data-bind="component:{ref:$model.data1.ref(&quot;sopr&quot;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;readonly&quot;:true}" __cid="cfia2Ez"/>
+              </div>
+            </div> 
+          </div>
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cfia2Ez" xid="row6" style="padding:0px 0px 0px 0px;margin:10px 0px 0px 0px;height:30px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfia2Ez"> 
+            <div class="x-col cfia2Ez" xid="col8" __cid="cfia2Ez"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cfia2Ez" xid="labelEdit12" style="margin-left:10px;margin-right:10px;border-bottom-style:solid;border-bottom-width:1px;border-bottom-color:#C0C0C0;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cfia2Ez"> 
+                <label class="x-label cfia2Ez" xid="label12" style="padding-left:6px;width:70px;" __cid="cfia2Ez">留言时间</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm x-edit cfia2Ez" xid="input10" style="padding-right:6px;height:24px;" data-bind="component:{ref:$model.data1.ref(&quot;sdt&quot;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;readonly&quot;:true}" __cid="cfia2Ez"/>
+              </div>
+            </div> 
+          </div>
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cfia2Ez" xid="row20" style="padding:0px 0px 0px 0px;margin:10px 0px 0px 0px;height:60px;" bind-visible="$model.showDeal" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfia2Ez"> 
+            <div class="x-col cfia2Ez" xid="col29" __cid="cfia2Ez"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cfia2Ez" xid="labelEdit2" style="margin-left:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cfia2Ez"> 
+                <label class="x-label cfia2Ez" xid="label2" style="padding-left:6px;width:70px;" __cid="cfia2Ez">处理意见</label>  
+                <textarea component="$model/UI2/system/components/justep/textarea/textarea" class="form-control x-edit cfia2Ez" xid="textarea2" data-bind="component:{ref:$model.data1.ref(&quot;dmemo&quot;),name:'$model/UI2/system/components/justep/textarea/textarea'}" __cid="cfia2Ez"/>
+              </div>
+            </div> 
+          </div>
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cfia2Ez" xid="row19" style="padding:0px 0px 0px 0px;margin:10px 0px 0px 0px;height:30px;" bind-visible="$model.showDeal" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfia2Ez"> 
+            <div class="x-col cfia2Ez" xid="col28" __cid="cfia2Ez"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cfia2Ez" xid="labelEdit21" style="margin-left:10px;margin-right:10px;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cfia2Ez"> 
+                <label class="x-label cfia2Ez" xid="label14" style="padding-left:6px;width:70px;" __cid="cfia2Ez">处理人</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm x-edit cfia2Ez" xid="input4" style="padding-right:6px;height:24px;" data-bind="component:{ref:$model.data1.ref(&quot;dopr&quot;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;readonly&quot;:true}" __cid="cfia2Ez"/> 
+              </div> 
+            </div> 
+          </div>
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row cfia2Ez" xid="row21" style="padding:0px 0px 0px 0px;margin:10px 0px 0px 0px;height:30px;" bind-visible="$model.showDeal" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfia2Ez"> 
+            <div class="x-col cfia2Ez" xid="col30" __cid="cfia2Ez"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 cfia2Ez" xid="labelEdit23" style="margin-left:10px;margin-right:10px;border-bottom-style:solid;border-bottom-width:1px;border-bottom-color:#C0C0C0;" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="cfia2Ez"> 
+                <label class="x-label cfia2Ez" xid="label22" style="padding-left:6px;width:70px;" __cid="cfia2Ez">处理时间</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm x-edit cfia2Ez" xid="input5" style="padding-right:6px;height:24px;" data-bind="component:{ref:$model.data1.ref(&quot;ddt&quot;),name:'$model/UI2/system/components/justep/input/input'}" data-config="{&quot;readonly&quot;:true}" __cid="cfia2Ez"/> 
+              </div> 
+            </div> 
+          </div> 
+        </div> 
+      </div>
+    </div>  
+    <div class="x-panel-bottom cfia2Ez" xid="bottom2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cfia2Ez"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cfia2Ez" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cfia2Ez"> 
+        <div class="x-col cfia2Ez" xid="col3" __cid="cfia2Ez"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-sm btn-block center-block cfia2Ez" xid="btnBack" style="background-color:#FFFFFF;color:#1E90FF;border-style:solid solid solid solid;border-width:1px 1px 1px 1px;height:32px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnBackClick" data-config="{&quot;icon&quot;:&quot;icon-android-arrow-back&quot;,&quot;label&quot;:&quot;返回&quot;}" __cid="cfia2Ez"> 
+            <i xid="i2" class="icon-android-arrow-back cfia2Ez" __cid="cfia2Ez"/>  
+            <span xid="span3" __cid="cfia2Ez" class="cfia2Ez">返回</span>
+          </a> 
+        </div>  
+        <div class="x-col cfia2Ez" xid="col19" bind-visible="$model.showSubmitBtn" __cid="cfia2Ez">
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-sm btn-block center-block cfia2Ez" xid="btnSubmit" style="background-color:#FFFFFF;color:#1E90FF;border-style:solid solid solid solid;border-width:1px 1px 1px 1px;height:32px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnSubmitClick" data-config="{&quot;icon&quot;:&quot;icon-android-checkmark&quot;,&quot;label&quot;:&quot;提交&quot;}" __cid="cfia2Ez"> 
+            <i xid="i10" class="icon-android-checkmark cfia2Ez" __cid="cfia2Ez"/>  
+            <span xid="span11" __cid="cfia2Ez" class="cfia2Ez">提交</span>
+          </a> 
+        </div> 
+      </div>
+    </div>
+    <style __cid="cfia2Ez" class="cfia2Ez">.x-panel.pcIFZFF3-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcIFZFF3-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcIFZFF3-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcIFZFF3-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcIFZFF3-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcIFZFF3-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcIFZFF3-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcIFZFF3-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcIFZFF3-iosstatusbar &gt;.x-panel-content {top: 48px;}</style>
+  </div>  
+  <div id="gallery_neworder" class="pswp cfia2Ez" tabindex="-1" role="dialog" aria-hidden="true" style="opacity:1;z-index:10000;" xid="div11" __cid="cfia2Ez"> 
+    <div class="pswp__bg cfia2Ez" xid="div10" __cid="cfia2Ez"/>  
+    <div class="pswp__scroll-wrap cfia2Ez" xid="div9" __cid="cfia2Ez"> 
+      <div class="pswp__container cfia2Ez" xid="div7" __cid="cfia2Ez"> 
+        <div class="pswp__item cfia2Ez" xid="div6" __cid="cfia2Ez"/>  
+        <div class="pswp__item cfia2Ez" xid="div7" __cid="cfia2Ez"/>  
+        <div class="pswp__item cfia2Ez" xid="div6" __cid="cfia2Ez"/>
+      </div>  
+      <div class="pswp__ui pswp__ui--hidden cfia2Ez" style="height:44px;" xid="div9" __cid="cfia2Ez"> 
+        <div class="pswp__top-bar cfia2Ez" xid="div10" __cid="cfia2Ez"> 
+          <div class="pswp__counter cfia2Ez" xid="div11" __cid="cfia2Ez"/>  
+          <button class="pswp__button pswp__button--close cfia2Ez" title="Close (Esc)" xid="button1" __cid="cfia2Ez"/>  
+          <button class="pswp__button pswp__button--share cfia2Ez" title="Share" xid="button1" __cid="cfia2Ez"/>  
+          <button class="pswp__button pswp__button--fs cfia2Ez" title="Toggle fullscreen" xid="button3" __cid="cfia2Ez"/>  
+          <button class="pswp__button pswp__button--zoom cfia2Ez" title="Zoom in/out" xid="button4" __cid="cfia2Ez"/>  
+          <button class="pswp__button pswp__button--delete cfia2Ez" title="Delete" __cid="cfia2Ez"/>  
+          <div class="pswp__preloader cfia2Ez" xid="div12" __cid="cfia2Ez"> 
+            <div class="pswp__preloader__icn cfia2Ez" xid="div13" __cid="cfia2Ez"> 
+              <div class="pswp__preloader__cut cfia2Ez" xid="div14" __cid="cfia2Ez"> 
+                <div class="pswp__preloader__donut cfia2Ez" xid="div15" __cid="cfia2Ez"/>
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap cfia2Ez" xid="div16" __cid="cfia2Ez"> 
+          <div class="pswp__share-tooltip cfia2Ez" xid="div17" __cid="cfia2Ez"/>
+        </div>  
+        <button class="pswp__button pswp__button--arrow--left cfia2Ez" title="Previous (arrow left)" xid="button5" __cid="cfia2Ez"/>  
+        <button class="pswp__button pswp__button--arrow--right cfia2Ez" title="Next (arrow right)" xid="button6" __cid="cfia2Ez"/>  
+        <div class="pswp__caption cfia2Ez" xid="div18" __cid="cfia2Ez"> 
+          <div class="pswp__caption__center cfia2Ez" xid="div19" __cid="cfia2Ez"/>
+        </div> 
+      </div> 
+    </div> 
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver1" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:windowReceiver1Receive" __cid="cfia2Ez" class="cfia2Ez"/>
+</div>

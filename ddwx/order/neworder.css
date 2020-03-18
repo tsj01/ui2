@@ -1,0 +1,104 @@
+.h3 {
+	margin : 0;
+	color : inherit;
+	font-size : 24px;
+}
+.x-output {
+	padding : 0px;
+	margin:0px;
+	font-size : 12px;
+}
+.account-list-line {
+	border-bottom: 1px solid lightgray;	
+	overflow: hidden;
+}
+.account-list-line:active {
+	background-color: lightgray;
+}
+label{
+	font-size : 12px;
+}
+/* .account-income {
+	color : green;
+}
+.account-payout {
+	color : brown;
+}
+ */
+ 
+.free-wall { margin-left: 5px;margin-right: 5px}
+.brick {
+	background-color: white;
+	float: left;
+	cursor: default;
+	overflow: hidden;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.brick img{ width:100%; height:100%;}
+.list-img li {
+            position: relative;
+            margin-right: 0px;
+            list-style: none;
+        }
+.list-img img {
+     display: inline-block;
+     width: 50px;
+     height:48px;    
+ }
+.list-img input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 50px;
+    height:48px;   
+    opacity: 0;    
+}
+.x-grid tr.jqgrow td{
+        padding:2px 4px 2px 4px;
+}
+.x-grid .x-grid-htable th {
+    background: #EEEEEE;
+    height: 10px;
+}
+
+.xui-grid td{
+height:10px;
+}
+
+/*-----------------------------------pop over-------------------------------------------------------*/
+.tb-nopadding{ padding:0;}
+
+/*弹出菜单*/
+/* .x-popOver-overlay{ height:600px; background-color:#000;} */
+.x-popOver .x-popOver-content{ width:100%; background-color:#fff; bottom:0!important;}
+.tb-sorting{ width:100%; background-color:#fff; border-top:1px solid #e1e1e1;}
+.tb-sorting .list-group-item{ margin:0 10px; padding-left:0;padding-right:0; border-radius:0; border-left:0; border-right:0; border-top:0;}
+.tb-sorting .list-group-item .tb-liBtn{ display:none;}
+.tb-sorting .list-group-item.current .tb-liBtn{ display:block;}
+.tb-sorting .list-group-item.current{ color:#ff4400;}
+/*筛选价格*/
+.list-group-item span{ padding-top:5px;}
+.list-group-item input{ background-color:#eee;}
+.list-group-item input:focus{ background-color:#fff;}
+/*筛选折扣*/
+.tb-typelist .col{ padding-left:0; padding-right:5px;}
+.tb-typelist .col h5{ line-height:30px; border-radius:5px; background-color:#eee; font-size:12px;}
+.tb-typelist .col h5.current{ background-color:#ff4400; color:#fff;}
+
+/*筛选按钮*/
+.tb-resetBtn.btn-default{ border-color:#ff4400; background-color:#fff; color:#ff4400; padding:4px 20px;}
+.tb-okBtn.btn{ margin-top:20px; background-color:#ff4400; border-radius:0; border:0;}
+
+/*单列内容*/
+.media{ margin-top:0; padding:10px; border-bottom:1px solid #e7e7e7; background-color:#fff;}
+
+/*双列内容*/
+.tb-twoColList{ padding:5px;}
+.tb-twoColList ul li{ margin-bottom:15px; padding:5px; background-color:#fff;}
+
+
+
+

@@ -1,0 +1,28 @@
+window.__justep.__ResourceEngine.loadCss([{url: '/UI2/v_af8723ed68fa49cd89397e2e87f78b3dl_zh_CNs_d_m/system/components/bootstrap.min.css', include: '$model/UI2/system/components/bootstrap/lib/css/bootstrap,$model/UI2/system/components/bootstrap/lib/css/bootstrap-theme'},{url: '/UI2/v_638047c112d54ebdb9b18f347f6fb391l_zh_CNs_d_m/system/components/comp.min.css', include: '$model/UI2/system/components/justep/lib/css2/dataControl,$model/UI2/system/components/justep/input/css/datePickerPC,$model/UI2/system/components/justep/messageDialog/css/messageDialog,$model/UI2/system/components/justep/lib/css3/round,$model/UI2/system/components/justep/input/css/datePicker,$model/UI2/system/components/justep/row/css/row,$model/UI2/system/components/justep/dataTables/css/responsive,$model/UI2/system/components/justep/attachment/css/attachment,$model/UI2/system/components/justep/barcode/css/barcodeImage,$model/UI2/system/components/bootstrap/dropdown/css/dropdown,$model/UI2/system/components/justep/contents/css/contents,$model/UI2/system/components/justep/common/css/forms,$model/UI2/system/components/justep/dataTables/css/responsive,$model/UI2/system/components/justep/locker/css/locker,$model/UI2/system/components/justep/menu/css/menu,$model/UI2/system/components/justep/scrollView/css/scrollView,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/dialog/css/dialog,$model/UI2/system/components/justep/bar/css/bar,$model/UI2/system/components/justep/popMenu/css/popMenu,$model/UI2/system/components/justep/lib/css/icons,$model/UI2/system/components/justep/lib/css4/e-commerce,$model/UI2/system/components/justep/toolBar/css/toolBar,$model/UI2/system/components/justep/popOver/css/popOver,$model/UI2/system/components/justep/panel/css/panel,$model/UI2/system/components/bootstrap/carousel/css/carousel,$model/UI2/system/components/justep/wing/css/wing,$model/UI2/system/components/bootstrap/scrollSpy/css/scrollSpy,$model/UI2/system/components/justep/titleBar/css/titleBar,$model/UI2/system/components/justep/lib/css1/linear,$model/UI2/system/components/justep/numberSelect/css/numberList,$model/UI2/system/components/justep/list/css/list,$model/UI2/system/components/justep/dataTables/css/dataTables'}]);window.__justep.__ResourceEngine.loadJs(['/v_96e9992794344b24ac170ee205f98d70l_zh_CNs_d_m/system/components/comp2.min.js','/v_bf1f47c01be242b4a934ad402d0a9906l_zh_CNs_d_m/system/core.min.js','/v_6171621a2bab4ad6a5f3c39207dbcb3dl_zh_CNs_d_m/system/common.min.js','/v_3cd3779f0259469bbc50f7d41bf7be99l_zh_CNs_d_m/system/components/comp.min.js']);define(function(require){
+require('$model/UI2/system/components/justep/model/model');
+require('$model/UI2/system/components/justep/loadingBar/loadingBar');
+require('$model/UI2/system/components/justep/button/button');
+require('$model/UI2/system/components/justep/row/row');
+require('$model/UI2/system/components/justep/list/list');
+require('$model/UI2/system/components/justep/titleBar/titleBar');
+require('$model/UI2/system/components/justep/panel/child');
+require('$model/UI2/system/components/justep/data/data');
+require('$model/UI2/system/components/justep/window/window');
+require('$model/UI2/system/components/justep/panel/panel');
+require('$model/UI2/system/components/justep/dataTables/dataTables');
+var __parent1=require('$model/UI2/system/lib/base/modelBase'); 
+var __parent0=require('$model/UI2/ddwx/order/imageViewRepair'); 
+var __result = __parent1._extend(__parent0).extend({
+	constructor:function(contextUrl){
+	this.__sysParam='true';
+	this.__contextUrl=contextUrl;
+	this.__id='';
+	this.__cid='cABVZje';
+	this._flag_='e0023d69353dd4a22e9339d209483ce6';
+	this._wCfg_={};
+	this._appCfg_={};
+	this.callParent(contextUrl);
+ var __Data__ = require("$UI/system/components/justep/data/data");new __Data__(this,{"autoLoad":false,"autoNew":false,"confirmDelete":false,"confirmRefresh":false,"defCols":{"attcount":{"define":"attcount","name":"attcount","relation":"attcount","rules":{"integer":true},"type":"Integer"},"id":{"define":"id","name":"id","relation":"id","rules":{"integer":true},"type":"Integer"},"oid":{"define":"oid","name":"oid","relation":"oid","rules":{"integer":true},"type":"Integer"},"partname":{"define":"partname","name":"partname","relation":"partname","type":"String"},"status":{"define":"status","name":"status","relation":"status","type":"String"}},"directDelete":false,"events":{"onCustomRefresh":"orderdtlDataCustomRefresh"},"idColumn":"id","initData":"[]","isMain":false,"limit":-1,"xid":"orderdtlData"});
+ new __Data__(this,{"autoLoad":false,"autoNew":false,"confirmDelete":true,"confirmRefresh":true,"defCols":{"id":{"define":"id","name":"id","relation":"id","rules":{"integer":true},"type":"Integer"},"mdtm":{"define":"mdtm","name":"mdtm","relation":"mdtm","type":"String"},"mopr":{"define":"mopr","name":"mopr","relation":"mopr","type":"String"},"name":{"define":"name","name":"name","relation":"name","type":"String"},"partname":{"define":"partname","name":"partname","relation":"partname","type":"String"},"path":{"define":"path","label":"路径","name":"path","relation":"path","type":"String"},"paththumb":{"define":"paththumb","name":"paththumb","relation":"paththumb","type":"String"},"sizekb":{"define":"sizekb","name":"sizekb","relation":"sizekb","type":"String"},"sizewh":{"define":"sizewh","name":"sizewh","relation":"sizewh","type":"String"}},"directDelete":false,"events":{"onCustomRefresh":"orderImgDataCustomRefresh"},"idColumn":"id","initData":"[{\"id\":\"1\",\"path\":\"\",\"create_time\":\"2015-05-17\",\"create_username\":\"tsw\"}]","isMain":false,"limit":-1,"xid":"orderImgData"});
+}}); 
+return __result;});

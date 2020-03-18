@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<div component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cABVZje" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cABVZje" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/list/list,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/dataTables/dataTables,">
+  <style>.brick.cABVZje{background-color: white; float: left; cursor: default; overflow: hidden; background-repeat: no-repeat; background-size: cover; background-position: center} .brick.cABVZje img.cABVZje{width: 100%; height: 100%} .list-img.cABVZje li.cABVZje{position: relative; margin-right: 0px; list-style: none} .list-img.cABVZje img.cABVZje{display: inline-block; width: 50px; height: 48px} .list-img.cABVZje input.cABVZje{position: absolute; top: 0; left: 0; z-index: 10; width: 50px; height: 48px; opacity: 0}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="cABVZje" class="cABVZje"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcB3Enia-iosstatusbar cABVZje" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cABVZje"> 
+    <div class="x-panel-top cABVZje" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cABVZje"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cABVZje" xid="titlebar" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;标题&#34;}" __cid="cABVZje"> 
+        <div class="x-titlebar-left cABVZje" __cid="cABVZje"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cABVZje" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&#34;icon&#34;:&#34;icon-chevron-left&#34;,&#34;label&#34;:&#34;&#34;}" __cid="cABVZje"> 
+            <i class="icon-chevron-left cABVZje" __cid="cABVZje"></i>  
+            <span __cid="cABVZje" class="cABVZje"></span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cABVZje" __cid="cABVZje"></div>  
+        <div class="x-titlebar-right  cABVZje" __cid="cABVZje">
+          <div class="empty cABVZje" __cid="cABVZje"></div>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cABVZje" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cABVZje">
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cABVZje" xid="row1" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cABVZje"> 
+        <div class="x-col cABVZje" xid="col1" __cid="cABVZje">
+          <table component="$model/UI2/system/components/justep/dataTables/dataTables" flexibleWidth="false" responsive="true" rowActiveClass="active" class="table table-hover table-striped cABVZje" xid="dataTables1" data="orderdtlData" showRowNumber="false" data-config="{&#34;columns&#34;:[{&#34;className&#34;:&#34;x-dt-title-center x-dt-cell-left&#34;,&#34;orderable&#34;:false,&#34;sName&#34;:&#34;partname&#34;,&#34;title&#34;:&#34;配件名称&#34;,&#34;width&#34;:&#34;70%&#34;,&#34;xid&#34;:&#34;column5&#34;},{&#34;className&#34;:&#34;x-dt-title-center x-dt-cell-center&#34;,&#34;orderable&#34;:false,&#34;sName&#34;:&#34;attcount&#34;,&#34;title&#34;:&#34;照片&#34;,&#34;xid&#34;:&#34;column1&#34;}],&#34;data&#34;:&#34;orderdtlData&#34;,&#34;flexibleWidth&#34;:false,&#34;responsive&#34;:true,&#34;rowActiveClass&#34;:&#34;active&#34;,&#34;showRowNumber&#34;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/dataTables/dataTables'}" data-events="onRowSelect:dataTables1RowSelect" __cid="cABVZje"></table> 
+        </div>  
+        <div class="x-col x-col-fixed cABVZje" xid="col2" style="padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;width:148px;" __cid="cABVZje"> 
+          <div class="list-img cABVZje" style="height:48px;" __cid="cABVZje"> 
+            <div component="$model/UI2/system/components/justep/row/row" class="x-row cABVZje" xid="row2" style="padding:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cABVZje"> 
+              <div class="x-col cABVZje" xid="col3" style="padding:0px 0px 0px 0px;" __cid="cABVZje">
+                <li style="padding-left:10px" __cid="cABVZje" class="cABVZje"> 
+                  <img src="@justepContextPath@/v_ed0b3b4d02914e45b9c19341cb041b5bl_zh_CNs_d_m/ddwx/res/images/MD_camera.png" xid="imgCamera" __cid="cABVZje" class="cABVZje" data-bind="event:{click:$model._callModelFn.bind($model, 'imgCameraClick')}">  
+                  <input type="file" accept="image/*" name="camera" capture="camera" xid="fileUpload" __cid="cABVZje" class="cABVZje"> 
+                </li>
+              </div>  
+              <div class="x-col cABVZje" xid="col4" style="padding:0px 0px 0px 0px;" __cid="cABVZje" data-bind="visible:showImgFolder">
+                <li xid="li1" style="padding-left:10px" __cid="cABVZje" class="cABVZje"> 
+                  <img src="@justepContextPath@/v_0481fb99b2294656b654e0fbfcd9d18cl_zh_CNs_d_m/ddwx/res/images/MD_photo.png" xid="image2" __cid="cABVZje" class="cABVZje">  
+                  <input type="file" accept="image/*" name="file" xid="fileUpload2" __cid="cABVZje" class="cABVZje">
+                </li>
+              </div> 
+            </div>
+          </div>  
+          <div component="$model/UI2/system/components/justep/list/list" class="x-list cABVZje" xid="orderImgList" data-bind="component:{name:'$model/UI2/system/components/justep/list/list'}" data-config="{&#34;autoLoad&#34;:false,&#34;data&#34;:&#34;orderImgData&#34;}" __cid="cABVZje"> 
+            <ul class="x-list-template hide cABVZje" xid="listTemplateUl2" style="margin-bottom:0px;" __cid="cABVZje" data-bind="foreach:{data:$model.foreach_orderImgList($element),afterRender:$model.foreach_afterRender_orderImgList.bind($model,$element)}"> 
+              <li xid="li2" style="margin-right:3px;height:70px;width:70px;" class="brick cABVZje" __cid="cABVZje">
+                <a href="javascript:void(0)" data-size="" data-med="" data-med-size="" xid="a2" __cid="cABVZje" class="cABVZje"> 
+                  <img src="" xid="image1" __cid="cABVZje" class="cABVZje" data-bind="attr:{src:$model.toImgUrl(val(&#34;paththumb&#34;))},event:{click:$model._callModelFn.bind($model, 'image1Click')}">
+                </a>
+              </li>
+            </ul> 
+          </div>
+        </div> 
+      </div>
+    </div>  
+    <style __cid="cABVZje" class="cABVZje">.x-panel.pcB3Enia-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcB3Enia-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcB3Enia-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcB3Enia-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcB3Enia-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcB3Enia-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcB3Enia-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcB3Enia-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcB3Enia-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div>  
+  <div id="gallery_imageview" class="pswp cABVZje" tabindex="-1" role="dialog" aria-hidden="true" style="opacity:1;z-index:10000;" xid="div2" __cid="cABVZje"> 
+    <div class="pswp__bg cABVZje" xid="div3" __cid="cABVZje"></div>  
+    <div class="pswp__scroll-wrap cABVZje" xid="div4" __cid="cABVZje"> 
+      <div class="pswp__container cABVZje" xid="div5" __cid="cABVZje"> 
+        <div class="pswp__item cABVZje" xid="div6" __cid="cABVZje"></div>  
+        <div class="pswp__item cABVZje" xid="div7" __cid="cABVZje"></div>  
+        <div class="pswp__item cABVZje" xid="div8" __cid="cABVZje"></div>
+      </div>  
+      <div class="pswp__ui pswp__ui--hidden cABVZje" style="height:44px;" xid="div9" __cid="cABVZje"> 
+        <div class="pswp__top-bar cABVZje" xid="div10" __cid="cABVZje"> 
+          <div class="pswp__counter cABVZje" xid="div11" __cid="cABVZje"></div>  
+          <button class="pswp__button pswp__button--close cABVZje" title="Close (Esc)" xid="button1" __cid="cABVZje"></button>  
+          <button class="pswp__button pswp__button--share cABVZje" title="Share" xid="button2" __cid="cABVZje"></button>  
+          <button class="pswp__button pswp__button--fs cABVZje" title="Toggle fullscreen" xid="button3" __cid="cABVZje"></button>  
+          <button class="pswp__button pswp__button--zoom cABVZje" title="Zoom in/out" xid="button4" __cid="cABVZje"></button>  
+          <button class="pswp__button pswp__button--delete cABVZje" title="Delete" __cid="cABVZje"></button>  
+          <button class="pswp__button pswp__button--download cABVZje" title="Download" xid="btnDownload" __cid="cABVZje">&gt;</button>  
+          <div class="pswp__preloader cABVZje" xid="div12" __cid="cABVZje"> 
+            <div class="pswp__preloader__icn cABVZje" xid="div13" __cid="cABVZje"> 
+              <div class="pswp__preloader__cut cABVZje" xid="div14" __cid="cABVZje"> 
+                <div class="pswp__preloader__donut cABVZje" xid="div15" __cid="cABVZje"></div>
+              </div> 
+            </div> 
+          </div> 
+        </div>  
+        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap cABVZje" xid="div16" __cid="cABVZje"> 
+          <div class="pswp__share-tooltip cABVZje" xid="div17" __cid="cABVZje"></div>
+        </div>  
+        <button class="pswp__button pswp__button--arrow--left cABVZje" title="Previous (arrow left)" xid="button5" __cid="cABVZje"></button>  
+        <button class="pswp__button pswp__button--arrow--right cABVZje" title="Next (arrow right)" xid="button6" __cid="cABVZje"></button>  
+        <div class="pswp__caption cABVZje" xid="div18" __cid="cABVZje"> 
+          <div class="pswp__caption__center cABVZje" xid="div19" __cid="cABVZje"></div>
+        </div> 
+      </div> 
+    </div> 
+  </div>
+</div>

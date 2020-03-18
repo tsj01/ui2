@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window caYZN32" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="caYZN32" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/button/checkbox,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" data-events="onLoad:modelLoad;onParamsReceive:modelParamsReceive" __cid="caYZN32" class="caYZN32"/>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcjQJrYf-iosstatusbar caYZN32" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="caYZN32"> 
+    <div class="x-panel-top caYZN32" xid="top1" style="padding-top:3px" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="caYZN32"> 
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default caYZN32" xid="button1" style="background-color:#FFFFFF;color:#1E90FF;border-style:solid solid solid solid;border-width:1px 1px 1px 1px;height:32px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button1Click" data-config="{&quot;label&quot;:&quot;当前位置&quot;}" __cid="caYZN32"> 
+        <i xid="i1" __cid="caYZN32" class="caYZN32"/>  
+        <span xid="span1" style="vertical-align:top;" __cid="caYZN32" class="caYZN32">当前位置</span>
+      </a>
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default caYZN32" xid="button2" style="background-color:#FFFFFF;color:#1E90FF;border-style:solid solid solid solid;border-width:1px 1px 1px 1px;height:32px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:button2Click" data-config="{&quot;label&quot;:&quot;订单分布&quot;}" __cid="caYZN32"> 
+        <i xid="i2" __cid="caYZN32" class="caYZN32"/>  
+        <span xid="span2" style="vertical-align:top;" __cid="caYZN32" class="caYZN32">订单分布</span>
+      </a>  
+      <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox caYZN32" xid="chkShowLabel" label="显示标签" checkedValue="1" uncheckedValue="0" value="0" checked="false" data-config="{&quot;checked&quot;:false,&quot;checkedValue&quot;:&quot;1&quot;,&quot;disabled&quot;:false,&quot;label&quot;:&quot;显示标签&quot;,&quot;uncheckedValue&quot;:&quot;0&quot;,&quot;value&quot;:&quot;0&quot;}" data-bind="component:{ref:$model.showLabel,name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="caYZN32">
+        <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" value="0" __cid="caYZN32" class="caYZN32"/>
+        <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="caYZN32" class="caYZN32">显示标签</xhtml:label>
+      </span>  
+      <span component="$model/UI2/system/components/justep/button/checkbox" class="x-checkbox caYZN32" xid="chkShowD" label="显示预约" checkedValue="1" uncheckedValue="0" value="0" checked="false" data-config="{&quot;checked&quot;:false,&quot;checkedValue&quot;:&quot;1&quot;,&quot;disabled&quot;:false,&quot;label&quot;:&quot;显示预约&quot;,&quot;uncheckedValue&quot;:&quot;0&quot;,&quot;value&quot;:&quot;0&quot;}" data-bind="component:{ref:$model.showD,name:'$model/UI2/system/components/justep/button/checkbox'}" __cid="caYZN32">
+        <xhtml:input xmlns:xhtml="http://www.w3.org/1999/xhtml" type="checkbox" value="0" __cid="caYZN32" class="caYZN32"/>
+        <xhtml:label xmlns:xhtml="http://www.w3.org/1999/xhtml" __cid="caYZN32" class="caYZN32">显示预约</xhtml:label>
+      </span>
+    </div>
+    <div class="x-panel-content caYZN32" xid="mapArea" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="caYZN32">
+      <iframe xid="baiduMap" style="width:100%;height:100%;border:0;" __cid="caYZN32" class="caYZN32"/> 
+    </div>  
+    <style __cid="caYZN32" class="caYZN32">.x-panel.pcjQJrYf-iosstatusbar &gt;.x-panel-top {height: 42px;}.x-panel.pcjQJrYf-iosstatusbar &gt;.x-panel-content { top: 42px;bottom: nullpx;}.x-panel.pcjQJrYf-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcjQJrYf-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcjQJrYf-iosstatusbar &gt;.x-panel-top {height: 62px;}.iosstatusbar .x-panel.pcjQJrYf-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcjQJrYf-iosstatusbar &gt;.x-panel-content { top: 62px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcjQJrYf-iosstatusbar &gt;.x-panel-top {height: 42px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcjQJrYf-iosstatusbar &gt;.x-panel-content {top: 42px;}</style>
+  </div>  
+  <span component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="mapDataReceiver" style="top:61px;left:55px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:mapDataReceiverReceive" __cid="caYZN32" class="caYZN32"/>  
+  <span component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="windowDialog1" style="top:77px;left:158px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" __cid="caYZN32" class="caYZN32">
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay caYZN32" __cid="caYZN32"/>
+    <xhtml:div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog caYZN32" style="display:none;" __cid="caYZN32">
+      <xhtml:div class="x-dialog-title caYZN32" __cid="caYZN32">
+        <xhtml:button class="close caYZN32" __cid="caYZN32">
+          <xhtml:span __cid="caYZN32" class="caYZN32">×</xhtml:span>
+        </xhtml:button>
+        <xhtml:div class="x-dialog-title-text caYZN32" __cid="caYZN32"/>
+      </xhtml:div>
+      <xhtml:div class="x-dialog-body caYZN32" __cid="caYZN32"/>
+    </xhtml:div>
+  </span>
+</div>

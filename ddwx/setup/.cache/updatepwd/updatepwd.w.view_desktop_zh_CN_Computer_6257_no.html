@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<div component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window c7naEJ3" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="c7naEJ3" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/input/password,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,">
+  <style>.x-panel.c7naEJ3 > .x-panel-content.c7naEJ3{margin: 30px; padding: 5px}</style>  
+  <div component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="c7naEJ3" class="c7naEJ3"></div>  
+  <div component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcRzYJV3-iosstatusbar c7naEJ3" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="c7naEJ3"> 
+    <div class="x-panel-top c7naEJ3" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c7naEJ3"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar c7naEJ3" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&#34;title&#34;:&#34;修改密码&#34;}" __cid="c7naEJ3"> 
+        <div class="x-titlebar-left c7naEJ3" __cid="c7naEJ3"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c7naEJ3" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&#34;icon&#34;:&#34;icon-chevron-left&#34;,&#34;label&#34;:&#34;&#34;}" __cid="c7naEJ3"> 
+            <i class="icon-chevron-left c7naEJ3" __cid="c7naEJ3"></i>  
+            <span __cid="c7naEJ3" class="c7naEJ3"></span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title c7naEJ3" __cid="c7naEJ3">修改密码</div>  
+        <div class="x-titlebar-right  c7naEJ3" __cid="c7naEJ3">
+          <div class="empty c7naEJ3" __cid="c7naEJ3"></div>
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon c7naEJ3" xid="btnHome" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnHomeClick" data-config="{&#34;icon&#34;:&#34;icon-home&#34;,&#34;label&#34;:&#34;&#34;}" __cid="c7naEJ3"> 
+            <i class="icon-home c7naEJ3" xid="i8" __cid="c7naEJ3"></i>  
+            <span xid="span12" __cid="c7naEJ3" class="c7naEJ3"></span> 
+          </a>
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content c7naEJ3" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="c7naEJ3"> 
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7naEJ3" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7naEJ3"> 
+        <label class="x-label c7naEJ3" xid="label1" __cid="c7naEJ3">旧密码</label>  
+        <input component="$model/UI2/system/components/justep/input/password" class="form-control x-edit c7naEJ3" xid="txt_old_pwd" type="password" data-bind="component:{name:'$model/UI2/system/components/justep/input/password'}" __cid="c7naEJ3"> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7naEJ3" xid="labelEdit2" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7naEJ3"> 
+        <label class="x-label c7naEJ3" xid="label2" __cid="c7naEJ3">新密码</label>  
+        <input component="$model/UI2/system/components/justep/input/password" class="form-control x-edit c7naEJ3" xid="txt_new_pwd" type="password" data-bind="component:{name:'$model/UI2/system/components/justep/input/password'}" __cid="c7naEJ3"> 
+      </div>  
+      <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 c7naEJ3" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="c7naEJ3"> 
+        <label class="x-label c7naEJ3" xid="label3" __cid="c7naEJ3">确认密码</label>  
+        <input component="$model/UI2/system/components/justep/input/password" class="form-control x-edit c7naEJ3" xid="text_comfir_pwd" type="password" data-bind="component:{name:'$model/UI2/system/components/justep/input/password'}" __cid="c7naEJ3"> 
+      </div>  
+      <br __cid="c7naEJ3" class="c7naEJ3">  
+      <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-block c7naEJ3" xid="btnOk" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnOkClick" data-config="{&#34;label&#34;:&#34;确定&#34;}" __cid="c7naEJ3"> 
+        <i xid="i1" __cid="c7naEJ3" class="c7naEJ3"></i>  
+        <span xid="span1" __cid="c7naEJ3" class="c7naEJ3">确定</span> 
+      </a> 
+    </div>  
+    <style __cid="c7naEJ3" class="c7naEJ3">.x-panel.pcRzYJV3-iosstatusbar >.x-panel-top {height: 48px;}.x-panel.pcRzYJV3-iosstatusbar >.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcRzYJV3-iosstatusbar >.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcRzYJV3-iosstatusbar >.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcRzYJV3-iosstatusbar >.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcRzYJV3-iosstatusbar >.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcRzYJV3-iosstatusbar >.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcRzYJV3-iosstatusbar >.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcRzYJV3-iosstatusbar >.x-panel-content {top: 48px;}</style>
+  </div> 
+</div>

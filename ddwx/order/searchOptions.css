@@ -1,0 +1,15 @@
+.x-output {
+	padding : 0px;
+	margin:0px;
+	font-size : 12px;
+}
+.account-list-line {
+	border-bottom: 1px solid lightgray;	
+	overflow: hidden;
+}
+.account-list-line:active {
+	background-color: lightgray;
+}
+label{
+	font-size : 12px;
+}

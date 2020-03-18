@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/window/window" design="device:m;" xid="window" class="window cN7nmIz" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="cN7nmIz" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/grid/grid,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/windowDialog/windowDialog,$model/UI2/system/components/justep/window/window,$model/UI2/system/components/justep/panel/panel,">  
+  <style xmlns="" xmlns:xhtml="http://www.w3.org/1999/xhtml">null</style>  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="cN7nmIz" class="cN7nmIz"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcfAVnYv-iosstatusbar cN7nmIz" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="cN7nmIz"> 
+    <div class="x-panel-top cN7nmIz" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cN7nmIz"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar cN7nmIz" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" data-config="{&quot;title&quot;:&quot;标题&quot;}" __cid="cN7nmIz"> 
+        <div class="x-titlebar-left cN7nmIz" __cid="cN7nmIz"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon cN7nmIz" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:{operation:'window.close'}" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;&quot;}" __cid="cN7nmIz"> 
+            <i class="icon-chevron-left cN7nmIz" __cid="cN7nmIz"/>  
+            <span __cid="cN7nmIz" class="cN7nmIz"/> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title cN7nmIz" __cid="cN7nmIz">标题</div>  
+        <div class="x-titlebar-right  cN7nmIz" __cid="cN7nmIz"> 
+          <div class="empty cN7nmIz" __cid="cN7nmIz"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content cN7nmIz" xid="content1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cN7nmIz"> 
+      <table xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/grid/grid" hiddenCaptionbar="true" altRows="true" class="x-grid-no-bordered cN7nmIz" xid="grid1" data="data1" appearance="treeGrid" expandColumn="title" data-config="{&quot;altRows&quot;:true,&quot;appearance&quot;:&quot;treeGrid&quot;,&quot;colModel&quot;:[{&quot;align&quot;:&quot;left&quot;,&quot;label&quot;:&quot;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;标题&quot;,&quot;name&quot;:&quot;title&quot;,&quot;sortable&quot;:false,&quot;width&quot;:&quot;80&quot;,&quot;xid&quot;:&quot;column1&quot;},{&quot;label&quot;:&quot;内容&quot;,&quot;name&quot;:&quot;content&quot;,&quot;sortable&quot;:false,&quot;width&quot;:&quot;100&quot;,&quot;xid&quot;:&quot;column3&quot;},{&quot;label&quot;:&quot;留言人&quot;,&quot;name&quot;:&quot;sopr&quot;,&quot;sortable&quot;:false,&quot;width&quot;:&quot;60&quot;,&quot;xid&quot;:&quot;column4&quot;},{&quot;label&quot;:&quot;留言时间&quot;,&quot;name&quot;:&quot;sdt&quot;,&quot;sortable&quot;:false,&quot;width&quot;:&quot;75&quot;,&quot;xid&quot;:&quot;column5&quot;},{&quot;label&quot;:&quot;状态&quot;,&quot;name&quot;:&quot;status&quot;,&quot;sortable&quot;:false,&quot;width&quot;:&quot;60&quot;,&quot;xid&quot;:&quot;column2&quot;}],&quot;data&quot;:&quot;data1&quot;,&quot;expandColumn&quot;:&quot;title&quot;,&quot;hiddenCaptionbar&quot;:true}" data-bind="component:{name:'$model/UI2/system/components/justep/grid/grid'}" data-events="onCellRender:grid1CellRender;onIndexChanged:grid1IndexChanged" __cid="cN7nmIz"></table> 
+    </div>  
+    <div class="x-panel-bottom cN7nmIz" xid="bottom1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="cN7nmIz"> 
+      <div component="$model/UI2/system/components/justep/row/row" class="x-row cN7nmIz" xid="row2" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="cN7nmIz"> 
+        <div class="x-col cN7nmIz" xid="col2" __cid="cN7nmIz"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-sm btn-block center-block cN7nmIz" xid="btnAdd" style="background-color:#FFFFFF;color:#1E90FF;border-style:solid solid solid solid;border-width:1px 1px 1px 1px;height:32px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnAddClick" data-config="{&quot;label&quot;:&quot;新增&quot;}" __cid="cN7nmIz"> 
+            <i xid="i3" __cid="cN7nmIz" class="cN7nmIz"/>  
+            <span xid="span4" __cid="cN7nmIz" class="cN7nmIz">新增</span> 
+          </a> 
+        </div>  
+        <div class="x-col cN7nmIz" xid="col3" __cid="cN7nmIz" data-bind="visible:$model.canView"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-sm btn-block center-block cN7nmIz" xid="btnViev" style="background-color:#FFFFFF;color:#1E90FF;border-style:solid solid solid solid;border-width:1px 1px 1px 1px;height:32px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnVievClick" data-config="{&quot;label&quot;:&quot;查看&quot;}" __cid="cN7nmIz"> 
+            <i xid="i2" __cid="cN7nmIz" class="cN7nmIz"/>  
+            <span xid="span3" __cid="cN7nmIz" class="cN7nmIz">查看</span> 
+          </a> 
+        </div>  
+        <div class="x-col cN7nmIz" xid="col4" __cid="cN7nmIz" data-bind="visible:$model.canReply"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-sm btn-block center-block cN7nmIz" xid="btnReply" style="background-color:#FFFFFF;color:#1E90FF;border-style:solid solid solid solid;border-width:1px 1px 1px 1px;height:32px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnReplyClick" data-config="{&quot;label&quot;:&quot;回复&quot;}" __cid="cN7nmIz"> 
+            <i xid="i6" __cid="cN7nmIz" class="cN7nmIz"/>  
+            <span xid="span8" __cid="cN7nmIz" class="cN7nmIz">回复</span> 
+          </a> 
+        </div>  
+        <div class="x-col cN7nmIz" xid="col5" __cid="cN7nmIz" data-bind="visible:$model.canDeal"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-sm btn-block center-block cN7nmIz" xid="btnDeal" style="background-color:#FFFFFF;color:#1E90FF;border-style:solid solid solid solid;border-width:1px 1px 1px 1px;height:32px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnDealClick" data-config="{&quot;label&quot;:&quot;处理&quot;}" __cid="cN7nmIz"> 
+            <i xid="i10" __cid="cN7nmIz" class="cN7nmIz"/>  
+            <span xid="span11" __cid="cN7nmIz" class="cN7nmIz">处理</span> 
+          </a> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="cN7nmIz" class="cN7nmIz">.x-panel.pcfAVnYv-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcfAVnYv-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcfAVnYv-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcfAVnYv-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcfAVnYv-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcfAVnYv-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcfAVnYv-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcfAVnYv-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcfAVnYv-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowDialog/windowDialog" xid="msgWin" data-bind="component:{name:'$model/UI2/system/components/justep/windowDialog/windowDialog'}" __cid="cN7nmIz" class="cN7nmIz"> 
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog-overlay cN7nmIz" __cid="cN7nmIz"></div>  
+    <div xmlns:xhtml="http://www.w3.org/1999/xhtml" class="x-dialog cN7nmIz" style="display:none;" __cid="cN7nmIz">  
+      <div class="x-dialog-title cN7nmIz" __cid="cN7nmIz"> 
+        <button class="close cN7nmIz" __cid="cN7nmIz"> 
+          <span __cid="cN7nmIz" class="cN7nmIz">×</span> 
+        </button>  
+        <div class="x-dialog-title-text cN7nmIz" __cid="cN7nmIz"/> 
+      </div>  
+      <div class="x-dialog-body cN7nmIz" __cid="cN7nmIz"/> 
+    </div> 
+  </span>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver1" style="top:107px;left:92px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:windowReceiver1Receive" __cid="cN7nmIz" class="cN7nmIz"/> 
+</div>

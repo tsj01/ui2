@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<div xmlns="http://www.w3.org/1999/xhtml" xid="window" class="window crMBjA3" component="$model/UI2/system/components/justep/window/window" design="device:m;" data-bind="component:{name:'$model/UI2/system/components/justep/window/window'}" __cid="crMBjA3" components="$model/UI2/system/components/justep/model/model,$model/UI2/system/components/justep/loadingBar/loadingBar,$model/UI2/system/components/justep/button/button,$model/UI2/system/components/justep/input/input,$model/UI2/system/components/justep/select/radioGroup,$model/UI2/system/components/justep/panel/child,$model/UI2/system/components/justep/labelEdit/labelEdit,$model/UI2/system/components/justep/panel/panel,$model/UI2/system/components/justep/contents/content,$model/UI2/system/components/justep/windowReceiver/windowReceiver,$model/UI2/system/components/justep/row/row,$model/UI2/system/components/justep/output/output,$model/UI2/system/components/justep/titleBar/titleBar,$model/UI2/system/components/justep/contents/contents,$model/UI2/system/components/justep/button/radio,$model/UI2/system/components/justep/data/data,$model/UI2/system/components/justep/window/window,">  
+  <div xmlns="" component="$model/UI2/system/components/justep/model/model" xid="model" style="display:none" data-bind="component:{name:'$model/UI2/system/components/justep/model/model'}" __cid="crMBjA3" class="crMBjA3"/>  
+  <div xmlns="" component="$model/UI2/system/components/justep/panel/panel" class="x-panel x-full pcbABNZ3-iosstatusbar crMBjA3" xid="panel1" data-bind="component:{name:'$model/UI2/system/components/justep/panel/panel'}" __cid="crMBjA3"> 
+    <div class="x-panel-top crMBjA3" xid="top1" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="crMBjA3"> 
+      <div component="$model/UI2/system/components/justep/titleBar/titleBar" class="x-titlebar crMBjA3" xid="titleBar1" data-bind="component:{name:'$model/UI2/system/components/justep/titleBar/titleBar'}" __cid="crMBjA3"> 
+        <div class="x-titlebar-left crMBjA3" xid="left1" __cid="crMBjA3"> 
+          <a component="$model/UI2/system/components/justep/button/button" class="btn btn-link btn-only-icon crMBjA3" xid="backBtn" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:backBtnClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-left&quot;,&quot;label&quot;:&quot;返回&quot;}" __cid="crMBjA3"> 
+            <i xid="i1" class="icon-chevron-left crMBjA3" __cid="crMBjA3"/>  
+            <span xid="span2" __cid="crMBjA3" class="crMBjA3">返回</span> 
+          </a> 
+        </div>  
+        <div class="x-titlebar-title crMBjA3" xid="title1" __cid="crMBjA3"> 
+          <span xid="span1" __cid="crMBjA3" class="crMBjA3">订单延后</span> 
+        </div>  
+        <div class="x-titlebar-right  crMBjA3" xid="right1" __cid="crMBjA3"> 
+          <div class="empty crMBjA3" __cid="crMBjA3"/> 
+        </div> 
+      </div> 
+    </div>  
+    <div class="x-panel-content crMBjA3" xid="content2" component="$model/UI2/system/components/justep/panel/child" data-bind="component:{name:'$model/UI2/system/components/justep/panel/child'}" __cid="crMBjA3"> 
+      <div component="$model/UI2/system/components/justep/contents/contents" class="x-contents crMBjA3" xid="content3" data-bind="component:{name:'$model/UI2/system/components/justep/contents/contents'}" data-config="{&quot;active&quot;:0}" __cid="crMBjA3"> 
+        <div class="x-contents-content active active crMBjA3" xid="contentOrder" component="$model/UI2/system/components/justep/contents/content" data-bind="component:{name:'$model/UI2/system/components/justep/contents/content'}" __cid="crMBjA3"> 
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row crMBjA3" xid="row6" style="padding:0px 5px 0px 5px;margin:0px 0px 0px 0px;height:40px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="crMBjA3"/>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row crMBjA3" xid="row4" style="padding:0px 5px 0px 5px;margin:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="crMBjA3"> 
+            <div class="x-col x-col-90 x-col-center center-block crMBjA3" xid="col7" __cid="crMBjA3"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 crMBjA3" xid="labelEdit3" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="crMBjA3"> 
+                <label class="x-label crMBjA3" xid="label3" style="margin:0px 0px 0px 5px;text-align:right;width:90px;" __cid="crMBjA3">原预约日期:</label>  
+                <div component="$model/UI2/system/components/justep/output/output" class="x-output x-edit crMBjA3" xid="output1" data-bind="component:{ref:$model.data1.ref(&quot;yydt_old&quot;),name:'$model/UI2/system/components/justep/output/output'}" __cid="crMBjA3"/> 
+              </div> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row crMBjA3" xid="row2" style="padding:0px 5px 0px 5px;margin:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="crMBjA3"> 
+            <div class="x-col x-col-90 x-col-center center-block crMBjA3" xid="col10" __cid="crMBjA3"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 crMBjA3" xid="labelEdit8" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="crMBjA3"> 
+                <label class="x-label crMBjA3" xid="label10" style="margin:0px 0px 0px 5px;text-align:right;width:90px;" __cid="crMBjA3">新预约日期:</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control x-edit crMBjA3" xid="input10" data-bind="component:{ref:$model.data1.ref(&quot;yydt&quot;),name:'$model/UI2/system/components/justep/input/input'}" __cid="crMBjA3"/> 
+              </div> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row crMBjA3" xid="row5" style="padding:0px 5px 0px 5px;margin:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="crMBjA3"> 
+            <div class="x-col x-col-90 x-col-center center-block crMBjA3" xid="col2" __cid="crMBjA3"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 crMBjA3" xid="labelEditRecvyy" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="crMBjA3"> 
+                <label class="x-label crMBjA3" xid="label2" style="margin:0px 0px 0px 5px;text-align:right;width:90px;" __cid="crMBjA3">延后原因:</label>  
+                <span component="$model/UI2/system/components/justep/select/radioGroup" class="x-radio-group x-radio-group-vertical x-radios x-edit crMBjA3" xid="rgpRecvyy" readonly="true" data-bind="component:{ref:delayy,name:'$model/UI2/system/components/justep/select/radioGroup'},foreach:{data:delayReasons.datas,afterRender:$model.comp($element)['_doUpdate'].bind($model.comp($element))}" data-events="onChange:rgpunrecvyyChange" data-config="{&quot;disabled&quot;:true}" __cid="crMBjA3"> 
+                  <span xmlns:xhtml="http://www.w3.org/1999/xhtml" component="$model/UI2/system/components/justep/button/radio" class="x-radio crMBjA3" data-config="{&quot;checked&quot;:false,&quot;disabled&quot;:false}" data-bind="component:{name:'$model/UI2/system/components/justep/button/radio',label:ref(&quot;name&quot;),value:ref(&quot;value&quot;)}" __cid="crMBjA3">  
+                    <input type="radio" __cid="crMBjA3" class="crMBjA3"/>  
+                    <label __cid="crMBjA3" class="crMBjA3"/> 
+                  </span> 
+                </span> 
+              </div> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row crMBjA3" xid="row7" style="padding:0px 10px 0px 5px;margin:0px 0px 0px 0px;height:40px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'},visible:showOthDelay" __cid="crMBjA3"> 
+            <div class="x-col x-col-90 x-col-center center-block crMBjA3" xid="col3" __cid="crMBjA3"> 
+              <div component="$model/UI2/system/components/justep/labelEdit/labelEdit" class="x-label-edit x-label30 crMBjA3" xid="labelEdit1" data-bind="component:{name:'$model/UI2/system/components/justep/labelEdit/labelEdit'}" __cid="crMBjA3"> 
+                <label class="x-label crMBjA3" xid="label1" style="margin:0px 0px 0px 5px;text-align:right;width:90px;" __cid="crMBjA3">其他情况:</label>  
+                <input component="$model/UI2/system/components/justep/input/input" class="form-control input-sm x-edit crMBjA3" xid="othDelay" data-bind="component:{ref:othdelayy,name:'$model/UI2/system/components/justep/input/input'}" __cid="crMBjA3"/> 
+              </div> 
+            </div> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row crMBjA3" xid="row1" style="padding:0px 10px 0px 5px;margin:0px 0px 0px 0px;" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="crMBjA3"> 
+            <div class="x-col crMBjA3" xid="col1" __cid="crMBjA3"/> 
+          </div>  
+          <div component="$model/UI2/system/components/justep/row/row" class="x-row crMBjA3" xid="row3" style="padding-top:5px;margin-top:5px" data-bind="component:{name:'$model/UI2/system/components/justep/row/row'}" __cid="crMBjA3"> 
+            <div class="x-col x-col-90 x-col-center center-block crMBjA3" xid="col4" __cid="crMBjA3"> 
+              <a component="$model/UI2/system/components/justep/button/button" class="btn btn-default btn-only-label btn-block crMBjA3" xid="btnOK" style="background-color:#FFFFFF;color:#1E90FF;border-style:solid solid solid solid;border-width:1px 1px 1px 1px;" data-bind="component:{name:'$model/UI2/system/components/justep/button/button'}" data-events="onClick:btnOKClick" data-config="{&quot;icon&quot;:&quot;icon-chevron-down&quot;,&quot;label&quot;:&quot;提交&quot;}" __cid="crMBjA3"> 
+                <i xid="i3" class="icon-chevron-down crMBjA3" __cid="crMBjA3"/>  
+                <span xid="span3" __cid="crMBjA3" class="crMBjA3">提交</span> 
+              </a> 
+            </div> 
+          </div> 
+        </div> 
+      </div> 
+    </div>  
+    <style __cid="crMBjA3" class="crMBjA3">.x-panel.pcbABNZ3-iosstatusbar &gt;.x-panel-top {height: 48px;}.x-panel.pcbABNZ3-iosstatusbar &gt;.x-panel-content { top: 48px;bottom: nullpx;}.x-panel.pcbABNZ3-iosstatusbar &gt;.x-panel-bottom {height: nullpx;}.iosstatusbar .x-panel.pcbABNZ3-iosstatusbar &gt;.x-panel-top,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcbABNZ3-iosstatusbar &gt;.x-panel-top {height: 68px;}.iosstatusbar .x-panel.pcbABNZ3-iosstatusbar &gt;.x-panel-content,.iosstatusbar .x-panel .x-panel-content .x-has-iosstatusbar.x-panel.pcbABNZ3-iosstatusbar &gt;.x-panel-content { top: 68px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcbABNZ3-iosstatusbar &gt;.x-panel-top {height: 48px;}.iosstatusbar .x-panel .x-panel-content .x-panel.pcbABNZ3-iosstatusbar &gt;.x-panel-content {top: 48px;}</style> 
+  </div>  
+  <span xmlns="" component="$model/UI2/system/components/justep/windowReceiver/windowReceiver" xid="windowReceiver1" style="top:22px;left:162px;" data-bind="component:{name:'$model/UI2/system/components/justep/windowReceiver/windowReceiver'}" data-events="onReceive:windowReceiver1Receive" __cid="crMBjA3" class="crMBjA3"/> 
+</div>
